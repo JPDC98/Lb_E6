@@ -1,0 +1,3 @@
+vhdl work "Salida_parte2.vhd"
+vhdl work "Entrada_parte1.vhd"
+vhdl work "Todo.vhd"

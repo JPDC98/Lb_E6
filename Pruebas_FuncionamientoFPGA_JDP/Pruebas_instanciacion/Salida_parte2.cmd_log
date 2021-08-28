@@ -1,0 +1,1 @@
+vhdtdtfi -prj Pruebas_instanciacion -o C:/Programas_Lab_E6/Pruebas_instanciacion/Salida_parte2.vhi -module Salida_parte2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Salida_parte2.vhd 

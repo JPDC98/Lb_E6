@@ -1,0 +1,21 @@
+V3 11
+FL C:/Programas_Lab_E6/Pruebas_instanciacion/Entrada_parte1.vhd 2021/08/28.16:08:50 P.20131013
+EN work/Entrada_parte1 1630188598 \
+      FL C:/Programas_Lab_E6/Pruebas_instanciacion/Entrada_parte1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Entrada_parte1/Behavioral 1630188599 \
+      FL C:/Programas_Lab_E6/Pruebas_instanciacion/Entrada_parte1.vhd \
+      EN work/Entrada_parte1 1630188598
+FL C:/Programas_Lab_E6/Pruebas_instanciacion/Salida_parte2.vhd 2021/08/28.16:09:20 P.20131013
+EN work/Salida_parte2 1630188600 \
+      FL C:/Programas_Lab_E6/Pruebas_instanciacion/Salida_parte2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Salida_parte2/Behavioral 1630188601 \
+      FL C:/Programas_Lab_E6/Pruebas_instanciacion/Salida_parte2.vhd \
+      EN work/Salida_parte2 1630188600
+FL C:/Programas_Lab_E6/Pruebas_instanciacion/Todo.vhd 2021/08/28.16:09:52 P.20131013
+EN work/Todo 1630188602 FL C:/Programas_Lab_E6/Pruebas_instanciacion/Todo.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Todo/Behavioral 1630188603 \
+      FL C:/Programas_Lab_E6/Pruebas_instanciacion/Todo.vhd EN work/Todo 1630188602 \
+      CP Entrada_parte1 CP Salida_parte2
