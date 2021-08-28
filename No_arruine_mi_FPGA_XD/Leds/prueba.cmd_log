@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/josed/Downloads/elbertv2.ucf -p xc3s50a-tq144-5 prueba.ngc prueba.ngd  
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/josed/Downloads/elbertv2.ucf -p xc3s50a-tq144-5 prueba.ngc prueba.ngd  
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Leds/prueba.xst" -ofn "C:/Programas_Lab_E6/Leds/prueba.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/josed/Downloads/elbertv2.ucf -p xc3s50a-tq144-5 prueba.ngc prueba.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/josed/Downloads/elbertv2.ucf -p xc3s50a-tq144-5 prueba.ngc prueba.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o prueba_map.ncd prueba.ngd prueba.pcf 
+par -w -intstyle ise -ol high -t 1 prueba_map.ncd prueba.ncd prueba.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml prueba.twx prueba.ncd -o prueba.twr prueba.pcf 
+bitgen -intstyle ise -f prueba.ut prueba.ncd 

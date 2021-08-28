@@ -1,0 +1,6 @@
+V3 3
+FL C:/Programas_Lab_E6/Leds/prueba.vhd 2021/08/28.13:24:04 P.20131013
+EN work/prueba 1630178651 FL C:/Programas_Lab_E6/Leds/prueba.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/prueba/Behavioral 1630178652 \
+      FL C:/Programas_Lab_E6/Leds/prueba.vhd EN work/prueba 1630178651
