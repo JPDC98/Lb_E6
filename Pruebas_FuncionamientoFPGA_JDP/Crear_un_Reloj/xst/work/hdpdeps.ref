@@ -1,0 +1,15 @@
+V3 7
+FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.vhd 2021/08/28.23:00:51 P.20131013
+EN work/modulo1_PS 1630213254 \
+      FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/modulo1_PS/Behavioral 1630213255 \
+      FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.vhd \
+      EN work/modulo1_PS 1630213254
+FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/UART.vhd 2021/08/28.18:31:22 P.20131013
+EN work/UART 0 \
+      FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/UART.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/UART/Behavioral 0 \
+      FL C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/UART.vhd \
+      EN work/UART 0 CP modulo1_PS

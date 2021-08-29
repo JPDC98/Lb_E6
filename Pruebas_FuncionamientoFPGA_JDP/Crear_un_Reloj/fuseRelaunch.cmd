@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/simulacion_isim_beh.exe" -prj "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/simulacion_beh.prj" "work.simulacion" 

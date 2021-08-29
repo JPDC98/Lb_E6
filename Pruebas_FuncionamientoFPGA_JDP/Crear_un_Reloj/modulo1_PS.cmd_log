@@ -1,0 +1,42 @@
+vhdtdtfi -prj pruebas_uart -o C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.vhi -module modulo1_PS -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work modulo1_PS.vhd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 modulo1_PS.ngc modulo1_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o modulo1_PS_map.ncd modulo1_PS.ngd modulo1_PS.pcf 
+par -w -intstyle ise -ol high -t 1 modulo1_PS_map.ncd modulo1_PS.ncd modulo1_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modulo1_PS.twx modulo1_PS.ncd -o modulo1_PS.twr modulo1_PS.pcf 
+bitgen -intstyle ise -f modulo1_PS.ut modulo1_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 modulo1_PS.ngc modulo1_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o modulo1_PS_map.ncd modulo1_PS.ngd modulo1_PS.pcf 
+par -w -intstyle ise -ol high -t 1 modulo1_PS_map.ncd modulo1_PS.ncd modulo1_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modulo1_PS.twx modulo1_PS.ncd -o modulo1_PS.twr modulo1_PS.pcf 
+bitgen -intstyle ise -f modulo1_PS.ut modulo1_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 modulo1_PS.ngc modulo1_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o modulo1_PS_map.ncd modulo1_PS.ngd modulo1_PS.pcf 
+par -w -intstyle ise -ol high -t 1 modulo1_PS_map.ncd modulo1_PS.ncd modulo1_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modulo1_PS.twx modulo1_PS.ncd -o modulo1_PS.twr modulo1_PS.pcf 
+bitgen -intstyle ise -f modulo1_PS.ut modulo1_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/modulo1_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 modulo1_PS.ngc modulo1_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o modulo1_PS_map.ncd modulo1_PS.ngd modulo1_PS.pcf 
+par -w -intstyle ise -ol high -t 1 modulo1_PS_map.ncd modulo1_PS.ncd modulo1_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml modulo1_PS.twx modulo1_PS.ncd -o modulo1_PS.twr modulo1_PS.pcf 
+bitgen -intstyle ise -f modulo1_PS.ut modulo1_PS.ncd 

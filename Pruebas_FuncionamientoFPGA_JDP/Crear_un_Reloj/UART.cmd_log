@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/UART.xst" -ofn "C:/Programas_Lab_E6/Pruebas_FuncionamientoFPGA_JDP/pruebas_uart/UART.syr" 

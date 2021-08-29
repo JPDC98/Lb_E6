@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Aug 28 23:01:06 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "LED" LOCATE = SITE "P46" LEVEL 1;
+COMP "Clk" LOCATE = SITE "P129" LEVEL 1;
+NET "Clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

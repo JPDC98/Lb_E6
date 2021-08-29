@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Programas_Lab_E6\Pruebas_FuncionamientoFPGA_JDP\pruebas_uart\modulo1_PS.ncd
+OUTFILE=C:\Programas_Lab_E6\Pruebas_FuncionamientoFPGA_JDP\pruebas_uart\modulo1_PS.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Programas_Lab_E6\Pruebas_FuncionamientoFPGA_JDP\pruebas_uart
+LICENSE=WebPack
+USER_INFO=212013186_0_0_473
