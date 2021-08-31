@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Aug 30 18:38:11 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "datos<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "datos<1>" LOCATE = SITE "P59" LEVEL 1;
+COMP "datos<2>" LOCATE = SITE "P60" LEVEL 1;
+COMP "datos<3>" LOCATE = SITE "P63" LEVEL 1;
+COMP "datos<4>" LOCATE = SITE "P64" LEVEL 1;
+COMP "datos<5>" LOCATE = SITE "P68" LEVEL 1;
+COMP "datos<6>" LOCATE = SITE "P69" LEVEL 1;
+COMP "datos<7>" LOCATE = SITE "P70" LEVEL 1;
+COMP "datosOut<0>" LOCATE = SITE "P46" LEVEL 1;
+COMP "datosOut<1>" LOCATE = SITE "P47" LEVEL 1;
+COMP "datosOut<2>" LOCATE = SITE "P48" LEVEL 1;
+COMP "datosOut<3>" LOCATE = SITE "P49" LEVEL 1;
+COMP "datosOut<4>" LOCATE = SITE "P50" LEVEL 1;
+COMP "datosOut<5>" LOCATE = SITE "P51" LEVEL 1;
+COMP "datosOut<6>" LOCATE = SITE "P54" LEVEL 1;
+COMP "datosOut<7>" LOCATE = SITE "P55" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "clk" LOCATE = SITE "P129" LEVEL 1;
+COMP "enable" LOCATE = SITE "P80" LEVEL 1;
+COMP "txSerial" LOCATE = SITE "P32" LEVEL 1;
+COMP "txOcupado" LOCATE = SITE "P31" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

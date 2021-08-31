@@ -1,0 +1,415 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: uart_tx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "uart_tx.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "uart_tx"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : uart_tx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd" in Library work.
+Entity <uart_tx> compiled.
+Entity <uart_tx> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <uart_tx> in library <work> (architecture <Behavioral>) with generics.
+	baudRate = 115200
+	clock = 12000000
+	nbits = 8
+	tiempoBit = 104
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <uart_tx> in library <work> (Architecture <Behavioral>).
+	baudRate = 115200
+	clock = 12000000
+	nbits = 8
+	tiempoBit = 104
+Entity <uart_tx> analyzed. Unit <uart_tx> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd".
+    Found finite state machine <FSM_0> for signal <estados>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <datosOut>.
+    Found 1-bit register for signal <txOcupado>.
+    Found 1-bit register for signal <txSerial>.
+    Found 8-bit register for signal <byte_Uart>.
+    Found 7-bit comparator less for signal <estados$cmp_lt0000> created at line 55.
+    Found 3-bit comparator less for signal <estados$cmp_lt0001> created at line 70.
+    Found 3-bit register for signal <n_Bit>.
+    Found 3-bit adder for signal <n_Bit$addsub0000> created at line 71.
+    Found 7-bit register for signal <t_Bit>.
+    Found 7-bit adder for signal <t_Bit$addsub0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <uart_tx> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 2
+ 3-bit comparator less                                 : 1
+ 7-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <estados/FSM> on signal <estados[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 3-bit adder                                           : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+# Comparators                                          : 2
+ 3-bit comparator less                                 : 1
+ 7-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <uart_tx> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block uart_tx, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : uart_tx.ngr
+Top Level Output File Name         : uart_tx
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 51
+#      LUT2                        : 12
+#      LUT2_L                      : 2
+#      LUT3                        : 4
+#      LUT3_L                      : 4
+#      LUT4                        : 22
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 30
+#      FD                          : 13
+#      FDE                         : 16
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 9
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       26  out of    704     3%  
+ Number of Slice Flip Flops:             30  out of   1408     2%  
+ Number of 4 input LUTs:                 47  out of   1408     3%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    108    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.674ns (Maximum Frequency: 213.968MHz)
+   Minimum input arrival time before clock: 3.340ns
+   Maximum output required time after clock: 5.390ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.674ns (frequency: 213.968MHz)
+  Total number of paths / destination ports: 239 / 31
+-------------------------------------------------------------------------
+Delay:               4.674ns (Levels of Logic = 3)
+  Source:            estados_FSM_FFd1 (FF)
+  Destination:       t_Bit_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: estados_FSM_FFd1 to t_Bit_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              18   0.495   0.974  estados_FSM_FFd1 (estados_FSM_FFd1)
+     LUT2:I1->O            9   0.562   0.699  estados_FSM_Out01 (estados_cmp_eq0000)
+     LUT4:I3->O            7   0.561   0.625  t_Bit_mux0000<0>11 (N2)
+     LUT3:I2->O            1   0.561   0.000  t_Bit_mux0000<5>1 (t_Bit_mux0000<5>)
+     FD:D                      0.197          t_Bit_1
+    ----------------------------------------
+    Total                      4.674ns (2.376ns logic, 2.298ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 33 / 25
+-------------------------------------------------------------------------
+Offset:              3.340ns (Levels of Logic = 3)
+  Source:            enable (PAD)
+  Destination:       estados_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: enable to estados_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.824   0.816  enable_IBUF (enable_IBUF)
+     LUT2:I1->O            1   0.562   0.380  estados_FSM_FFd2-In_SW0 (N4)
+     LUT4:I2->O            1   0.561   0.000  estados_FSM_FFd2-In (estados_FSM_FFd2-In)
+     FD:D                      0.197          estados_FSM_FFd2
+    ----------------------------------------
+    Total                      3.340ns (2.144ns logic, 1.196ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              5.390ns (Levels of Logic = 1)
+  Source:            txOcupado (FF)
+  Destination:       txOcupado (PAD)
+  Source Clock:      clk rising
+
+  Data Path: txOcupado to txOcupado
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.495   0.499  txOcupado (txOcupado_OBUF)
+     OBUF:I->O                 4.396          txOcupado_OBUF (txOcupado)
+    ----------------------------------------
+    Total                      5.390ns (4.891ns logic, 0.499ns route)
+                                       (90.7% logic, 9.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.07 secs
+ 
+--> 
+
+Total memory usage is 4513344 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,7 @@
+V3 3
+FL C:/Programas_Lab_E6/UART/mod_PS.vhd 2021/08/30.18:30:10 P.20131013
+EN work/mod_PS 1630369814 FL C:/Programas_Lab_E6/UART/mod_PS.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/mod_PS/Behavioral 1630369815 \
+      FL C:/Programas_Lab_E6/UART/mod_PS.vhd EN work/mod_PS 1630369814

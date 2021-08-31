@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Programas_Lab_E6/UART/prueba_isim_beh.exe" -prj "C:/Programas_Lab_E6/UART/prueba_beh.prj" "work.prueba" 

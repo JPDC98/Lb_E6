@@ -1,0 +1,287 @@
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART/mod_PS.xst" -ofn "C:/Programas_Lab_E6/UART/mod_PS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 mod_PS.ngc mod_PS.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o mod_PS_map.ncd mod_PS.ngd mod_PS.pcf 
+par -w -intstyle ise -ol high -t 1 mod_PS_map.ncd mod_PS.ncd mod_PS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod_PS.twx mod_PS.ncd -o mod_PS.twr mod_PS.pcf 
+bitgen -intstyle ise -f mod_PS.ut mod_PS.ncd 

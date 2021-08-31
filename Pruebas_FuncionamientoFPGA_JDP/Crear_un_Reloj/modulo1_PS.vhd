@@ -9,7 +9,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity modulo1_PS is --PS significa Paralelo a Serie
     Port ( LED : out  STD_LOGIC;
-           Clk : in  STD_LOGIC);
+            Clk : in  STD_LOGIC);
 end modulo1_PS;
 
 architecture Behavioral of modulo1_PS is
