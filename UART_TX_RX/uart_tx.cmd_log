@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/uart_tx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 uart_tx.ngc uart_tx.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o uart_tx_map.ncd uart_tx.ngd uart_tx.pcf 
+par -w -intstyle ise -ol high -t 1 uart_tx_map.ncd uart_tx.ncd uart_tx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml uart_tx.twx uart_tx.ncd -o uart_tx.twr uart_tx.pcf 
+bitgen -intstyle ise -f uart_tx.ut uart_tx.ncd 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhi -module uart_tx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_tx.vhd 

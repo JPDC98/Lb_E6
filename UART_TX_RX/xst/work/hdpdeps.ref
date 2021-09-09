@@ -1,0 +1,17 @@
+V3 11
+FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd 2021/09/09.17:09:21 P.20131013
+EN work/TOP 1631228969 FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/TOP/Behavioral 1631228970 \
+      FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd EN work/TOP 1631228969 CP uart_tx \
+      CP uart_rx
+FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd 2021/09/09.17:00:47 P.20131013
+EN work/uart_rx 1631228967 FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_rx/Behavioral 1631228968 \
+      FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd EN work/uart_rx 1631228967
+FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd 2021/09/09.16:40:57 P.20131013
+EN work/uart_tx 1631228965 FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_tx/Behavioral 1631228966 \
+      FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd EN work/uart_tx 1631228965
