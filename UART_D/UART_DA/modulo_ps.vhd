@@ -17,11 +17,11 @@ entity uart_tx is
 				tiempoBit:integer := 104-- clock/baudRate=104.1667 Tiempo de cada bit	
 	);
     Port ( datos : in  STD_LOGIC_VECTOR (7 downto 0);--Entrada en paralelo de datos
-           datosOut: out STD_LOGIC_VECTOR(7 downto 0);--Datos en paralelo
-			  clk : in  STD_LOGIC;--Entrada de reloj 12MHz			  
-			  enable: in STD_LOGIC;--Habilitador de envio SW1
-			  txOcupado: out STD_LOGIC;--Se coloca en estado alto mientras envia			 
-           txSerial : out  STD_LOGIC);--Salida TX del uart
+            datosOut: out STD_LOGIC_VECTOR(7 downto 0);--Datos en paralelo
+			clk : in  STD_LOGIC;--Entrada de reloj 12MHz			  
+		    enable: in STD_LOGIC;--Habilitador de envio SW1
+		    txOcupado: out STD_LOGIC;--Se coloca en estado alto mientras envia			 
+            txSerial : out  STD_LOGIC);--Salida TX del uart
 end uart_tx;
 
 architecture Behavioral of uart_tx is

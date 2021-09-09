@@ -32,10 +32,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4397104 kilobytes
+Total memory usage is 4397048 kilobytes
 
 Writing NGD file "mod_PS.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
+Total REAL time to NGDBUILD completion:  4 sec
 Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "mod_PS.bld"...

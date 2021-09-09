@@ -1,6 +1,6 @@
 V3 3
-FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd 2021/08/30.18:37:52 P.20131013
-EN work/uart_tx 1630370278 FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd \
+FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd 2021/09/09.11:43:44 P.20131013
+EN work/uart_tx 1631209742 FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/uart_tx/Behavioral 1630370279 \
-      FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd EN work/uart_tx 1630370278
+AR work/uart_tx/Behavioral 1631209743 \
+      FL C:/Programas_Lab_E6/UART_D/UART_DA/modulo_ps.vhd EN work/uart_tx 1631209742
