@@ -50,18 +50,18 @@
 #                               Seven Segment Display
 ####################################################################################################
 
-    #NET "SevenSegment[7]"    LOC = P117  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[6]"    LOC = P116  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[5]"    LOC = P115  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[4]"    LOC = P113  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[3]"    LOC = P112  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[2]"    LOC = P111  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[1]"    LOC = P110  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "SevenSegment[0]"    LOC = P114  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[7]"    LOC = P117  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[6]"    LOC = P116  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[5]"    LOC = P115  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[4]"    LOC = P113  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[3]"    LOC = P112  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[2]"    LOC = P111  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[1]"    LOC = P110  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "DISPLAY[0]"    LOC = P114  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 
-    #NET "Enable[2]"          LOC = P124  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "Enable[1]"          LOC = P121  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "Enable[0]"          LOC = P120  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "enable[2]"          LOC = P124  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "enable[1]"          LOC = P121  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "enable[0]"          LOC = P120  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 
 ####################################################################################################
 #                                       LED
@@ -95,7 +95,7 @@
 
      NET "PUSH_1"          LOC = P80   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
      NET "PUSH_2"          LOC = P79   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "Switch[2]"          LOC = P78   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "PUSH_3"          LOC = P78   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "Switch[3]"          LOC = P77   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "Switch[4]"          LOC = P76   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "Switch[5]"          LOC = P75   | PULLUP  | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
@@ -107,12 +107,12 @@
 ####################################################################################################
 # HEADER P1
 ####################################################################################################
-    NET "SALIDA_P1"           LOC = P31   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    NET "SALIDA_P2"           LOC = P32   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "IO_P1[2]"           LOC = P28   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "SALIDA_P1"           LOC = P31   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "SALIDA_P2"           LOC = P32   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "SALIDA_P3"           LOC = P28   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P1[3]"           LOC = P30   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "IO_P1[4]"           LOC = P27   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "IO_P1[5]"           LOC = P29   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "SALIDA_P5"           LOC = P27   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "SALIDA_P6"           LOC = P29   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P1[6]"           LOC = P24   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P1[7]"           LOC = P25   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 

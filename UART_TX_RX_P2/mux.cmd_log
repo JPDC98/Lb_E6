@@ -1,0 +1,4 @@
+vhdtdtfi -lib work mux.vhd -prj UART_TX_RX -o mux.spl -module mux -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a mux.spl C:/Programas_Lab_E6/UART_TX_RX/mux.sym 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/mux.vhi -module mux -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux.vhd 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/mux.vhi -module mux -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux.vhd 

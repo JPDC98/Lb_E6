@@ -1,3 +1,0 @@
-vhdl work "uart_tx.vhd"
-vhdl work "uart_rx.vhd"
-vhdl work "TOP.vhd"

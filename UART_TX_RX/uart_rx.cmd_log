@@ -1,1 +1,0 @@
-vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhi -module uart_rx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_rx.vhd 

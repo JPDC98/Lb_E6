@@ -1,0 +1,81 @@
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Programas_Lab_E6/UART_TX_RX/TOP.xst" -ofn "C:/Programas_Lab_E6/UART_TX_RX/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Programas_Lab_E6/elbertv2.ucf -p xc3s50a-tq144-5 TOP.ngc TOP.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -t 1 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 

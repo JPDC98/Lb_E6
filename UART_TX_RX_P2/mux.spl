@@ -1,0 +1,10 @@
+[Inputs]
+senal_1
+senal_2
+=dato_1[7:0]=
+=dato_2[7:0]=
+[Outputs]
+salida_bit_1
+salida_bit_2
+=salida_vector[7:0]=
+[BiDir]

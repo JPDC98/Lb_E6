@@ -1,0 +1,5 @@
+set -tmpdir "C:/Programas_Lab_E6/UART_TX_RX/xst/projnav.tmp"
+set -xsthdpdir "C:/Programas_Lab_E6/UART_TX_RX/xst"
+elaborate
+-ifn view_data.prj
+-ifmt mixed

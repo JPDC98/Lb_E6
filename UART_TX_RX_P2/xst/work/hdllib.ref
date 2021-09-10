@@ -1,0 +1,10 @@
+AR uart_rx behavioral C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd sub00/vhpl03 1631251809
+AR mux behavioral C:/Programas_Lab_E6/UART_TX_RX/mux.vhd sub00/vhpl07 1631251811
+EN view_data NULL C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd sub00/vhpl08 1631251812
+EN top NULL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd sub00/vhpl04 1631251814
+AR view_data behavioral C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd sub00/vhpl09 1631251813
+AR uart_tx behavioral C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd sub00/vhpl01 1631251807
+EN mux NULL C:/Programas_Lab_E6/UART_TX_RX/mux.vhd sub00/vhpl06 1631251810
+EN uart_rx NULL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd sub00/vhpl02 1631251808
+AR top behavioral C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd sub00/vhpl05 1631251815
+EN uart_tx NULL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd sub00/vhpl00 1631251806

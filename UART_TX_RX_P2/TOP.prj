@@ -1,0 +1,5 @@
+vhdl work "view_data.vhd"
+vhdl work "uart_tx.vhd"
+vhdl work "uart_rx.vhd"
+vhdl work "mux.vhd"
+vhdl work "TOP.vhd"
