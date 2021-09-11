@@ -1,0 +1,1 @@
+vhdtdtfi -prj hc_sr04 -o /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhi -module echo -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work echo.vhd 

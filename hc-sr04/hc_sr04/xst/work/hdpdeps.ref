@@ -1,0 +1,36 @@
+V3 19
+FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhd 2021/09/10.21:25:06 P.20131013
+EN work/control_3_byte 1631393305 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/control_3_byte/Behavioral 1631393306 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhd \
+      EN work/control_3_byte 1631393305
+FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhd 2021/09/10.14:08:23 P.20131013
+EN work/echo 1631393303 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/echo/Behavioral 1631393304 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhd \
+      EN work/echo 1631393303
+FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.vhd 2021/09/11.10:40:06 P.20131013
+EN work/hc_sr04_top 1631393307 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/hc_sr04_top/Behavioral 1631393308 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.vhd \
+      EN work/hc_sr04_top 1631393307 CP uart_tx CP trigger CP echo CP control_3_byte
+FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/trigger.vhd 2021/09/10.12:03:47 P.20131013
+EN work/trigger 1631393301 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/trigger.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/trigger/Behavioral 1631393302 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/trigger.vhd \
+      EN work/trigger 1631393301
+FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/uart_tx.vhd 2021/09/10.10:39:08 P.20131013
+EN work/uart_tx 1631393299 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/uart_tx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_tx/Behavioral 1631393300 \
+      FL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/uart_tx.vhd \
+      EN work/uart_tx 1631393299

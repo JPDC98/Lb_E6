@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.xst" -ofn "/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc elbertv2.ucf -p xc3s50a-tq144-5 hc_sr04_top.ngc hc_sr04_top.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o hc_sr04_top_map.ncd hc_sr04_top.ngd hc_sr04_top.pcf 
+par -w -intstyle ise -ol high -t 1 hc_sr04_top_map.ncd hc_sr04_top.ncd hc_sr04_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml hc_sr04_top.twx hc_sr04_top.ncd -o hc_sr04_top.twr hc_sr04_top.pcf -ucf elbertv2.ucf 
+bitgen -intstyle ise -f hc_sr04_top.ut hc_sr04_top.ncd 

@@ -1,0 +1,10 @@
+EN control_3_byte NULL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhd sub00/vhpl06 1631393305
+AR control_3_byte behavioral /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhd sub00/vhpl07 1631393306
+AR echo behavioral /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhd sub00/vhpl05 1631393304
+EN trigger NULL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/trigger.vhd sub00/vhpl02 1631393301
+EN hc_sr04_top NULL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.vhd sub00/vhpl08 1631393307
+AR trigger behavioral /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/trigger.vhd sub00/vhpl03 1631393302
+EN echo NULL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/echo.vhd sub00/vhpl04 1631393303
+AR uart_tx behavioral /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/uart_tx.vhd sub00/vhpl01 1631393300
+AR hc_sr04_top behavioral /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.vhd sub00/vhpl09 1631393308
+EN uart_tx NULL /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/uart_tx.vhd sub00/vhpl00 1631393299

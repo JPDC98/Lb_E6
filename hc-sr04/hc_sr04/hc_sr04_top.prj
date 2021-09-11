@@ -1,0 +1,5 @@
+vhdl work "uart_tx.vhd"
+vhdl work "trigger.vhd"
+vhdl work "echo.vhd"
+vhdl work "control_3_byte.vhd"
+vhdl work "hc_sr04_top.vhd"

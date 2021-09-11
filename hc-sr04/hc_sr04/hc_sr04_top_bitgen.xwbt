@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.ncd
+OUTFILE=/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/hc_sr04_top.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04
+LICENSE=WebPack
+USER_INFO=212012819_0_0_117

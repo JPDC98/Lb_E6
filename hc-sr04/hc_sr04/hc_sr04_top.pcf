@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Sep 11 14:48:33 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "trigger_top" LOCATE = SITE "P32" LEVEL 1;
+COMP "trigger_top0" LOCATE = SITE "P24" LEVEL 1;
+COMP "echo_top0" LOCATE = SITE "P29" LEVEL 1;
+COMP "uartTx_top" LOCATE = SITE "P28" LEVEL 1;
+COMP "clk12" LOCATE = SITE "P129" LEVEL 1;
+COMP "enable_top" LOCATE = SITE "P27" LEVEL 1;
+COMP "echo_top" LOCATE = SITE "P31" LEVEL 1;
+COMP "txOcupado_top" LOCATE = SITE "P30" LEVEL 1;
+NET "clk12_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

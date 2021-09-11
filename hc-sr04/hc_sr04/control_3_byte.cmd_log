@@ -1,0 +1,2 @@
+vhdtdtfi -prj hc_sr04 -o /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhi -module control_3_byte -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_3_byte.vhd 
+vhdtdtfi -prj hc_sr04 -o /media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control_3_byte.vhi -module control_3_byte -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_3_byte.vhd 
