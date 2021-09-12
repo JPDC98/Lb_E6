@@ -1,12 +1,12 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Programas_Lab_E6/UART_TX_RX/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Programas_Lab_E6/UART_TX_RX_P2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
---> Parameter xsthdpdir set to C:/Programas_Lab_E6/UART_TX_RX/xst
+--> Parameter xsthdpdir set to C:/Programas_Lab_E6/UART_TX_RX_P2/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -17,7 +17,7 @@ Total CPU time to Xst completion: 0.11 secs
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Programas_Lab_E6/UART_TX_RX/mux.vhd" in Library work.
+Compiling vhdl file "C:/Programas_Lab_E6/UART_TX_RX_P2/mux.vhd" in Library work.
 Entity <mux> compiled.
 Entity <mux> (Architecture <behavioral>) compiled.
 
@@ -27,7 +27,7 @@ Total CPU time to Xst completion: 0.16 secs
  
 --> 
 
-Total memory usage is 4467980 kilobytes
+Total memory usage is 4467928 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

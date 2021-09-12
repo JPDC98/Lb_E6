@@ -1,25 +1,26 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Programas_Lab_E6/UART_TX_RX/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Programas_Lab_E6/UART_TX_RX_P2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
---> Parameter xsthdpdir set to C:/Programas_Lab_E6/UART_TX_RX/xst
+--> Parameter xsthdpdir set to C:/Programas_Lab_E6/UART_TX_RX_P2/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd" in Library work.
-Entity <view_data> compiled.
-Entity <view_data> (Architecture <behavioral>) compiled.
+WARNING:HDLParsers:3607 - Unit work/view_data is now defined in a different file.  It was defined in "C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd", and is now defined in "C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd".
+WARNING:HDLParsers:3607 - Unit work/view_data/Behavioral is now defined in a different file.  It was defined in "C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd", and is now defined in "C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd".
+Compiling vhdl file "C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd" in Library work.
+Architecture behavioral of Entity view_data is up to date.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -27,9 +28,9 @@ Total CPU time to Xst completion: 0.15 secs
  
 --> 
 
-Total memory usage is 4467964 kilobytes
+Total memory usage is 4467988 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

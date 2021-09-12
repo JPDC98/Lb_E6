@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file view_data.vhd -- 21:33:59 09/09/2021
+-- VHDL Instantiation Created from source file view_data.vhd -- 13:35:05 09/12/2021
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -8,8 +8,7 @@
 
 	COMPONENT view_data
 	PORT(
-		activar_1 : IN std_logic;
-		activar_2 : IN std_logic;
+		activar : IN std_logic_vector(1 downto 0);
 		Switch_3 : IN std_logic;
 		clk : IN std_logic;          
 		enable : OUT std_logic_vector(2 downto 0);
@@ -18,8 +17,7 @@
 	END COMPONENT;
 
 	Inst_view_data: view_data PORT MAP(
-		activar_1 => ,
-		activar_2 => ,
+		activar => ,
 		Switch_3 => ,
 		clk => ,
 		enable => ,
