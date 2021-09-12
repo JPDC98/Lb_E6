@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control2test_isim_beh.exe" -prj "/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/control2test_beh.prj" "work.control2test" 
