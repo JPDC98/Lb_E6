@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 20 03:25:54 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "TRIGGER_TOP" LOCATE = SITE "P31" LEVEL 1;
+COMP "ECHO_TOP" LOCATE = SITE "P32" LEVEL 1;
+COMP "TX_TOP" LOCATE = SITE "P28" LEVEL 1;
+COMP "SWITCH_TOP" LOCATE = SITE "P70" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P129" LEVEL 1;
+NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -77,7 +77,7 @@ reloj: process(Clk)
 						end if;
 					when others =>
 						estado <= idle;
-				end case;
+		    end case;
         end if;
     end process reloj;
 

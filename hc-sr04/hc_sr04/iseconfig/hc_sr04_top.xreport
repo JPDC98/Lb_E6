@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-09-11T14:47:18</DateModified>
+  <DateModified>2021-09-19T21:09:28</DateModified>
   <ModuleName>hc_sr04_top</ModuleName>
   <SummaryTimeStamp>2021-09-11T10:43:55</SummaryTimeStamp>
-  <SavedFilePath>/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/iseconfig/hc_sr04_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/media/omar/FILES/Omar/U/cursos/E6/lab/hc-sr04/hc_sr04/</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Programas_Lab_E6/hc-sr04/hc_sr04/iseconfig/hc_sr04_top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Programas_Lab_E6/hc-sr04/hc_sr04\</ImplementationReportsDirectory>
   <DateInitialized>2021-09-10T08:45:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
