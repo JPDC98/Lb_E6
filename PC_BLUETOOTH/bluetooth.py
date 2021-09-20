@@ -3,18 +3,18 @@ import serial
 from serial.serialutil import Timeout
 
 try:
-    com_serial = serial.Serial(port='COM8',
-                            baudrate=9600,
-                            bytesize=serial.EIGHTBITS,
-                            parity=serial.PARITY_NONE,
-                            stopbits = serial.STOPBITS_ONE, 
-                            timeout=1)#COM8 en entrada de datos del bluetooth de la PC
-    print(com_serial.name)
+    com_serial = serial.Serial(port='COM8',#Poner dirección del dispositivo si es sistema linux; Windows verificar puerto asignado al bluetooth.
+                            baudrate=9600, #Velidicad de recepción de datos, HC-06 por defecto esta a 9600
+                            bytesize=serial.EIGHTBITS, #Numero de bits a contar y empaquetar
+                            parity=serial.PARITY_NONE, #Desabilitamos bits de paridad por el momento
+                            stopbits = serial.STOPBITS_ONE, #Se detiene la recepción de datos cuando se detecta un estado alto. 
+                            timeout=1)
+    print(com_serial.name) #imprimimos el puerto serial a utilizar, conexión correcta
     while(1):
-        datos_bytes = com_serial.read(2)
-        datos = [(a/2) for a in datos_bytes]
-        print("distancia_1: {} cm distancia_2: {} cm".format(datos[0],datos[1]))   
+        datos_bytes = com_serial.read(2) #Leemos los dos bits enviados de la FPGA
+        datos = [(a/2) for a in datos_bytes] #Distancia dividida en 2 dado que se calcula el tiempo de ida como de regreso de la onda ultrasonica
+        print("distancia_1: {} cm distancia_2: {} cm".format(datos[0],datos[1])) #impresión con fomrato de texto  
 
 except:
-    com_serial.close()
-    print("ERROR")
+    com_serial.close() # se cierra la comunicación para evitar loops indeseados.
+    print("ERROR") # se nos hace saber que hubo un error.

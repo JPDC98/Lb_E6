@@ -9,7 +9,7 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Mon Sep 20 10:33:51 2021
+Mapped Date    : Mon Sep 20 16:47:50 2021
 
 Mapping design into LUTs...
 Running directed packing...

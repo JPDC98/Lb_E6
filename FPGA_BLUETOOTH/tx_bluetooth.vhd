@@ -10,16 +10,16 @@ entity tx_bluetooth is
 				num_puertos: integer:= 2;		-- Numero de sensores conectados al sistema
 				tiempo_bit: integer:= 1250		-- Tiempo de espera por bit, reloj/baudrate
 	 );
-    Port (  IO_P1: out  STD_LOGIC; 
-				DPSwitch_1: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
-				DPSwitch_2: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
-				Switch_1: in STD_LOGIC;
-            Clk : in  STD_LOGIC);
+    Port (  IO_P1: out  STD_LOGIC; 											 --
+				DPSwitch_1: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);--
+				DPSwitch_2: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);----> Varialbles explicadas en el archivo TOP.vhdl
+				Switch_1: in STD_LOGIC;											 --
+            Clk : in  STD_LOGIC);											 --	
 end tx_bluetooth;
 
 architecture Behavioral of tx_bluetooth is
 
-	type uart_tx is (idle,data,start,stop);
+	type uart_tx is (idle,data,start,stop);--Se crea una maquina de estados que nos ayudara a convertir datos paralelos a datos serie
 	signal estado: uart_tx:= idle; 
    signal conteo: integer range 0 to tiempo_bit-1:= 0;
 	signal puente: std_logic_vector (Bits_data-1 downto 0):= (others => '0');
@@ -32,7 +32,7 @@ begin
     begin
         if (rising_edge(Clk)) then
             case estado is
-					when idle =>
+					when idle => -- Estado de espera de la maquina de estados, variables puestas en estado bajo esperando Switch = '0'
 						IO_P1 <= '1'; 
 						conteo <= 0;
 						indice <= 0;
@@ -43,16 +43,15 @@ begin
 								puerto <= puerto + 1;
 								estado <= start;
 							else
-								puente <= DPSwitch_2;
+								puente <= DPSwitch_2;--Se ingresa los datos paralelo a un vector para ser lansados en serie
 								puerto <= 0;
 								estado <= start;
 							end if;
-							
 						else
 							estado <= idle;
 						end if;
 						
-					when start =>
+					when start => --Se ingresa un pulso en bajo equivalente a un bit segun baudrate especificado
 						IO_P1 <= '0'; 
 						if (conteo <  tiempo_bit-1) then
 							conteo <= conteo + 1;
@@ -61,7 +60,7 @@ begin
 							conteo <= 0;
 							estado <= data;
 						end if;
-					when data =>
+					when data => --Se toma los datos del verctor catapulta y se envia bit a bit por la salida TX
 						IO_P1 <= puente(indice);
 						if (conteo < tiempo_bit-1) then
 							conteo <= conteo + 1;
@@ -76,7 +75,7 @@ begin
 								estado <= stop;
 							end if;
 						end if;
-					when stop =>
+					when stop => --Se pone estado en alto la salidada por un periodo de un bit segun baudrate especificado 
 						IO_P1 <= '1';
 						if (conteo < tiempo_bit-1) then
 							conteo <= conteo + 1;
@@ -85,7 +84,7 @@ begin
 							conteo <= 0;
 							estado <= idle;							
 						end if;
-					when others =>
+					when others => --En vista de diferentes caso no previstos se toma una medida de retorno al idle
 						estado <= idle;
 		    end case;
         end if;

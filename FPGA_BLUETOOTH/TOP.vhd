@@ -7,16 +7,16 @@ entity TOP is
 				HZ_reloj: integer:= 12000000; --Frecuencia del reloj a utilizar.
 				Bits_data: integer:= 8        -- N?mero de bits a enviar.
 	 );	
-    Port ( SWITCH_TOP : in  STD_LOGIC;
-           ECHO_TOP : in  STD_LOGIC;
-			  CLK: in STD_LOGIC;
-           TRIGGER_TOP : out  STD_LOGIC;
-           TX_TOP : out  STD_LOGIC);
+    Port ( SWITCH_TOP : in  STD_LOGIC; --Señal de bloqueo 
+           ECHO_TOP : in  STD_LOGIC;   --Señal de tiempo alto, proporcional a distancia
+			  CLK: in STD_LOGIC;				--Reloj de 12MHz interno de la FPGA
+           TRIGGER_TOP : out  STD_LOGIC;--Entrada señal de activacición módulo ultrasónico
+           TX_TOP : out  STD_LOGIC);	--Salida serial de datos de 8 bits
 end TOP;
 
 architecture Behavioral of TOP is
 
-	COMPONENT control_hc_sr04
+	COMPONENT control_hc_sr04 --Controlador del modulo ultrasonico HC-04
 	PORT(
 		Clk : IN std_logic;
 		ECO : IN std_logic;
@@ -26,7 +26,7 @@ architecture Behavioral of TOP is
 		);
 	END COMPONENT;
 
-	COMPONENT tx_bluetooth
+	COMPONENT tx_bluetooth  --Conmutador y gestionador de informacion de entrada de modulos HC-04 a modulo bluetooth
 	PORT(
 		DPSwitch_1 : IN std_logic_vector(7 downto 0);
 		DPSwitch_2 : IN std_logic_vector(7 downto 0);
@@ -40,7 +40,7 @@ architecture Behavioral of TOP is
 	signal bus_data_2: std_logic_vector(Bits_data-1 downto 0);
 
 begin
-	bus_data_2<= "00011000";
+	bus_data_2<= "00011000"; --Datos fantasma que proporcionara el segundo HC-04  
 	Inst_control_hc_sr04: control_hc_sr04 PORT MAP(
 		Clk => CLK,
 		ECO => ECHO_TOP,

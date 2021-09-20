@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-09-20T07:39:08</DateModified>
+  <DateModified>2021-09-20T11:36:45</DateModified>
   <ModuleName>TOP</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Programas_Lab_E6/FPGA_BLUETOOTH/iseconfig/TOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Programas_Lab_E6/FPGA_BLUETOOTH</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Programas_Lab_E6/FPGA_BLUETOOTH\</ImplementationReportsDirectory>
   <DateInitialized>2021-09-20T07:39:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
