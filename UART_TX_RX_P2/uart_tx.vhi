@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file uart_tx.vhd -- 21:28:21 09/09/2021
+-- VHDL Instantiation Created from source file uart_tx.vhd -- 13:30:04 09/12/2021
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

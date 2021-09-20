@@ -11,7 +11,7 @@ entity uart_tx is
 				tiempo_bit: integer:= 104		-- Tiempo de espera por bit, reloj/baudrate
 	 );
     Port (  IO_P1: out  STD_LOGIC; 
-				DPSwitch: in STD_LOGIC_VECTOR (7 downto 0);
+				DPSwitch: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
 				Switch_1: in STD_LOGIC;
             Clk : in  STD_LOGIC);
 
@@ -22,7 +22,7 @@ architecture Behavioral of uart_tx is
 	type uart_tx is (idle,data,start,stop);
 	signal estado: uart_tx:= idle; 
    signal conteo: integer range 0 to tiempo_bit-1:= 0;
-	signal puente: std_logic_vector (7 downto 0):= (others => '0');
+	signal puente: std_logic_vector (Bits_data-1 downto 0):= (others => '0');
 	signal indice: integer range 0 to Bits_data-1:= 0;
 
 begin
@@ -77,7 +77,7 @@ reloj: process(Clk)
 						end if;
 					when others =>
 						estado <= idle;
-				end case;
+		    end case;
         end if;
     end process reloj;
 

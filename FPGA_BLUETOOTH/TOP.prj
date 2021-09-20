@@ -1,0 +1,3 @@
+vhdl work "tx_bluetooth.vhd"
+vhdl work "control_hc_sr04.vhd"
+vhdl work "TOP.vhd"

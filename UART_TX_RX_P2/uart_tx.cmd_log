@@ -8,3 +8,5 @@ trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml uart_tx.twx uart_tx.ncd -o uar
 bitgen -intstyle ise -f uart_tx.ut uart_tx.ncd 
 vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhi -module uart_tx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_tx.vhd 
 vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhi -module uart_tx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_tx.vhd 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx.vhi -module uart_tx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_tx.vhd 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx.vhi -module uart_tx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work uart_tx.vhd 

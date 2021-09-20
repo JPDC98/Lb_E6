@@ -1,0 +1,565 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf
+
+Design file:              TOP.ncd
+Physical constraint file: TOP.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3602 paths analyzed, 296 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.087ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/sumador_8 (SLICE_X10Y23.G3), 22 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     76.246ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_7 (FF)
+  Destination:          Inst_control_hc_sr04/sumador_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.039ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.048ns (0.226 - 0.274)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_7 to Inst_control_hc_sr04/sumador_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y10.XQ       Tcko                  0.521   Inst_control_hc_sr04/contador<7>
+                                                       Inst_control_hc_sr04/contador_7
+    SLICE_X1Y9.G3        net (fanout=7)        1.509   Inst_control_hc_sr04/contador<7>
+    SLICE_X1Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_lut<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<2>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.G2      net (fanout=13)       1.399   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.Y       Tilo                  0.616   Inst_control_hc_sr04/sumador<0>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>11
+    SLICE_X10Y23.G3      net (fanout=9)        0.968   Inst_control_hc_sr04/N11
+    SLICE_X10Y23.CLK     Tgck                  0.671   Inst_control_hc_sr04/sumador<8>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>2
+                                                       Inst_control_hc_sr04/sumador_8
+    -------------------------------------------------  ---------------------------
+    Total                                      7.039ns (3.163ns logic, 3.876ns route)
+                                                       (44.9% logic, 55.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.918ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_6 (FF)
+  Destination:          Inst_control_hc_sr04/sumador_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.367ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.048ns (0.226 - 0.274)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_6 to Inst_control_hc_sr04/sumador_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y10.YQ       Tcko                  0.596   Inst_control_hc_sr04/contador<7>
+                                                       Inst_control_hc_sr04/contador_6
+    SLICE_X1Y9.G2        net (fanout=7)        0.762   Inst_control_hc_sr04/contador<6>
+    SLICE_X1Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_lut<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<2>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.G2      net (fanout=13)       1.399   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.Y       Tilo                  0.616   Inst_control_hc_sr04/sumador<0>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>11
+    SLICE_X10Y23.G3      net (fanout=9)        0.968   Inst_control_hc_sr04/N11
+    SLICE_X10Y23.CLK     Tgck                  0.671   Inst_control_hc_sr04/sumador<8>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>2
+                                                       Inst_control_hc_sr04/sumador_8
+    -------------------------------------------------  ---------------------------
+    Total                                      6.367ns (3.238ns logic, 3.129ns route)
+                                                       (50.9% logic, 49.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.955ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_14 (FF)
+  Destination:          Inst_control_hc_sr04/sumador_8 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.333ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.045ns (0.226 - 0.271)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_14 to Inst_control_hc_sr04/sumador_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y14.YQ       Tcko                  0.596   Inst_control_hc_sr04/contador<15>
+                                                       Inst_control_hc_sr04/contador_14
+    SLICE_X1Y10.G1       net (fanout=7)        0.858   Inst_control_hc_sr04/contador<14>
+    SLICE_X1Y10.COUT     Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_lut<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.G2      net (fanout=13)       1.399   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X10Y18.Y       Tilo                  0.616   Inst_control_hc_sr04/sumador<0>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>11
+    SLICE_X10Y23.G3      net (fanout=9)        0.968   Inst_control_hc_sr04/N11
+    SLICE_X10Y23.CLK     Tgck                  0.671   Inst_control_hc_sr04/sumador<8>
+                                                       Inst_control_hc_sr04/sumador_mux0001<0>2
+                                                       Inst_control_hc_sr04/sumador_8
+    -------------------------------------------------  ---------------------------
+    Total                                      6.333ns (3.108ns logic, 3.225ns route)
+                                                       (49.1% logic, 50.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/contador_10 (SLICE_X2Y13.G1), 65 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     76.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_7 (FF)
+  Destination:          Inst_control_hc_sr04/contador_10 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.900ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.036ns (0.238 - 0.274)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_7 to Inst_control_hc_sr04/contador_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y10.XQ       Tcko                  0.521   Inst_control_hc_sr04/contador<7>
+                                                       Inst_control_hc_sr04/contador_7
+    SLICE_X1Y9.G3        net (fanout=7)        1.509   Inst_control_hc_sr04/contador<7>
+    SLICE_X1Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_lut<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<2>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X4Y13.F2       net (fanout=13)       0.598   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X4Y13.X        Tilo                  0.601   Inst_control_hc_sr04/contador_mux0001<0>19
+                                                       Inst_control_hc_sr04/contador_mux0001<0>19
+    SLICE_X4Y12.G2       net (fanout=1)        0.088   Inst_control_hc_sr04/contador_mux0001<0>19
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y13.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y13.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<11>
+                                                       Inst_control_hc_sr04/contador_mux0001<7>1
+                                                       Inst_control_hc_sr04/contador_10
+    -------------------------------------------------  ---------------------------
+    Total                                      6.900ns (3.764ns logic, 3.136ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.924ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_10 (FF)
+  Destination:          Inst_control_hc_sr04/contador_10 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.409ns (Levels of Logic = 6)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_10 to Inst_control_hc_sr04/contador_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y13.YQ       Tcko                  0.596   Inst_control_hc_sr04/contador<11>
+                                                       Inst_control_hc_sr04/contador_10
+    SLICE_X7Y9.G4        net (fanout=7)        1.077   Inst_control_hc_sr04/contador<10>
+    SLICE_X7Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>1
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_lut<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>_0
+    SLICE_X7Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>1
+    SLICE_X7Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/estado_FSM_FFd1-In24
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.G1       net (fanout=2)        0.471   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.Y        Tilo                  0.561   Inst_control_hc_sr04/contador_mux0001<0>13
+                                                       Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.G1       net (fanout=1)        0.121   Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y13.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y13.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<11>
+                                                       Inst_control_hc_sr04/contador_mux0001<7>1
+                                                       Inst_control_hc_sr04/contador_10
+    -------------------------------------------------  ---------------------------
+    Total                                      6.409ns (3.799ns logic, 2.610ns route)
+                                                       (59.3% logic, 40.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.003ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_15 (FF)
+  Destination:          Inst_control_hc_sr04/contador_10 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.336ns (Levels of Logic = 5)
+  Clock Path Skew:      0.006ns (0.011 - 0.005)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_15 to Inst_control_hc_sr04/contador_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y14.XQ       Tcko                  0.521   Inst_control_hc_sr04/contador<15>
+                                                       Inst_control_hc_sr04/contador_15
+    SLICE_X7Y10.G1       net (fanout=7)        1.209   Inst_control_hc_sr04/contador<15>
+    SLICE_X7Y10.COUT     Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_lut<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/estado_FSM_FFd1-In24
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.G1       net (fanout=2)        0.471   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.Y        Tilo                  0.561   Inst_control_hc_sr04/contador_mux0001<0>13
+                                                       Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.G1       net (fanout=1)        0.121   Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y13.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y13.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<11>
+                                                       Inst_control_hc_sr04/contador_mux0001<7>1
+                                                       Inst_control_hc_sr04/contador_10
+    -------------------------------------------------  ---------------------------
+    Total                                      6.336ns (3.594ns logic, 2.742ns route)
+                                                       (56.7% logic, 43.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/contador_12 (SLICE_X2Y12.G1), 65 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     76.397ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_7 (FF)
+  Destination:          Inst_control_hc_sr04/contador_12 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.900ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.036ns (0.238 - 0.274)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_7 to Inst_control_hc_sr04/contador_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X4Y10.XQ       Tcko                  0.521   Inst_control_hc_sr04/contador<7>
+                                                       Inst_control_hc_sr04/contador_7
+    SLICE_X1Y9.G3        net (fanout=7)        1.509   Inst_control_hc_sr04/contador<7>
+    SLICE_X1Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_lut<1>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<1>
+    SLICE_X1Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<2>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<3>
+    SLICE_X1Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X4Y13.F2       net (fanout=13)       0.598   Inst_control_hc_sr04/Mcompar_estado_cmp_gt0000_cy<4>
+    SLICE_X4Y13.X        Tilo                  0.601   Inst_control_hc_sr04/contador_mux0001<0>19
+                                                       Inst_control_hc_sr04/contador_mux0001<0>19
+    SLICE_X4Y12.G2       net (fanout=1)        0.088   Inst_control_hc_sr04/contador_mux0001<0>19
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y12.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y12.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<13>
+                                                       Inst_control_hc_sr04/contador_mux0001<5>1
+                                                       Inst_control_hc_sr04/contador_12
+    -------------------------------------------------  ---------------------------
+    Total                                      6.900ns (3.764ns logic, 3.136ns route)
+                                                       (54.6% logic, 45.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     76.922ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_10 (FF)
+  Destination:          Inst_control_hc_sr04/contador_12 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.409ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.002ns (0.011 - 0.013)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_10 to Inst_control_hc_sr04/contador_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y13.YQ       Tcko                  0.596   Inst_control_hc_sr04/contador<11>
+                                                       Inst_control_hc_sr04/contador_10
+    SLICE_X7Y9.G4        net (fanout=7)        1.077   Inst_control_hc_sr04/contador<10>
+    SLICE_X7Y9.COUT      Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>1
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_lut<3>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>_0
+    SLICE_X7Y10.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<3>1
+    SLICE_X7Y10.COUT     Tbyp                  0.130   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<4>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/estado_FSM_FFd1-In24
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.G1       net (fanout=2)        0.471   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.Y        Tilo                  0.561   Inst_control_hc_sr04/contador_mux0001<0>13
+                                                       Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.G1       net (fanout=1)        0.121   Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y12.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y12.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<13>
+                                                       Inst_control_hc_sr04/contador_mux0001<5>1
+                                                       Inst_control_hc_sr04/contador_12
+    -------------------------------------------------  ---------------------------
+    Total                                      6.409ns (3.799ns logic, 2.610ns route)
+                                                       (59.3% logic, 40.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     77.003ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_hc_sr04/contador_15 (FF)
+  Destination:          Inst_control_hc_sr04/contador_12 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      6.336ns (Levels of Logic = 5)
+  Clock Path Skew:      0.006ns (0.011 - 0.005)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_hc_sr04/contador_15 to Inst_control_hc_sr04/contador_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X2Y14.XQ       Tcko                  0.521   Inst_control_hc_sr04/contador<15>
+                                                       Inst_control_hc_sr04/contador_15
+    SLICE_X7Y10.G1       net (fanout=7)        1.209   Inst_control_hc_sr04/contador<15>
+    SLICE_X7Y10.COUT     Topcyg                1.009   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_lut<5>
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.CIN      net (fanout=1)        0.000   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<5>
+    SLICE_X7Y11.XB       Tcinxb                0.216   Inst_control_hc_sr04/estado_FSM_FFd1-In24
+                                                       Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.G1       net (fanout=2)        0.471   Inst_control_hc_sr04/Mcompar_estado_cmp_lt0002_cy<6>
+    SLICE_X5Y13.Y        Tilo                  0.561   Inst_control_hc_sr04/contador_mux0001<0>13
+                                                       Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.G1       net (fanout=1)        0.121   Inst_control_hc_sr04/contador_mux0001<0>123
+    SLICE_X4Y12.Y        Tilo                  0.616   Inst_control_hc_sr04/contador<8>
+                                                       Inst_control_hc_sr04/contador_mux0001<0>136
+    SLICE_X2Y12.G1       net (fanout=18)       0.941   Inst_control_hc_sr04/N01
+    SLICE_X2Y12.CLK      Tgck                  0.671   Inst_control_hc_sr04/contador<13>
+                                                       Inst_control_hc_sr04/contador_mux0001<5>1
+                                                       Inst_control_hc_sr04/contador_12
+    -------------------------------------------------  ---------------------------
+    Total                                      6.336ns (3.594ns logic, 2.742ns route)
+                                                       (56.7% logic, 43.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/DATA_7 (SLICE_X15Y13.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.936ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_hc_sr04/distancia_7 (FF)
+  Destination:          Inst_control_hc_sr04/DATA_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.967ns (Levels of Logic = 0)
+  Clock Path Skew:      0.031ns (0.251 - 0.220)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_hc_sr04/distancia_7 to Inst_control_hc_sr04/DATA_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y12.XQ      Tcko                  0.417   Inst_control_hc_sr04/distancia<7>
+                                                       Inst_control_hc_sr04/distancia_7
+    SLICE_X15Y13.BX      net (fanout=2)        0.488   Inst_control_hc_sr04/distancia<7>
+    SLICE_X15Y13.CLK     Tckdi       (-Th)    -0.062   Inst_control_hc_sr04/DATA<7>
+                                                       Inst_control_hc_sr04/DATA_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.967ns (0.479ns logic, 0.488ns route)
+                                                       (49.5% logic, 50.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/DATA_4 (SLICE_X14Y10.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.995ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_hc_sr04/distancia_4 (FF)
+  Destination:          Inst_control_hc_sr04/DATA_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.036ns (Levels of Logic = 0)
+  Clock Path Skew:      0.041ns (0.261 - 0.220)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_hc_sr04/distancia_4 to Inst_control_hc_sr04/DATA_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X11Y12.XQ      Tcko                  0.396   Inst_control_hc_sr04/distancia<4>
+                                                       Inst_control_hc_sr04/distancia_4
+    SLICE_X14Y10.BY      net (fanout=6)        0.503   Inst_control_hc_sr04/distancia<4>
+    SLICE_X14Y10.CLK     Tckdi       (-Th)    -0.137   Inst_control_hc_sr04/DATA<5>
+                                                       Inst_control_hc_sr04/DATA_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.036ns (0.533ns logic, 0.503ns route)
+                                                       (51.4% logic, 48.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_hc_sr04/DATA_5 (SLICE_X14Y10.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.038ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_hc_sr04/distancia_5 (FF)
+  Destination:          Inst_control_hc_sr04/DATA_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.079ns (Levels of Logic = 0)
+  Clock Path Skew:      0.041ns (0.261 - 0.220)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_hc_sr04/distancia_5 to Inst_control_hc_sr04/DATA_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X10Y13.XQ      Tcko                  0.417   Inst_control_hc_sr04/distancia<5>
+                                                       Inst_control_hc_sr04/distancia_5
+    SLICE_X14Y10.BX      net (fanout=4)        0.560   Inst_control_hc_sr04/distancia<5>
+    SLICE_X14Y10.CLK     Tckdi       (-Th)    -0.102   Inst_control_hc_sr04/DATA<5>
+                                                       Inst_control_hc_sr04/DATA_5
+    -------------------------------------------------  ---------------------------
+    Total                                      1.079ns (0.519ns logic, 0.560ns route)
+                                                       (48.1% logic, 51.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_control_hc_sr04/estado_FSM_FFd3/CLK
+  Logical resource: Inst_control_hc_sr04/estado_FSM_FFd3/CK
+  Location pin: SLICE_X6Y12.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: Inst_control_hc_sr04/estado_FSM_FFd3/CLK
+  Logical resource: Inst_control_hc_sr04/estado_FSM_FFd3/CK
+  Location pin: SLICE_X6Y12.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_control_hc_sr04/distancia<0>/CLK
+  Logical resource: Inst_control_hc_sr04/distancia_0/CK
+  Location pin: SLICE_X10Y10.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    7.087|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 3602 paths, 0 nets, and 646 connections
+
+Design statistics:
+   Minimum period:   7.087ns{1}   (Maximum frequency: 141.103MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Sep 20 03:26:03 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4522 MB
+
+
+

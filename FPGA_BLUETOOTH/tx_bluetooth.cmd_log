@@ -1,0 +1,2 @@
+vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhi -module tx_bluetooth -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work tx_bluetooth.vhd 
+vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhi -module tx_bluetooth -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work tx_bluetooth.vhd 

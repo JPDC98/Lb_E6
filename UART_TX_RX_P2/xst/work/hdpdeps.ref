@@ -1,28 +1,43 @@
-V3 19
+V3 32
 FL C:/Programas_Lab_E6/UART_TX_RX/mux.vhd 2021/09/09.23:20:00 P.20131013
-EN work/mux 1631251810 FL C:/Programas_Lab_E6/UART_TX_RX/mux.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/mux/Behavioral 1631251811 \
-      FL C:/Programas_Lab_E6/UART_TX_RX/mux.vhd EN work/mux 1631251810
 FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd 2021/09/09.23:12:30 P.20131013
-EN work/TOP 1631251814 FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/TOP/Behavioral 1631251815 \
-      FL C:/Programas_Lab_E6/UART_TX_RX/TOP.vhd EN work/TOP 1631251814 CP uart_tx \
-      CP uart_rx CP mux CP view_data
 FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd 2021/09/09.17:58:03 P.20131013
-EN work/uart_rx 1631251808 FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/uart_rx/Behavioral 1631251809 \
-      FL C:/Programas_Lab_E6/UART_TX_RX/uart_rx.vhd EN work/uart_rx 1631251808
 FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd 2021/09/09.17:58:01 P.20131013
-EN work/uart_tx 1631251806 FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/uart_tx/Behavioral 1631251807 \
-      FL C:/Programas_Lab_E6/UART_TX_RX/uart_tx.vhd EN work/uart_tx 1631251806
 FL C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd 2021/09/09.23:30:02 P.20131013
-EN work/view_data 1631251812 FL C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd \
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/mux.vhd 2021/09/12.13:20:27 P.20131013
+EN work/mux 1631481860 FL C:/Programas_Lab_E6/UART_TX_RX_P2/mux.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/mux/Behavioral 1631481861 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/mux.vhd EN work/mux 1631481860
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/TOP.vhd 2021/09/12.15:24:09 P.20131013
+EN work/TOP 1631481864 FL C:/Programas_Lab_E6/UART_TX_RX_P2/TOP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/TOP/Behavioral 1631481865 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/TOP.vhd EN work/TOP 1631481864 \
+      CP uart_tx CP uart_rx CP uart_tx2 CP uart_rx2 CP mux CP view_data
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx.vhd 2021/09/12.12:41:12 P.20131013
+EN work/uart_rx 1631481854 FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_rx/Behavioral 1631481855 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx.vhd EN work/uart_rx 1631481854
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx2.vhd 2021/09/12.12:42:47 P.20131013
+EN work/uart_rx2 1631481858 FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_rx2/Behavioral 1631481859 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_rx2.vhd EN work/uart_rx2 1631481858
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx.vhd 2021/09/12.12:34:14 P.20131013
+EN work/uart_tx 1631481852 FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_tx/Behavioral 1631481853 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx.vhd EN work/uart_tx 1631481852
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx2.vhd 2021/09/12.12:39:40 P.20131013
+EN work/uart_tx2 1631481856 FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/uart_tx2/Behavioral 1631481857 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/uart_tx2.vhd EN work/uart_tx2 1631481856
+FL C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd 2021/09/09.23:30:02 P.20131013
+EN work/view_data 1631481862 FL C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/view_data/Behavioral 1631251813 \
-      FL C:/Programas_Lab_E6/UART_TX_RX/view_data.vhd EN work/view_data 1631251812
+AR work/view_data/Behavioral 1631481863 \
+      FL C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhd EN work/view_data 1631481862

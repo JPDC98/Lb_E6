@@ -1,1 +1,2 @@
 vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX/view_data.vhi -module view_data -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work view_data.vhd 
+vhdtdtfi -prj UART_TX_RX -o C:/Programas_Lab_E6/UART_TX_RX_P2/view_data.vhi -module view_data -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work view_data.vhd 

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Thu Sep 09 23:30:22 2021">
+  <application stringID="par" timeStamp="Sun Sep 12 15:30:38 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -59,7 +59,7 @@
     </task>
     <task stringID="PAR_DEVICE_UTILIZATION">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item AVAILABLE="704" dataType="int" stringID="PAR_SLICES" value="158"></item>
+        <item AVAILABLE="704" dataType="int" stringID="PAR_SLICES" value="141"></item>
       </section>
     </task>
     <task stringID="PAR_PAR">
@@ -88,17 +88,17 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="87.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.132000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.605000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="78.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.099000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.575000"/>
           </row>
           <row stringID="row" value="2">
-            <item label="Clock Net" stringID="CLOCK_NET" value="Inst_uart_rx_2/salida_bit"/>
+            <item label="Clock Net" stringID="CLOCK_NET" value="Inst_uart_rx2/salida_bit"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="2.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.862000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="4.000000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.828000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.762000"/>
           </row>
         </table>
       </section>
@@ -439,7 +439,7 @@
           </row>
           <row stringID="row" value="46">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P46"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;7>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L05P_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -454,7 +454,7 @@
           </row>
           <row stringID="row" value="47">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P47"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;6>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L06P_2"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -469,7 +469,7 @@
           </row>
           <row stringID="row" value="48">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P48"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;2>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;5>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L05N_2/D7"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -484,7 +484,7 @@
           </row>
           <row stringID="row" value="49">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P49"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;3>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;4>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L06N_2/D6"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -499,7 +499,7 @@
           </row>
           <row stringID="row" value="50">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P50"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;4>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;3>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L07P_2/D5"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -514,7 +514,7 @@
           </row>
           <row stringID="row" value="51">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P51"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;5>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;2>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L07N_2/D4"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -541,7 +541,7 @@
           </row>
           <row stringID="row" value="54">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P54"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;6>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L08P_2/GCLK14"/>
             <item stringID="Direction" value="OUTPUT"/>
@@ -556,7 +556,7 @@
           </row>
           <row stringID="row" value="55">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="P55"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;7>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="DATOS_RX&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L08N_2/GCLK15"/>
             <item stringID="Direction" value="OUTPUT"/>

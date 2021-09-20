@@ -5,8 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_uart_rx_2/salida_bit</arg> may have excessive skew because 
-   <arg fmt="%d" index="2">1</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">Inst_uart_rx2/salida_bit</arg> may have excessive skew because 
+   <arg fmt="%d" index="2">2</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
 </messages>
