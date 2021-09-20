@@ -1,0 +1,5 @@
+set -tmpdir "C:/Programas_Lab_E6/FPGA_BLUETOOTH/xst/projnav.tmp"
+set -xsthdpdir "C:/Programas_Lab_E6/FPGA_BLUETOOTH/xst"
+elaborate
+-ifn control_multisensor.prj
+-ifmt mixed

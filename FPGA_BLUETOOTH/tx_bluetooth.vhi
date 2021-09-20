@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file tx_bluetooth.vhd -- 02:19:35 09/20/2021
+-- VHDL Instantiation Created from source file tx_bluetooth.vhd -- 09:39:08 09/20/2021
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types
@@ -8,7 +8,8 @@
 
 	COMPONENT tx_bluetooth
 	PORT(
-		DPSwitch : IN std_logic_vector(7 downto 0);
+		DPSwitch_1 : IN std_logic_vector(7 downto 0);
+		DPSwitch_2 : IN std_logic_vector(7 downto 0);
 		Switch_1 : IN std_logic;
 		Clk : IN std_logic;          
 		IO_P1 : OUT std_logic
@@ -17,7 +18,8 @@
 
 	Inst_tx_bluetooth: tx_bluetooth PORT MAP(
 		IO_P1 => ,
-		DPSwitch => ,
+		DPSwitch_1 => ,
+		DPSwitch_2 => ,
 		Switch_1 => ,
 		Clk => 
 	);

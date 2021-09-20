@@ -7,10 +7,12 @@ entity tx_bluetooth is
 				HZ_reloj: integer:= 12000000; --Frecuencia del reloj a utilizar.
 				Bits_data: integer:= 8;       -- N?mero de bits a enviar.
 				BaudRate: integer:= 9600;     -- Bits por segundo. 
+				num_puertos: integer:= 2;		-- Numero de sensores conectados al sistema
 				tiempo_bit: integer:= 1250		-- Tiempo de espera por bit, reloj/baudrate
 	 );
     Port (  IO_P1: out  STD_LOGIC; 
-				DPSwitch: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
+				DPSwitch_1: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
+				DPSwitch_2: in STD_LOGIC_VECTOR (Bits_data-1 downto 0);
 				Switch_1: in STD_LOGIC;
             Clk : in  STD_LOGIC);
 end tx_bluetooth;
@@ -22,6 +24,7 @@ architecture Behavioral of tx_bluetooth is
    signal conteo: integer range 0 to tiempo_bit-1:= 0;
 	signal puente: std_logic_vector (Bits_data-1 downto 0):= (others => '0');
 	signal indice: integer range 0 to Bits_data-1:= 0;
+	signal puerto: integer range 0 to num_puertos-1:= 0;
 
 begin
 
@@ -35,8 +38,16 @@ begin
 						indice <= 0;
 						puente <= (others => '0');
 						if (Switch_1 = '0') then
-							puente <= DPSwitch;
-							estado <= start;
+							if (puerto = 0) then
+								puente <= DPSwitch_1;
+								puerto <= puerto + 1;
+								estado <= start;
+							else
+								puente <= DPSwitch_2;
+								puerto <= 0;
+								estado <= start;
+							end if;
+							
 						else
 							estado <= idle;
 						end if;

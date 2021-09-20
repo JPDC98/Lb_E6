@@ -1,20 +1,27 @@
-V3 11
-FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhd 2021/09/20.03:25:36 P.20131013
-EN work/control_hc_sr04 1632129941 \
+V3 14
+FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhd 2021/09/20.10:33:34 P.20131013
+EN work/control_hc_sr04 1632155619 \
       FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/control_hc_sr04/Behavioral 1632129942 \
+AR work/control_hc_sr04/Behavioral 1632155620 \
       FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhd \
-      EN work/control_hc_sr04 1632129941
-FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd 2021/09/20.02:20:26 P.20131013
-EN work/TOP 1632129945 FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd \
+      EN work/control_hc_sr04 1632155619
+FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd 2021/09/20.09:24:16 P.20131013
+EN work/control_multisensor 1632151564 \
+      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/TOP/Behavioral 1632129946 \
-      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd EN work/TOP 1632129945 \
+AR work/control_multisensor/Behavioral 1632151565 \
+      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd \
+      EN work/control_multisensor 1632151564
+FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd 2021/09/20.09:42:33 P.20131013
+EN work/TOP 1632155623 FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/TOP/Behavioral 1632155624 \
+      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/TOP.vhd EN work/TOP 1632155623 \
       CP control_hc_sr04 CP tx_bluetooth
-FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd 2021/09/20.02:23:32 P.20131013
-EN work/tx_bluetooth 1632129943 \
+FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd 2021/09/20.09:37:53 P.20131013
+EN work/tx_bluetooth 1632155621 \
       FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/tx_bluetooth/Behavioral 1632129944 \
-      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd EN work/tx_bluetooth 1632129943
+AR work/tx_bluetooth/Behavioral 1632155622 \
+      FL C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd EN work/tx_bluetooth 1632155621

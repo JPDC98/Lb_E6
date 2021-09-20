@@ -3,6 +3,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity TOP is
+	 generic(
+				HZ_reloj: integer:= 12000000; --Frecuencia del reloj a utilizar.
+				Bits_data: integer:= 8        -- N?mero de bits a enviar.
+	 );	
     Port ( SWITCH_TOP : in  STD_LOGIC;
            ECHO_TOP : in  STD_LOGIC;
 			  CLK: in STD_LOGIC;
@@ -21,31 +25,34 @@ architecture Behavioral of TOP is
 		DATA : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
-	
+
 	COMPONENT tx_bluetooth
 	PORT(
-		DPSwitch : IN std_logic_vector(7 downto 0);
+		DPSwitch_1 : IN std_logic_vector(7 downto 0);
+		DPSwitch_2 : IN std_logic_vector(7 downto 0);
 		Switch_1 : IN std_logic;
 		Clk : IN std_logic;          
 		IO_P1 : OUT std_logic
 		);
 	END COMPONENT;
-	
-	signal bus_data: std_logic_vector(7 downto 0);
+
+	signal bus_data_1: std_logic_vector(Bits_data-1 downto 0);
+	signal bus_data_2: std_logic_vector(Bits_data-1 downto 0);
 
 begin
-
+	bus_data_2<= "00011000";
 	Inst_control_hc_sr04: control_hc_sr04 PORT MAP(
 		Clk => CLK,
 		ECO => ECHO_TOP,
 		TRIGGER => TRIGGER_TOP,
-		DATA => bus_data,
+		DATA => bus_data_1,
 		DISPARO => SWITCH_TOP
 	);
-	
+
 	Inst_tx_bluetooth: tx_bluetooth PORT MAP(
 		IO_P1 => TX_TOP,
-		DPSwitch => bus_data,
+		DPSwitch_1 => bus_data_1,
+		DPSwitch_2 => bus_data_2,
 		Switch_1 => SWITCH_TOP,
 		Clk => CLK
 	);

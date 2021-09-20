@@ -1,0 +1,37 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Programas_Lab_E6/FPGA_BLUETOOTH/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to C:/Programas_Lab_E6/FPGA_BLUETOOTH/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd" in Library work.
+ERROR:HDLParsers:164 - "C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd" Line 21. parse error, unexpected COLON, expecting AFFECT or SEMICOLON
+ERROR:HDLParsers:808 - "C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd" Line 25. = can not have such operands in this context.
+ERROR:HDLParsers:3312 - "C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd" Line 27. Undefined symbol 'conteo'.
+ERROR:HDLParsers:1209 - "C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd" Line 27. conteo: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> 
+
+Total memory usage is 4467900 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

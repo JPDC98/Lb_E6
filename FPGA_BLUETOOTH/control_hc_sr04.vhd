@@ -10,6 +10,7 @@ entity control_hc_sr04 is
 				Conteo_max: integer:= 139200;  --Conteo de distancia max a medir.
 				distancia_max: integer:= 200; --Distancia maxima en cm a medir.
 				tiempo_sonico: integer:= 2400;--Tiempo de espera envio ultrasonico
+				tiempo_descanso: integer:= 2400;--Tiempo contra sobrecarga del ultrasonido.
 				centimetro: integer:= 348     --Conteo equivalente a un cm. 
 	 );	
     Port ( Clk : in  STD_LOGIC;

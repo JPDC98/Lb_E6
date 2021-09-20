@@ -100,3 +100,5 @@ par -w -intstyle ise -ol high -t 1 control_hc_sr04_map.ncd control_hc_sr04.ncd c
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_hc_sr04.twx control_hc_sr04.ncd -o control_hc_sr04.twr control_hc_sr04.pcf 
 bitgen -intstyle ise -f control_hc_sr04.ut control_hc_sr04.ncd 
 vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhi -module control_hc_sr04 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_hc_sr04.vhd 
+vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhi -module control_hc_sr04 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_hc_sr04.vhd 
+vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_hc_sr04.vhi -module control_hc_sr04 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_hc_sr04.vhd 

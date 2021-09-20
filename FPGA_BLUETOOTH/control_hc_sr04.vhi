@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file control_hc_sr04.vhd -- 02:10:25 09/20/2021
+-- VHDL Instantiation Created from source file control_hc_sr04.vhd -- 09:38:22 09/20/2021
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

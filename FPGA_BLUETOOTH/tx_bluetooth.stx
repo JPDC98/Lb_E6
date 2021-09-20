@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to C:/Programas_Lab_E6/FPGA_BLUETOOTH/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
@@ -19,7 +19,7 @@ Total CPU time to Xst completion: 0.11 secs
 =========================================================================
 Compiling vhdl file "C:/Programas_Lab_E6/FPGA_BLUETOOTH/tx_bluetooth.vhd" in Library work.
 Entity <tx_bluetooth> compiled.
-Entity <tx_bluetooth> (Architecture <Behavioral>) compiled.
+Entity <tx_bluetooth> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -27,7 +27,7 @@ Total CPU time to Xst completion: 0.16 secs
  
 --> 
 
-Total memory usage is 4467904 kilobytes
+Total memory usage is 4467936 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

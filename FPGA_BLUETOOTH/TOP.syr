@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -115,7 +115,9 @@ Architecture behavioral of Entity top is up to date.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <TOP> in library <work> (architecture <behavioral>) with generics.
+	Bits_data = 8
+	HZ_reloj = 12000000
 
 Analyzing hierarchy for entity <control_hc_sr04> in library <work> (architecture <behavioral>) with generics.
 	Bits_data = 8
@@ -124,19 +126,23 @@ Analyzing hierarchy for entity <control_hc_sr04> in library <work> (architecture
 	Pulso_trigger = 120
 	centimetro = 348
 	distancia_max = 200
+	tiempo_descanso = 2400
 	tiempo_sonico = 2400
 
 Analyzing hierarchy for entity <tx_bluetooth> in library <work> (architecture <behavioral>) with generics.
 	BaudRate = 9600
 	Bits_data = 8
 	HZ_reloj = 12000000
+	num_puertos = 2
 	tiempo_bit = 1250
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <TOP> in library <work> (Architecture <behavioral>).
+	Bits_data = 8
+	HZ_reloj = 12000000
 Entity <TOP> analyzed. Unit <TOP> generated.
 
 Analyzing generic Entity <control_hc_sr04> in library <work> (Architecture <behavioral>).
@@ -146,6 +152,7 @@ Analyzing generic Entity <control_hc_sr04> in library <work> (Architecture <beha
 	Pulso_trigger = 120
 	centimetro = 348
 	distancia_max = 200
+	tiempo_descanso = 2400
 	tiempo_sonico = 2400
 Entity <control_hc_sr04> analyzed. Unit <control_hc_sr04> generated.
 
@@ -153,6 +160,7 @@ Analyzing generic Entity <tx_bluetooth> in library <work> (Architecture <behavio
 	BaudRate = 9600
 	Bits_data = 8
 	HZ_reloj = 12000000
+	num_puertos = 2
 	tiempo_bit = 1250
 Entity <tx_bluetooth> analyzed. Unit <tx_bluetooth> generated.
 
@@ -179,16 +187,16 @@ Synthesizing Unit <control_hc_sr04>.
     Found 1-bit register for signal <TRIGGER>.
     Found 8-bit register for signal <DATA>.
     Found 18-bit register for signal <contador>.
-    Found 18-bit addsub for signal <contador$share0000> created at line 32.
+    Found 18-bit addsub for signal <contador$share0000> created at line 33.
     Found 8-bit register for signal <distancia>.
-    Found 8-bit adder for signal <distancia$addsub0000> created at line 83.
-    Found 9-bit comparator less for signal <distancia$cmp_lt0000> created at line 79.
-    Found 18-bit comparator greater for signal <estado$cmp_gt0000> created at line 77.
-    Found 18-bit comparator less for signal <estado$cmp_lt0000> created at line 45.
-    Found 18-bit comparator less for signal <estado$cmp_lt0001> created at line 54.
-    Found 18-bit comparator less for signal <estado$cmp_lt0002> created at line 63.
+    Found 8-bit adder for signal <distancia$addsub0000> created at line 84.
+    Found 9-bit comparator less for signal <distancia$cmp_lt0000> created at line 80.
+    Found 18-bit comparator greater for signal <estado$cmp_gt0000> created at line 78.
+    Found 18-bit comparator less for signal <estado$cmp_lt0000> created at line 46.
+    Found 18-bit comparator less for signal <estado$cmp_lt0001> created at line 55.
+    Found 18-bit comparator less for signal <estado$cmp_lt0002> created at line 64.
     Found 9-bit register for signal <sumador>.
-    Found 9-bit adder for signal <sumador$addsub0000> created at line 80.
+    Found 9-bit adder for signal <sumador$addsub0000> created at line 81.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred  44 D-type flip-flop(s).
@@ -204,7 +212,7 @@ Synthesizing Unit <tx_bluetooth>.
     | States             | 4                                              |
     | Transitions        | 9                                              |
     | Inputs             | 3                                              |
-    | Outputs            | 4                                              |
+    | Outputs            | 5                                              |
     | Clock              | Clk                       (rising_edge)        |
     | Power Up State     | idle                                           |
     | Encoding           | automatic                                      |
@@ -213,14 +221,15 @@ Synthesizing Unit <tx_bluetooth>.
     Found 1-bit register for signal <IO_P1>.
     Found 11-bit register for signal <conteo>.
     Found 11-bit adder for signal <conteo$addsub0000>.
-    Found 11-bit comparator less for signal <estado$cmp_lt0000> created at line 46.
-    Found 3-bit comparator less for signal <estado$cmp_lt0001> created at line 60.
+    Found 11-bit comparator less for signal <estado$cmp_lt0000> created at line 57.
+    Found 3-bit comparator less for signal <estado$cmp_lt0001> created at line 71.
     Found 3-bit register for signal <indice>.
-    Found 3-bit adder for signal <indice$addsub0000> created at line 61.
+    Found 3-bit adder for signal <indice$addsub0000> created at line 72.
     Found 8-bit register for signal <puente>.
+    Found 1-bit register for signal <puerto<0>>.
     Summary:
 	inferred   1 Finite State Machine(s).
-	inferred  23 D-type flip-flop(s).
+	inferred  24 D-type flip-flop(s).
 	inferred   2 Adder/Subtractor(s).
 	inferred   2 Comparator(s).
 Unit <tx_bluetooth> synthesized.
@@ -242,8 +251,8 @@ Macro Statistics
  3-bit adder                                           : 1
  8-bit adder                                           : 1
  9-bit adder                                           : 1
-# Registers                                            : 9
- 1-bit register                                        : 2
+# Registers                                            : 10
+ 1-bit register                                        : 3
  11-bit register                                       : 1
  18-bit register                                       : 1
  3-bit register                                        : 1
@@ -296,8 +305,8 @@ Macro Statistics
  3-bit adder                                           : 1
  8-bit adder                                           : 1
  9-bit adder                                           : 1
-# Registers                                            : 67
- Flip-Flops                                            : 67
+# Registers                                            : 68
+ Flip-Flops                                            : 68
 # Comparators                                          : 7
  11-bit comparator less                                : 1
  18-bit comparator greater                             : 1
@@ -327,8 +336,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 72
- Flip-Flops                                            : 72
+# Registers                                            : 73
+ Flip-Flops                                            : 73
 
 =========================================================================
 
@@ -357,13 +366,13 @@ Design Statistics
 # IOs                              : 5
 
 Cell Usage :
-# BELS                             : 282
+# BELS                             : 284
 #      GND                         : 1
-#      INV                         : 3
+#      INV                         : 4
 #      LUT1                        : 23
-#      LUT2                        : 16
+#      LUT2                        : 8
 #      LUT2_D                      : 1
-#      LUT3                        : 13
+#      LUT3                        : 22
 #      LUT3_L                      : 1
 #      LUT4                        : 103
 #      LUT4_D                      : 5
@@ -372,9 +381,9 @@ Cell Usage :
 #      MUXF5                       : 12
 #      VCC                         : 1
 #      XORCY                       : 38
-# FlipFlops/Latches                : 72
+# FlipFlops/Latches                : 73
 #      FD                          : 54
-#      FDE                         : 16
+#      FDE                         : 17
 #      FDRS                        : 1
 #      FDS                         : 1
 # Clock Buffers                    : 1
@@ -390,8 +399,8 @@ Device utilization summary:
 Selected Device : 3s50atq144-5 
 
  Number of Slices:                       92  out of    704    13%  
- Number of Slice Flip Flops:             72  out of   1408     5%  
- Number of 4 input LUTs:                170  out of   1408    12%  
+ Number of Slice Flip Flops:             73  out of   1408     5%  
+ Number of 4 input LUTs:                172  out of   1408    12%  
  Number of IOs:                           5
  Number of bonded IOBs:                   5  out of    108     4%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -417,7 +426,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 72    |
+CLK                                | BUFGP                  | 73    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -440,7 +449,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 6.532ns (frequency: 153.096MHz)
-  Total number of paths / destination ports: 3602 / 91
+  Total number of paths / destination ports: 3613 / 93
 -------------------------------------------------------------------------
 Delay:               6.532ns (Levels of Logic = 9)
   Source:            Inst_control_hc_sr04/contador_0 (FF)
@@ -469,7 +478,7 @@ Delay:               6.532ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 47 / 29
+  Total number of paths / destination ports: 48 / 30
 -------------------------------------------------------------------------
 Offset:              4.539ns (Levels of Logic = 4)
   Source:            ECHO_TOP (PAD)
@@ -511,12 +520,12 @@ Offset:              5.271ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.41 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.22 secs
  
 --> 
 
-Total memory usage is 4513288 kilobytes
+Total memory usage is 4513332 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
