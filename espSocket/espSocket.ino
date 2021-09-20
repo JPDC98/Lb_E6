@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
-const char * ssid    ="UNE_DBD9";
-const char * password="00002510700236";
+const char * ssid    ="xxxxxxxxxxx";
+const char * password="xxxxxxxxxxxx";
 
 const uint16_t port=5050;  //Puerto del servidor
 const char * host="192.168.1.79";//Dirección del servidor
@@ -42,7 +42,7 @@ void setup() {
   digitalWrite(trigger,LOW);
   //------------------------------------
   
-  WiFi.begin("UNE_DBD9","00002510700236");
+  WiFi.begin(ssid,password);
   while(WiFi.status()!=WL_CONNECTED){
     delay(500);
     Serial.print(".");
