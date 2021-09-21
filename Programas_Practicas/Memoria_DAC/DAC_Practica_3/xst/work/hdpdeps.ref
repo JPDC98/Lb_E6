@@ -1,0 +1,8 @@
+V3 3
+FL C:/Programas_Lab_E6/Programas_Practicas/Memoria_DAC/DAC_Practica_3/Memoria.vhd 2021/09/21.17:28:16 P.20131013
+EN work/Memoria 1632266902 \
+      FL C:/Programas_Lab_E6/Programas_Practicas/Memoria_DAC/DAC_Practica_3/Memoria.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Memoria/Behavioral 1632266903 \
+      FL C:/Programas_Lab_E6/Programas_Practicas/Memoria_DAC/DAC_Practica_3/Memoria.vhd \
+      EN work/Memoria 1632266902

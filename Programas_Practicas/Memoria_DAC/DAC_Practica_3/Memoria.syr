@@ -1,0 +1,387 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Memoria.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Memoria.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Memoria"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : Memoria
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Programas_Lab_E6/Programas_Practicas/Memoria_DAC/DAC_Practica_3/Memoria.vhd" in Library work.
+Entity <memoria> compiled.
+Entity <memoria> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Memoria> in library <work> (architecture <behavioral>) with generics.
+	bits_salida = 12
+	direcciones = 500
+	f_media_onda = 308
+	f_reloj = 12000000
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <Memoria> in library <work> (Architecture <behavioral>).
+	bits_salida = 12
+	direcciones = 500
+	f_media_onda = 308
+	f_reloj = 12000000
+Entity <Memoria> analyzed. Unit <Memoria> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Memoria>.
+    Related source file is "C:/Programas_Lab_E6/Programas_Practicas/Memoria_DAC/DAC_Practica_3/Memoria.vhd".
+    Found 500x12-bit ROM for signal <SALIDA$rom0000> created at line 107.
+    Found 1-bit register for signal <cambio>.
+    Found 9-bit up counter for signal <contador>.
+    Found 9-bit updown counter for signal <dir>.
+    Found 9-bit comparator greatequal for signal <dir$cmp_ge0000> created at line 89.
+    Found 9-bit comparator lessequal for signal <dir$cmp_le0000> created at line 95.
+    Found 9-bit comparator less for signal <dir$cmp_lt0000> created at line 83.
+    Found 1-bit register for signal <hight_low>.
+    Found 9-bit comparator greater for signal <hight_low$cmp_gt0000> created at line 95.
+    Found 9-bit comparator less for signal <hight_low$cmp_lt0000> created at line 89.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+Unit <Memoria> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 500x12-bit ROM                                        : 1
+# Counters                                             : 2
+ 9-bit up counter                                      : 1
+ 9-bit updown counter                                  : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 5
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 500x12-bit ROM                                        : 1
+# Counters                                             : 2
+ 9-bit up counter                                      : 1
+ 9-bit updown counter                                  : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 5
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Memoria> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Memoria, actual ratio is 28.
+FlipFlop dir_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Memoria.ngr
+Top Level Output File Name         : Memoria
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 563
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 8
+#      LUT2                        : 23
+#      LUT3                        : 62
+#      LUT4                        : 231
+#      MUXCY                       : 16
+#      MUXF5                       : 118
+#      MUXF6                       : 50
+#      MUXF7                       : 22
+#      MUXF8                       : 11
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 20
+#      FDE                         : 11
+#      FDR                         : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                      173  out of    704    24%  
+ Number of Slice Flip Flops:             20  out of   1408     1%  
+ Number of 4 input LUTs:                326  out of   1408    23%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    108    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.785ns (Maximum Frequency: 172.857MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 10.823ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 5.785ns (frequency: 172.857MHz)
+  Total number of paths / destination ports: 539 / 40
+-------------------------------------------------------------------------
+Delay:               5.785ns (Levels of Logic = 4)
+  Source:            dir_0 (FF)
+  Destination:       dir_0 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: dir_0 to dir_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            211   0.495   1.187  dir_0 (dir_0)
+     LUT4:I1->O           13   0.562   0.838  Mrom_SALIDA_rom000010711 (Mrom_SALIDA_rom00001071)
+     LUT4:I3->O            1   0.561   0.000  dir_not0001257_F (N441)
+     MUXF5:I0->O           2   0.229   0.446  dir_not0001257 (N9)
+     LUT2:I1->O           10   0.562   0.750  dir_not00011 (dir_not0001)
+     FDE:CE                    0.156          dir_0
+    ----------------------------------------
+    Total                      5.785ns (2.565ns logic, 3.220ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 1307 / 12
+-------------------------------------------------------------------------
+Offset:              10.823ns (Levels of Logic = 7)
+  Source:            dir_0 (FF)
+  Destination:       SALIDA<7> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: dir_0 to SALIDA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            211   0.495   1.187  dir_0 (dir_0)
+     LUT4:I1->O           13   0.562   0.902  Mrom_SALIDA_rom000010711 (Mrom_SALIDA_rom00001071)
+     LUT2:I1->O            1   0.562   0.000  Mrom_SALIDA_rom00009171_121 (Mrom_SALIDA_rom00009171_121)
+     MUXF5:I1->O           1   0.229   0.359  Mrom_SALIDA_rom00009171_11_f5 (Mrom_SALIDA_rom00009171_11_f5)
+     LUT4:I3->O            1   0.561   0.423  dir<6>12 (dir<6>22)
+     LUT3:I1->O            1   0.562   0.000  Mrom_SALIDA_rom00009171_4 (Mrom_SALIDA_rom00009171_4)
+     MUXF5:I0->O           1   0.229   0.357  Mrom_SALIDA_rom00009171_2_f5 (SALIDA_7_OBUF)
+     OBUF:I->O                 4.396          SALIDA_7_OBUF (SALIDA<7>)
+    ----------------------------------------
+    Total                     10.823ns (7.596ns logic, 3.227ns route)
+                                       (70.2% logic, 29.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.55 secs
+ 
+--> 
+
+Total memory usage is 4513356 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

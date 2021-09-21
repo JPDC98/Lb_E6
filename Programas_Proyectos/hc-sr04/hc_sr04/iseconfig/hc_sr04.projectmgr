@@ -11,13 +11,13 @@
          <ClosedNode>/trigger - Behavioral |media|omar|FILES|Omar|U|cursos|E6|lab|hc-sr04|hc_sr04|trigger.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>echo_0 - echo - Behavioral (C:/Programas_Lab_E6/hc-sr04/hc_sr04/echo.vhd)</SelectedItem>
+         <SelectedItem>hc_sr04_top - Behavioral (C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/hc_sr04_top.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000187000000020000000000000000000000000200000064ffffffff000000810000000300000002000001870000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>echo_0 - echo - Behavioral (C:/Programas_Lab_E6/hc-sr04/hc_sr04/echo.vhd)</CurrentItem>
+      <CurrentItem>hc_sr04_top - Behavioral (C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/hc_sr04_top.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -76,17 +76,16 @@
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

@@ -8,19 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/hc-sr04/hc_sr04/control_3_byte.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/control_3_byte.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/hc-sr04/hc_sr04/echo.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/echo.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/hc-sr04/hc_sr04/hc_sr04_top.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/hc_sr04_top.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/hc-sr04/hc_sr04/trigger.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/trigger.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/hc-sr04/hc_sr04/uart_tx.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Programas_Lab_E6/Programas_Proyectos/hc-sr04/hc_sr04/uart_tx.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
