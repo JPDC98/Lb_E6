@@ -8,9 +8,11 @@ entity TOP is
 				Bits_data: integer:= 8        -- N?mero de bits a enviar.
 	 );	
     Port ( SWITCH_TOP : in  STD_LOGIC; --Señal de bloqueo 
-           ECHO_TOP : in  STD_LOGIC;   --Señal de tiempo alto, proporcional a distancia
+           ECHO_TOP_1 : in  STD_LOGIC;   --Señal de tiempo alto, proporcional a distancia
+			  ECHO_TOP_2 : in  STD_LOGIC;   --Señal de tiempo alto, proporcional a distancia
 			  CLK: in STD_LOGIC;				--Reloj de 12MHz interno de la FPGA
-           TRIGGER_TOP : out  STD_LOGIC;--Entrada señal de activacición módulo ultrasónico
+           TRIGGER_TOP_1 : out  STD_LOGIC;--Entrada señal de activacición módulo ultrasónico
+			  TRIGGER_TOP_2 : out  STD_LOGIC;--Entrada señal de activacición módulo ultrasónico
            TX_TOP : out  STD_LOGIC);	--Salida serial de datos de 8 bits
 end TOP;
 
@@ -40,12 +42,19 @@ architecture Behavioral of TOP is
 	signal bus_data_2: std_logic_vector(Bits_data-1 downto 0);
 
 begin
-	bus_data_2<= "00011000"; --Datos fantasma que proporcionara el segundo HC-04  
-	Inst_control_hc_sr04: control_hc_sr04 PORT MAP(
+	Inst_control_hc_sr04_1: control_hc_sr04 PORT MAP(
 		Clk => CLK,
-		ECO => ECHO_TOP,
-		TRIGGER => TRIGGER_TOP,
+		ECO => ECHO_TOP_1,
+		TRIGGER => TRIGGER_TOP_1,
 		DATA => bus_data_1,
+		DISPARO => SWITCH_TOP
+	);
+	
+	Inst_control_hc_sr04_2: control_hc_sr04 PORT MAP(
+		Clk => CLK,
+		ECO => ECHO_TOP_2,
+		TRIGGER => TRIGGER_TOP_2,
+		DATA => bus_data_2,
 		DISPARO => SWITCH_TOP
 	);
 

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Programas_Lab_E6\FPGA_BLUETOOTH\TOP.ncd
-OUTFILE=C:\Programas_Lab_E6\FPGA_BLUETOOTH\TOP.bit
+INFILE=C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH\TOP.ncd
+OUTFILE=C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH\TOP.bit
 FAMILY=Spartan3A and Spartan3AN
 PART=xc3s50a-5tq144
-WORKINGDIR=C:\Programas_Lab_E6\FPGA_BLUETOOTH
+WORKINGDIR=C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH
 LICENSE=WebPack
 USER_INFO=212013186_0_0_473

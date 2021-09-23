@@ -9,34 +9,34 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Mon Sep 20 16:47:50 2021
+Mapped Date    : Wed Sep 22 21:57:55 2021
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            73 out of   1,408    5%
-  Number of 4 input LUTs:               148 out of   1,408   10%
+  Number of Slice Flip Flops:           120 out of   1,408    8%
+  Number of 4 input LUTs:               258 out of   1,408   18%
 Logic Distribution:
-  Number of occupied Slices:             96 out of     704   13%
-    Number of Slices containing only related logic:      96 out of      96 100%
-    Number of Slices containing unrelated logic:          0 out of      96   0%
+  Number of occupied Slices:            164 out of     704   23%
+    Number of Slices containing only related logic:     164 out of     164 100%
+    Number of Slices containing unrelated logic:          0 out of     164   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         171 out of   1,408   12%
-    Number used as logic:               148
-    Number used as a route-thru:         23
+  Total Number of 4 input LUTs:         292 out of   1,408   20%
+    Number used as logic:               258
+    Number used as a route-thru:         34
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                  5 out of     108    4%
+  Number of bonded IOBs:                  7 out of     108    6%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                3.61
+Average Fanout of Non-Clock Nets:                3.71
 
 Peak Memory Usage:  4418 MB
-Total REAL time to MAP completion:  1 secs 
+Total REAL time to MAP completion:  4 secs 
 Total CPU time to MAP completion:   1 secs 
 
 NOTES:
@@ -111,9 +111,11 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | CLK                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
-| ECHO_TOP                           | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| ECHO_TOP_1                         | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| ECHO_TOP_2                         | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
 | SWITCH_TOP                         | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
-| TRIGGER_TOP                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| TRIGGER_TOP_1                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| TRIGGER_TOP_2                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | TX_TOP                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 

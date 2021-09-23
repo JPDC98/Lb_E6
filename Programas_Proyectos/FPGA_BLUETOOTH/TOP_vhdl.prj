@@ -1,3 +1,3 @@
-vhdl work "C:\Programas_Lab_E6\FPGA_BLUETOOTH\tx_bluetooth.vhd"
-vhdl work "C:\Programas_Lab_E6\FPGA_BLUETOOTH\control_hc_sr04.vhd"
-vhdl work "C:\Programas_Lab_E6\FPGA_BLUETOOTH\TOP.vhd"
+vhdl work "C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH\tx_bluetooth.vhd"
+vhdl work "C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH\control_hc_sr04.vhd"
+vhdl work "C:\Programas_Lab_E6\Programas_Proyectos\FPGA_BLUETOOTH\TOP.vhd"
