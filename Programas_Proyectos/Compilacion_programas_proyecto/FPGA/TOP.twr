@@ -1,0 +1,619 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf
+
+Design file:              TOP.ncd
+Physical constraint file: TOP.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 14841 paths analyzed, 648 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.110ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_ultrasonico_2/distancia_2 (SLICE_X18Y26.G2), 54 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     75.223ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_4 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      8.026ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_4 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y20.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<5>
+                                                       Inst_control_ultrasonico_2/conteo_4
+    SLICE_X3Y24.G1       net (fanout=4)        1.161   Inst_control_ultrasonico_2/conteo<4>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.G2      net (fanout=5)        0.840   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.026ns (3.443ns logic, 4.583ns route)
+                                                       (42.9% logic, 57.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.645ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_3 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.604ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_3 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y21.XQ       Tcko                  0.521   Inst_control_ultrasonico_2/conteo<3>
+                                                       Inst_control_ultrasonico_2/conteo_3
+    SLICE_X3Y24.G4       net (fanout=4)        0.814   Inst_control_ultrasonico_2/conteo<3>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.G2      net (fanout=5)        0.840   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.604ns (3.368ns logic, 4.236ns route)
+                                                       (44.3% logic, 55.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.781ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_8 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.462ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.090ns (0.430 - 0.520)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_8 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y23.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<9>
+                                                       Inst_control_ultrasonico_2/conteo_8
+    SLICE_X3Y25.G1       net (fanout=4)        0.727   Inst_control_ultrasonico_2/conteo<8>
+    SLICE_X3Y25.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<3>_INV_0
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.G2      net (fanout=5)        0.840   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.462ns (3.313ns logic, 4.149ns route)
+                                                       (44.4% logic, 55.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_ultrasonico_2/distancia_2 (SLICE_X18Y26.G4), 56 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     75.241ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_4 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      8.008ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_4 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y20.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<5>
+                                                       Inst_control_ultrasonico_2/conteo_4
+    SLICE_X3Y24.G1       net (fanout=4)        1.161   Inst_control_ultrasonico_2/conteo<4>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.G4      net (fanout=10)       2.527   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_control_ultrasonico_2/distancia<5>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>21
+    SLICE_X18Y26.G4      net (fanout=5)        0.822   Inst_control_ultrasonico_2/N21
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.008ns (3.498ns logic, 4.510ns route)
+                                                       (43.7% logic, 56.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.663ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_3 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.586ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_3 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y21.XQ       Tcko                  0.521   Inst_control_ultrasonico_2/conteo<3>
+                                                       Inst_control_ultrasonico_2/conteo_3
+    SLICE_X3Y24.G4       net (fanout=4)        0.814   Inst_control_ultrasonico_2/conteo<3>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.G4      net (fanout=10)       2.527   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_control_ultrasonico_2/distancia<5>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>21
+    SLICE_X18Y26.G4      net (fanout=5)        0.822   Inst_control_ultrasonico_2/N21
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.586ns (3.423ns logic, 4.163ns route)
+                                                       (45.1% logic, 54.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.799ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_8 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_2 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.444ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.090ns (0.430 - 0.520)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_8 to Inst_control_ultrasonico_2/distancia_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y23.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<9>
+                                                       Inst_control_ultrasonico_2/conteo_8
+    SLICE_X3Y25.G1       net (fanout=4)        0.727   Inst_control_ultrasonico_2/conteo<8>
+    SLICE_X3Y25.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<3>_INV_0
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.G4      net (fanout=10)       2.527   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X16Y27.Y       Tilo                  0.616   Inst_control_ultrasonico_2/distancia<5>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>21
+    SLICE_X18Y26.G4      net (fanout=5)        0.822   Inst_control_ultrasonico_2/N21
+    SLICE_X18Y26.CLK     Tgck                  0.671   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<2>
+                                                       Inst_control_ultrasonico_2/distancia_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.444ns (3.368ns logic, 4.076ns route)
+                                                       (45.2% logic, 54.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_ultrasonico_2/distancia_4 (SLICE_X18Y26.F2), 54 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     75.274ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_4 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_4 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.975ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_4 to Inst_control_ultrasonico_2/distancia_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y20.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<5>
+                                                       Inst_control_ultrasonico_2/conteo_4
+    SLICE_X3Y24.G1       net (fanout=4)        1.161   Inst_control_ultrasonico_2/conteo<4>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.F2      net (fanout=5)        0.804   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tfck                  0.656   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<4>
+                                                       Inst_control_ultrasonico_2/distancia_4
+    -------------------------------------------------  ---------------------------
+    Total                                      7.975ns (3.428ns logic, 4.547ns route)
+                                                       (43.0% logic, 57.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.696ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_3 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_4 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.553ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.084ns (0.430 - 0.514)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_3 to Inst_control_ultrasonico_2/distancia_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y21.XQ       Tcko                  0.521   Inst_control_ultrasonico_2/conteo<3>
+                                                       Inst_control_ultrasonico_2/conteo_3
+    SLICE_X3Y24.G4       net (fanout=4)        0.814   Inst_control_ultrasonico_2/conteo<3>
+    SLICE_X3Y24.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<1>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<1>
+    SLICE_X3Y25.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<2>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.F2      net (fanout=5)        0.804   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tfck                  0.656   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<4>
+                                                       Inst_control_ultrasonico_2/distancia_4
+    -------------------------------------------------  ---------------------------
+    Total                                      7.553ns (3.353ns logic, 4.200ns route)
+                                                       (44.4% logic, 55.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.832ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_ultrasonico_2/conteo_8 (FF)
+  Destination:          Inst_control_ultrasonico_2/distancia_4 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.411ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.090ns (0.430 - 0.520)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_ultrasonico_2/conteo_8 to Inst_control_ultrasonico_2/distancia_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X0Y23.YQ       Tcko                  0.596   Inst_control_ultrasonico_2/conteo<9>
+                                                       Inst_control_ultrasonico_2/conteo_8
+    SLICE_X3Y25.G1       net (fanout=4)        0.727   Inst_control_ultrasonico_2/conteo<8>
+    SLICE_X3Y25.COUT     Topcyg                1.009   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_lut<3>_INV_0
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<3>
+    SLICE_X3Y26.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<4>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<5>
+    SLICE_X3Y27.COUT     Tbyp                  0.130   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<6>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.CIN      net (fanout=1)        0.000   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<7>
+    SLICE_X3Y28.XB       Tcinxb                0.216   Inst_control_ultrasonico_2/conteo<24>
+                                                       Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.G1      net (fanout=10)       2.582   Inst_control_ultrasonico_2/Mcompar_estado_cmp_lt0001_cy<8>
+    SLICE_X17Y27.Y       Tilo                  0.561   Inst_control_ultrasonico_2/distancia<0>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<0>11
+    SLICE_X18Y26.F2      net (fanout=5)        0.804   Inst_control_ultrasonico_2/N2
+    SLICE_X18Y26.CLK     Tfck                  0.656   Inst_control_ultrasonico_2/distancia<4>
+                                                       Inst_control_ultrasonico_2/distancia_mux0001<4>
+                                                       Inst_control_ultrasonico_2/distancia_4
+    -------------------------------------------------  ---------------------------
+    Total                                      7.411ns (3.298ns logic, 4.113ns route)
+                                                       (44.5% logic, 55.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_transmiso_tx/cargador_2_3 (SLICE_X23Y23.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.739ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_ultrasonico_2/dato_3 (FF)
+  Destination:          Inst_transmiso_tx/cargador_2_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.745ns (Levels of Logic = 0)
+  Clock Path Skew:      0.006ns (0.043 - 0.037)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_ultrasonico_2/dato_3 to Inst_transmiso_tx/cargador_2_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y22.XQ      Tcko                  0.396   Inst_control_ultrasonico_2/dato<3>
+                                                       Inst_control_ultrasonico_2/dato_3
+    SLICE_X23Y23.BX      net (fanout=1)        0.287   Inst_control_ultrasonico_2/dato<3>
+    SLICE_X23Y23.CLK     Tckdi       (-Th)    -0.062   Inst_transmiso_tx/cargador_2<3>
+                                                       Inst_transmiso_tx/cargador_2_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.745ns (0.458ns logic, 0.287ns route)
+                                                       (61.5% logic, 38.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_transmiso_tx/cargador_2_1 (SLICE_X22Y22.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.742ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_ultrasonico_2/dato_1 (FF)
+  Destination:          Inst_transmiso_tx/cargador_2_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.806ns (Levels of Logic = 0)
+  Clock Path Skew:      0.064ns (0.313 - 0.249)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_ultrasonico_2/dato_1 to Inst_transmiso_tx/cargador_2_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y22.XQ      Tcko                  0.417   Inst_control_ultrasonico_2/dato<1>
+                                                       Inst_control_ultrasonico_2/dato_1
+    SLICE_X22Y22.BX      net (fanout=1)        0.287   Inst_control_ultrasonico_2/dato<1>
+    SLICE_X22Y22.CLK     Tckdi       (-Th)    -0.102   Inst_transmiso_tx/cargador_2<1>
+                                                       Inst_transmiso_tx/cargador_2_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.806ns (0.519ns logic, 0.287ns route)
+                                                       (64.4% logic, 35.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_transmiso_tx/cargador_1_3 (SLICE_X23Y15.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.765ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_ultrasonico_1/dato_3 (FF)
+  Destination:          Inst_transmiso_tx/cargador_1_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.766ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.005 - 0.004)
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_ultrasonico_1/dato_3 to Inst_transmiso_tx/cargador_1_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X22Y15.XQ      Tcko                  0.417   Inst_control_ultrasonico_1/dato<3>
+                                                       Inst_control_ultrasonico_1/dato_3
+    SLICE_X23Y15.BX      net (fanout=1)        0.287   Inst_control_ultrasonico_1/dato<3>
+    SLICE_X23Y15.CLK     Tckdi       (-Th)    -0.062   Inst_transmiso_tx/cargador_1<3>
+                                                       Inst_transmiso_tx/cargador_1_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.766ns (0.479ns logic, 0.287ns route)
+                                                       (62.5% logic, 37.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_transmiso_tx/estado_FSM_FFd2/CLK
+  Logical resource: Inst_transmiso_tx/estado_FSM_FFd2/CK
+  Location pin: SLICE_X22Y18.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 83.333ns
+  High pulse: 41.666ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: Inst_transmiso_tx/estado_FSM_FFd2/CLK
+  Logical resource: Inst_transmiso_tx/estado_FSM_FFd2/CK
+  Location pin: SLICE_X22Y18.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 83.333ns
+  Low pulse: 41.666ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: Inst_control_ultrasonico_1/conteo<15>/CLK
+  Logical resource: Inst_control_ultrasonico_1/conteo_15/CK
+  Location pin: SLICE_X6Y6.CLK
+  Clock network: CLK_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    8.110|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 14841 paths, 0 nets, and 1464 connections
+
+Design statistics:
+   Minimum period:   8.110ns{1}   (Maximum frequency: 123.305MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Oct 19 23:52:41 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4522 MB
+
+
+

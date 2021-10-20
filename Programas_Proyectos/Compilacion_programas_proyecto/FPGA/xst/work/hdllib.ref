@@ -1,0 +1,6 @@
+EN transmiso_tx NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/transmiso_tx.vhd sub00/vhpl02 1634709137
+AR control_ultrasonico behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/control_ultrasonico.vhd sub00/vhpl01 1634709136
+EN top NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/TOP.vhd sub00/vhpl04 1634709139
+AR transmiso_tx behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/transmiso_tx.vhd sub00/vhpl03 1634709138
+EN control_ultrasonico NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/control_ultrasonico.vhd sub00/vhpl00 1634709135
+AR top behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/TOP.vhd sub00/vhpl05 1634709140

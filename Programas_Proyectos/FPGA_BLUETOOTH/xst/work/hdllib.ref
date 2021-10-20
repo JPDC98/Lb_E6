@@ -1,8 +1,0 @@
-EN control_multisensor NULL C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd sub00/vhpl06 1632151564
-EN tx_bluetooth NULL C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/tx_bluetooth.vhd sub00/vhpl02 1632369462
-AR control_hc_sr04 behavioral C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/control_hc_sr04.vhd sub00/vhpl01 1632369461
-EN control_hc_sr04 NULL C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/control_hc_sr04.vhd sub00/vhpl00 1632369460
-EN top NULL C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/TOP.vhd sub00/vhpl04 1632369464
-AR control_multisensor behavioral C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhd sub00/vhpl07 1632151565
-AR top behavioral C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/TOP.vhd sub00/vhpl05 1632369465
-AR tx_bluetooth behavioral C:/Programas_Lab_E6/Programas_Proyectos/FPGA_BLUETOOTH/tx_bluetooth.vhd sub00/vhpl03 1632369463

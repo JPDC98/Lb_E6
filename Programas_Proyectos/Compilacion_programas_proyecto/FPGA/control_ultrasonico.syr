@@ -1,0 +1,453 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: control_ultrasonico.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "control_ultrasonico.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "control_ultrasonico"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : control_ultrasonico
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/control_ultrasonico.vhd" in Library work.
+Entity <control_ultrasonico> compiled.
+Entity <control_ultrasonico> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <control_ultrasonico> in library <work> (architecture <behavioral>) with generics.
+	distancia_max = 400
+	f_reloj = 12000000
+	t_cm_us = 706
+	t_max_echo = 24000000
+	t_trigg = 120
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <control_ultrasonico> in library <work> (Architecture <behavioral>).
+	distancia_max = 400
+	f_reloj = 12000000
+	t_cm_us = 706
+	t_max_echo = 24000000
+	t_trigg = 120
+INFO:Xst:2679 - Register <pivote> in unit <control_ultrasonico> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <control_ultrasonico> analyzed. Unit <control_ultrasonico> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <control_ultrasonico>.
+    Related source file is "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/control_ultrasonico.vhd".
+WARNING:Xst:646 - Signal <pivote<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <trigg>.
+    Found 8-bit register for signal <LED>.
+    Found 25-bit register for signal <conteo>.
+    Found 25-bit adder for signal <conteo$share0000> created at line 34.
+    Found 9-bit register for signal <distancia>.
+    Found 9-bit adder for signal <distancia$addsub0000> created at line 76.
+    Found 25-bit comparator less for signal <distancia$cmp_lt0000> created at line 71.
+    Found 25-bit comparator greater for signal <estado$cmp_gt0000> created at line 69.
+    Found 25-bit comparator less for signal <estado$cmp_lt0000> created at line 47.
+    Found 25-bit register for signal <pulsos>.
+    Found 25-bit addsub for signal <pulsos$share0000> created at line 34.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  68 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <control_ultrasonico> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 25-bit adder                                          : 1
+ 25-bit addsub                                         : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 25-bit register                                       : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 3
+ 25-bit comparator greater                             : 1
+ 25-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <estado/FSM> on signal <estado[1:3]> with gray encoding.
+---------------------
+ State   | Encoding
+---------------------
+ idle    | 000
+ disparo | 001
+ eco     | 011
+ contar  | 010
+ calculo | 110
+ envio   | 111
+---------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 3
+ 25-bit adder                                          : 1
+ 25-bit addsub                                         : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+# Comparators                                          : 3
+ 25-bit comparator greater                             : 1
+ 25-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <distancia_8> of sequential type is unconnected in block <control_ultrasonico>.
+
+Optimizing unit <control_ultrasonico> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block control_ultrasonico, actual ratio is 12.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : control_ultrasonico.ngr
+Top Level Output File Name         : control_ultrasonico
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 294
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 33
+#      LUT2                        : 6
+#      LUT3                        : 4
+#      LUT4                        : 103
+#      LUT4_D                      : 5
+#      MUXCY                       : 77
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 58
+# FlipFlops/Latches                : 70
+#      FD                          : 61
+#      FDE                         : 8
+#      FDRS                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       86  out of    704    12%  
+ Number of Slice Flip Flops:             70  out of   1408     4%  
+ Number of 4 input LUTs:                155  out of   1408    11%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    108    11%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 70    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.986ns (Maximum Frequency: 167.043MHz)
+   Minimum input arrival time before clock: 4.848ns
+   Maximum output required time after clock: 5.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.986ns (frequency: 167.043MHz)
+  Total number of paths / destination ports: 6374 / 80
+-------------------------------------------------------------------------
+Delay:               5.986ns (Levels of Logic = 27)
+  Source:            estado_FSM_FFd1 (FF)
+  Destination:       pulsos_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: estado_FSM_FFd1 to pulsos_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q            38   0.495   1.140  estado_FSM_FFd1 (estado_FSM_FFd1)
+     LUT4:I1->O            1   0.562   0.000  Maddsub_pulsos_share0000_lut<0> (Maddsub_pulsos_share0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Maddsub_pulsos_share0000_cy<0> (Maddsub_pulsos_share0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<1> (Maddsub_pulsos_share0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<2> (Maddsub_pulsos_share0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<3> (Maddsub_pulsos_share0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<4> (Maddsub_pulsos_share0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<5> (Maddsub_pulsos_share0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<6> (Maddsub_pulsos_share0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<7> (Maddsub_pulsos_share0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<8> (Maddsub_pulsos_share0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<9> (Maddsub_pulsos_share0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<10> (Maddsub_pulsos_share0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<11> (Maddsub_pulsos_share0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<12> (Maddsub_pulsos_share0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<13> (Maddsub_pulsos_share0000_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<14> (Maddsub_pulsos_share0000_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<15> (Maddsub_pulsos_share0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<16> (Maddsub_pulsos_share0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<17> (Maddsub_pulsos_share0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<18> (Maddsub_pulsos_share0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<19> (Maddsub_pulsos_share0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<20> (Maddsub_pulsos_share0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<21> (Maddsub_pulsos_share0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Maddsub_pulsos_share0000_cy<22> (Maddsub_pulsos_share0000_cy<22>)
+     MUXCY:CI->O           0   0.065   0.000  Maddsub_pulsos_share0000_cy<23> (Maddsub_pulsos_share0000_cy<23>)
+     XORCY:CI->O           1   0.654   0.359  Maddsub_pulsos_share0000_xor<24> (pulsos_share0000<24>)
+     LUT4:I3->O            1   0.561   0.000  pulsos_mux0000<0>2 (pulsos_mux0000<0>)
+     FD:D                      0.197          pulsos_24
+    ----------------------------------------
+    Total                      5.986ns (4.487ns logic, 1.499ns route)
+                                       (75.0% logic, 25.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 69 / 35
+-------------------------------------------------------------------------
+Offset:              4.848ns (Levels of Logic = 4)
+  Source:            echo (PAD)
+  Destination:       pulsos_18 (FF)
+  Destination Clock: clk rising
+
+  Data Path: echo to pulsos_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.824   0.677  echo_IBUF (echo_IBUF)
+     LUT2:I0->O            1   0.561   0.380  pulsos_mux0000<0>1_SW0 (N02)
+     LUT4_D:I2->O         24   0.561   1.087  pulsos_mux0000<0>1 (N11)
+     LUT4:I2->O            1   0.561   0.000  pulsos_mux0000<6>1 (pulsos_mux0000<6>)
+     FD:D                      0.197          pulsos_18
+    ----------------------------------------
+    Total                      4.848ns (2.704ns logic, 2.144ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              5.271ns (Levels of Logic = 1)
+  Source:            trigg (FF)
+  Destination:       trigg (PAD)
+  Source Clock:      clk rising
+
+  Data Path: trigg to trigg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.495   0.380  trigg (trigg_OBUF)
+     OBUF:I->O                 4.396          trigg_OBUF (trigg)
+    ----------------------------------------
+    Total                      5.271ns (4.891ns logic, 0.380ns route)
+                                       (92.8% logic, 7.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.76 secs
+ 
+--> 
+
+Total memory usage is 4513204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

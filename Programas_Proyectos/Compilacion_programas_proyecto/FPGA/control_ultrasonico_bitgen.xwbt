@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA\control_ultrasonico.ncd
+OUTFILE=C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA\control_ultrasonico.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA
+LICENSE=ISE
+USER_INFO=212013181_0_0_202

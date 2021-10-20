@@ -1,1 +1,0 @@
-vhdtdtfi -prj FPGA_BLUETOOTH -o C:/Programas_Lab_E6/FPGA_BLUETOOTH/control_multisensor.vhi -module control_multisensor -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_multisensor.vhd 
