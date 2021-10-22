@@ -6,6 +6,7 @@ entity transmiso_tx is
 	 generic(
 			  num_datos: integer := 3;
 			  t_bit: integer:= 104;
+			  t_bit_extend: integer:= 1040;
 			  bits_datos: integer:= 8);	
 	 		
     Port ( data_1 : in  STD_LOGIC_VECTOR (bits_datos-1 downto 0);
@@ -17,7 +18,7 @@ end transmiso_tx;
 
 architecture Behavioral of transmiso_tx is
 
-	type serial is (idle,start,datos,stop);
+	type serial is (idle,start,datos,stop,stop_extend);
 	signal estado: serial:= idle;
 	signal cargador_1: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
 	signal cargador_2: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
@@ -25,6 +26,7 @@ architecture Behavioral of transmiso_tx is
 	signal select_senal: integer range 0 to num_datos:= 0;
 	signal salida: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
 	signal indice: integer range 0 to bits_datos-1:= 0;
+	signal conteo_extend: integer range 0 to t_bit_extend:= 0;
 	
 begin
 	reloj: process(clk)
@@ -34,6 +36,7 @@ begin
 				when idle =>
 					conteo <= 0;
 					select_senal <= 0;
+					conteo_extend <= 0;
 					tx <= '1';
 					if (activador = '0') then
 						cargador_1 <= data_1;
@@ -69,9 +72,15 @@ begin
 							indice <= indice + 1;
 							estado <= datos;
 						else
-							conteo <= 0;
-							indice <= 0;
-							estado <= stop;
+							if (select_senal = 0) then
+								conteo <= 0;
+								indice <= 0;
+								estado <= stop;
+							else
+								conteo <= 0;
+								indice <= 0;
+								estado <= stop_extend;
+							end if;
 						end if;
 					end if;
 				when stop =>
@@ -80,14 +89,18 @@ begin
 						conteo <= conteo + 1;
 						estado <= stop;
 					else
-						if (select_senal = 0) then
-							conteo <= 0;
-							select_senal <= select_senal + 1;
-							estado <= start;
-						else
-							conteo <= 0;
-							estado <= idle;
-						end if;						
+						conteo <= 0;
+						select_senal <= select_senal + 1;
+						estado <= start;			
+					end if;
+				when stop_extend =>
+					tx <= '1';
+					if (conteo_extend < t_bit_extend) then
+						conteo_extend <= conteo_extend + 1;
+						estado <= stop_extend;
+					else
+						conteo_extend <= 0;
+						estado <= idle;						
 					end if;
 				when others =>
 					estado <= idle;
