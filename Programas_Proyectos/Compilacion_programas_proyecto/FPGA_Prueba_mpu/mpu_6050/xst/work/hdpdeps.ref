@@ -1,8 +1,9 @@
-V3 3
-FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/control_i2c.vhd 2021/10/22.08:36:10 P.20131013
-EN work/control_i2c 1634913374 \
-      FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/control_i2c.vhd \
+V3 4
+FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.vhd 2021/10/23.17:39:33 P.20131013
+EN work/control_i2c 1635032395 \
+      FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/control_i2c/Behavioral 1634913375 \
-      FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/control_i2c.vhd \
-      EN work/control_i2c 1634913374
+AR work/control_i2c/Behavioral 1635032396 \
+      FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.vhd \
+      EN work/control_i2c 1635032395
+FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/control_i2c.vhd 2021/10/22.08:36:10 P.20131013

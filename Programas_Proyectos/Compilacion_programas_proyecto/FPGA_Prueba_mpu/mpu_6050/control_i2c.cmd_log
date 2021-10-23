@@ -453,3 +453,126 @@ map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_
 par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
 bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 
+xst -intstyle ise -ifn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.xst" -ofn "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/elbertv2.ucf -p xc3s50a-tq144-5 control_i2c.ngc control_i2c.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o control_i2c_map.ncd control_i2c.ngd control_i2c.pcf 
+par -w -intstyle ise -ol high -t 1 control_i2c_map.ncd control_i2c.ncd control_i2c.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml control_i2c.twx control_i2c.ncd -o control_i2c.twr control_i2c.pcf 
+bitgen -intstyle ise -f control_i2c.ut control_i2c.ncd 

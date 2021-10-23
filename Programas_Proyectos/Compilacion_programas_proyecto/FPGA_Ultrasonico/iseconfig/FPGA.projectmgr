@@ -10,13 +10,13 @@
          <ClosedNode>/control_ultrasonico - Behavioral C:|Lb_E6|Programas_Proyectos|Compilacion_programas_proyecto|FPGA|control_ultrasonico.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TOP - Behavioral (C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/TOP.vhd)</SelectedItem>
+         <SelectedItem>elbertv2.ucf (C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/elbertv2.ucf)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TOP - Behavioral (C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/TOP.vhd)</CurrentItem>
+      <CurrentItem>elbertv2.ucf (C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/elbertv2.ucf)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -80,12 +80,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000de000000010000000100000000000000000000000064ffffffff000000810000000000000001000000de0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

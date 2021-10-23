@@ -67,14 +67,14 @@ CONFIG VCCAUX = "3.3" ;
 #                                       LED
 ####################################################################################################
 
-    #NET "LED[0]"             LOC = P46   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[1]"             LOC = P47   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[2]"             LOC = P48   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[3]"             LOC = P49   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[4]"             LOC = P50   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[5]"             LOC = P51   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[6]"             LOC = P54   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "LED[7]"             LOC = P55   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[0]"             LOC = P46   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[1]"             LOC = P47   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[2]"             LOC = P48   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[3]"             LOC = P49   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[4]"             LOC = P50   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[5]"             LOC = P51   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[6]"             LOC = P54   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "datos_1[7]"             LOC = P55   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 
 ####################################################################################################
 #                                   DP Switches
@@ -120,14 +120,14 @@ CONFIG VCCAUX = "3.3" ;
 # HEADER P6
 ####################################################################################################
    
-     NET "datos_1[0]"           LOC = P19   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[1]"           LOC = P21   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[2]"           LOC = P18   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[3]"           LOC = P20   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[4]"           LOC = P15   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[5]"           LOC = P16   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[6]"           LOC = P12   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-     NET "datos_1[7]"           LOC = P13   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[0]"           LOC = P19   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[1]"           LOC = P21   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[2]"           LOC = P18   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[3]"           LOC = P20   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[4]"           LOC = P15   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[5]"           LOC = P16   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[6]"           LOC = P12   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+    #NET "datos_1[7]"           LOC = P13   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
 
 ####################################################################################################
 # HEADER P2

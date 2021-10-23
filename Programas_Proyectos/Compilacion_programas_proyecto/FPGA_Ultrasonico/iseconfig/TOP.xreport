@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-10-22T11:38:49</DateModified>
+  <DateModified>2021-10-22T20:28:00</DateModified>
   <ModuleName>TOP</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/iseconfig/TOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/iseconfig/TOP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico\</ImplementationReportsDirectory>
   <DateInitialized>2021-10-20T10:30:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

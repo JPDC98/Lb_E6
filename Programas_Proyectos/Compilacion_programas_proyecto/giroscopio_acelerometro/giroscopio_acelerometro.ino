@@ -26,7 +26,7 @@ float dt;
 
 void setup()
 {
-Wire.begin(); // D2(GPIO4)=SDA / D1(GPIO5)=SCL
+Wire.begin(4,5); // D2(GPIO4)=SDA / D1(GPIO5)=SCL
 Wire.beginTransmission(MPU);
 Wire.write(0x6B);
 Wire.write(0);

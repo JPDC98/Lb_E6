@@ -329,4 +329,4 @@
 <!ELEMENT twName (#PCDATA)>
 <!ELEMENT twValue (#PCDATA)>
 ]>
-<twReport><twBody><twSumRpt><twConstSummaryTable><twConstSummary><twConstName UCFConstName="" ScopeName="">NET &quot;clk_BUFGP/IBUFG&quot; PERIOD = 83.3333333 ns HIGH 50%</twConstName><twConstData type="SETUP" slack="76.858" best="6.475" units="ns" errors="0" score="0"/><twConstData type="HOLD" slack="0.758" units="ns" errors="0" score="0"/></twConstSummary></twConstSummaryTable><twUnmetConstCnt anchorID="4">0</twUnmetConstCnt></twSumRpt></twBody></twReport>
+<twReport><twBody><twSumRpt><twConstSummaryTable><twConstSummary><twConstName UCFConstName="" ScopeName="">NET &quot;clk_BUFGP/IBUFG&quot; PERIOD = 83.3333333 ns HIGH 50%</twConstName><twConstData type="SETUP" slack="74.553" best="8.780" units="ns" errors="0" score="0"/><twConstData type="HOLD" slack="0.751" units="ns" errors="0" score="0"/></twConstSummary></twConstSummaryTable><twUnmetConstCnt anchorID="4">0</twUnmetConstCnt></twSumRpt></twBody></twReport>

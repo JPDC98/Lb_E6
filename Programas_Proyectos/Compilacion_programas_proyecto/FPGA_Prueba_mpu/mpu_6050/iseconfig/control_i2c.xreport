@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-10-22T08:04:55</DateModified>
+  <DateModified>2021-10-23T11:29:28</DateModified>
   <ModuleName>control_i2c</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/iseconfig/control_i2c.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/iseconfig/control_i2c.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050\</ImplementationReportsDirectory>
   <DateInitialized>2021-10-21T11:55:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

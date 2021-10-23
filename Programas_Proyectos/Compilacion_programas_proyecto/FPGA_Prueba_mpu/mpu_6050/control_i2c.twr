@@ -37,425 +37,443 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 791 paths analyzed, 194 endpoints analyzed, 0 failing endpoints
+ 1648 paths analyzed, 292 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.475ns.
+ Minimum period is   8.780ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Mtridata_sda (SLICE_X7Y13.CE), 77 paths
+Paths for end point Mtrien_sda (SLICE_X13Y8.CE), 82 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     76.858ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pas_scl (FF)
-  Destination:          Mtridata_sda (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      6.437ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.038ns (0.226 - 0.264)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: pas_scl to Mtridata_sda
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y10.XQ       Tcko                  0.521   pas_scl
-                                                       pas_scl
-    SLICE_X4Y12.G1       net (fanout=25)       1.387   pas_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_F
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X7Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X7Y8.X         Tbxx                  0.627   N40
-                                                       Mtridata_sda_or0009116_SW3
-    SLICE_X7Y9.F2        net (fanout=1)        0.087   N40
-    SLICE_X7Y9.X         Tilo                  0.562   Mtridata_sda_not0001
-                                                       Mtridata_sda_not00011
-    SLICE_X7Y13.CE       net (fanout=1)        0.724   Mtridata_sda_not0001
-    SLICE_X7Y13.CLK      Tceck                 0.155   Mtridata_sda
-                                                       Mtridata_sda
-    -------------------------------------------------  ---------------------------
-    Total                                      6.437ns (3.319ns logic, 3.118ns route)
-                                                       (51.6% logic, 48.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     77.210ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sig_scl (FF)
-  Destination:          Mtridata_sda (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      6.080ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.043ns (0.226 - 0.269)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: sig_scl to Mtridata_sda
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X10Y9.YQ       Tcko                  0.596   sig_scl
-                                                       sig_scl
-    SLICE_X4Y12.G3       net (fanout=25)       0.955   sig_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_F
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X7Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X7Y8.X         Tbxx                  0.627   N40
-                                                       Mtridata_sda_or0009116_SW3
-    SLICE_X7Y9.F2        net (fanout=1)        0.087   N40
-    SLICE_X7Y9.X         Tilo                  0.562   Mtridata_sda_not0001
-                                                       Mtridata_sda_not00011
-    SLICE_X7Y13.CE       net (fanout=1)        0.724   Mtridata_sda_not0001
-    SLICE_X7Y13.CLK      Tceck                 0.155   Mtridata_sda
-                                                       Mtridata_sda
-    -------------------------------------------------  ---------------------------
-    Total                                      6.080ns (3.394ns logic, 2.686ns route)
-                                                       (55.8% logic, 44.2% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     77.211ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sig_scl (FF)
-  Destination:          Mtridata_sda (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      6.079ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.043ns (0.226 - 0.269)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: sig_scl to Mtridata_sda
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X10Y9.YQ       Tcko                  0.596   sig_scl
-                                                       sig_scl
-    SLICE_X4Y12.F3       net (fanout=25)       0.954   sig_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_G
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X7Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X7Y8.X         Tbxx                  0.627   N40
-                                                       Mtridata_sda_or0009116_SW3
-    SLICE_X7Y9.F2        net (fanout=1)        0.087   N40
-    SLICE_X7Y9.X         Tilo                  0.562   Mtridata_sda_not0001
-                                                       Mtridata_sda_not00011
-    SLICE_X7Y13.CE       net (fanout=1)        0.724   Mtridata_sda_not0001
-    SLICE_X7Y13.CLK      Tceck                 0.155   Mtridata_sda
-                                                       Mtridata_sda
-    -------------------------------------------------  ---------------------------
-    Total                                      6.079ns (3.394ns logic, 2.685ns route)
-                                                       (55.8% logic, 44.2% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Mtrien_sda (SLICE_X7Y7.CE), 80 paths
---------------------------------------------------------------------------------
-Slack (setup path):     76.939ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pas_scl (FF)
+Slack (setup path):     74.553ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_2 (FF)
   Destination:          Mtrien_sda (FF)
   Requirement:          83.333ns
-  Data Path Delay:      6.365ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.029ns (0.235 - 0.264)
+  Data Path Delay:      8.700ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.080ns (0.427 - 0.507)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: pas_scl to Mtrien_sda
+  Maximum Data Path: cont_2 to Mtrien_sda
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y10.XQ       Tcko                  0.521   pas_scl
-                                                       pas_scl
-    SLICE_X4Y12.G1       net (fanout=25)       1.387   pas_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_F
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X6Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X6Y8.X         Tbxx                  0.705   N37
-                                                       Mtridata_sda_or0009116_SW1
-    SLICE_X6Y9.F1        net (fanout=1)        0.115   N37
-    SLICE_X6Y9.X         Tilo                  0.601   Mtrien_sda_not0001
-                                                       Mtrien_sda_not0001
-    SLICE_X7Y7.CE        net (fanout=1)        0.507   Mtrien_sda_not0001
-    SLICE_X7Y7.CLK       Tceck                 0.155   Mtrien_sda
+    SLICE_X20Y1.YQ       Tcko                  0.596   cont<3>
+                                                       cont_2
+    SLICE_X20Y0.G1       net (fanout=4)        0.505   cont<2>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y8.F4       net (fanout=2)        0.057   Mtridata_sda_or0010231
+    SLICE_X12Y8.X        Tilo                  0.601   Mtrien_sda_not0001
+                                                       Mtrien_sda_not00011
+    SLICE_X13Y8.CE       net (fanout=1)        0.952   Mtrien_sda_not0001
+    SLICE_X13Y8.CLK      Tceck                 0.155   Mtrien_sda
                                                        Mtrien_sda
     -------------------------------------------------  ---------------------------
-    Total                                      6.365ns (3.436ns logic, 2.929ns route)
-                                                       (54.0% logic, 46.0% route)
+    Total                                      8.700ns (3.851ns logic, 4.849ns route)
+                                                       (44.3% logic, 55.7% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     77.291ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sig_scl (FF)
+Slack (setup path):     74.656ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_4 (FF)
   Destination:          Mtrien_sda (FF)
   Requirement:          83.333ns
-  Data Path Delay:      6.008ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.034ns (0.235 - 0.269)
+  Data Path Delay:      8.578ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.099ns (0.427 - 0.526)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sig_scl to Mtrien_sda
+  Maximum Data Path: cont_4 to Mtrien_sda
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y9.YQ       Tcko                  0.596   sig_scl
-                                                       sig_scl
-    SLICE_X4Y12.G3       net (fanout=25)       0.955   sig_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_F
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X6Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X6Y8.X         Tbxx                  0.705   N37
-                                                       Mtridata_sda_or0009116_SW1
-    SLICE_X6Y9.F1        net (fanout=1)        0.115   N37
-    SLICE_X6Y9.X         Tilo                  0.601   Mtrien_sda_not0001
-                                                       Mtrien_sda_not0001
-    SLICE_X7Y7.CE        net (fanout=1)        0.507   Mtrien_sda_not0001
-    SLICE_X7Y7.CLK       Tceck                 0.155   Mtrien_sda
+    SLICE_X18Y0.YQ       Tcko                  0.596   cont<4>
+                                                       cont_4
+    SLICE_X20Y0.G2       net (fanout=2)        0.383   cont<4>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y8.F4       net (fanout=2)        0.057   Mtridata_sda_or0010231
+    SLICE_X12Y8.X        Tilo                  0.601   Mtrien_sda_not0001
+                                                       Mtrien_sda_not00011
+    SLICE_X13Y8.CE       net (fanout=1)        0.952   Mtrien_sda_not0001
+    SLICE_X13Y8.CLK      Tceck                 0.155   Mtrien_sda
                                                        Mtrien_sda
     -------------------------------------------------  ---------------------------
-    Total                                      6.008ns (3.511ns logic, 2.497ns route)
-                                                       (58.4% logic, 41.6% route)
+    Total                                      8.578ns (3.851ns logic, 4.727ns route)
+                                                       (44.9% logic, 55.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     77.292ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sig_scl (FF)
+Slack (setup path):     74.684ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_1 (FF)
   Destination:          Mtrien_sda (FF)
   Requirement:          83.333ns
-  Data Path Delay:      6.007ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.034ns (0.235 - 0.269)
+  Data Path Delay:      8.550ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.099ns (0.427 - 0.526)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sig_scl to Mtrien_sda
+  Maximum Data Path: cont_1 to Mtrien_sda
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y9.YQ       Tcko                  0.596   sig_scl
-                                                       sig_scl
-    SLICE_X4Y12.F3       net (fanout=25)       0.954   sig_scl
-    SLICE_X4Y12.X        Tif5x                 0.853   N34
-                                                       Mtridata_sda_or000930_SW1_G
-                                                       Mtridata_sda_or000930_SW1
-    SLICE_X4Y13.F1       net (fanout=1)        0.115   N34
-    SLICE_X4Y13.X        Tilo                  0.601   Mtridata_sda_or000944
-                                                       Mtridata_sda_or000944
-    SLICE_X6Y8.BX        net (fanout=4)        0.805   Mtridata_sda_or000944
-    SLICE_X6Y8.X         Tbxx                  0.705   N37
-                                                       Mtridata_sda_or0009116_SW1
-    SLICE_X6Y9.F1        net (fanout=1)        0.115   N37
-    SLICE_X6Y9.X         Tilo                  0.601   Mtrien_sda_not0001
-                                                       Mtrien_sda_not0001
-    SLICE_X7Y7.CE        net (fanout=1)        0.507   Mtrien_sda_not0001
-    SLICE_X7Y7.CLK       Tceck                 0.155   Mtrien_sda
+    SLICE_X19Y0.XQ       Tcko                  0.495   cont<1>
+                                                       cont_1
+    SLICE_X20Y0.G3       net (fanout=5)        0.456   cont<1>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y8.F4       net (fanout=2)        0.057   Mtridata_sda_or0010231
+    SLICE_X12Y8.X        Tilo                  0.601   Mtrien_sda_not0001
+                                                       Mtrien_sda_not00011
+    SLICE_X13Y8.CE       net (fanout=1)        0.952   Mtrien_sda_not0001
+    SLICE_X13Y8.CLK      Tceck                 0.155   Mtrien_sda
                                                        Mtrien_sda
     -------------------------------------------------  ---------------------------
-    Total                                      6.007ns (3.511ns logic, 2.496ns route)
-                                                       (58.4% logic, 41.6% route)
+    Total                                      8.550ns (3.750ns logic, 4.800ns route)
+                                                       (43.9% logic, 56.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point cont_2 (SLICE_X12Y10.F4), 14 paths
+Paths for end point Mtridata_sda (SLICE_X12Y10.CE), 81 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     77.748ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     74.753ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_2 (FF)
+  Destination:          Mtridata_sda (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      8.493ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.087ns (0.420 - 0.507)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cont_2 to Mtridata_sda
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y1.YQ       Tcko                  0.596   cont<3>
+                                                       cont_2
+    SLICE_X20Y0.G1       net (fanout=4)        0.505   cont<2>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y11.F3      net (fanout=2)        0.285   Mtridata_sda_or0010231
+    SLICE_X12Y11.X       Tilo                  0.601   Mtridata_sda_not0001
+                                                       Mtridata_sda_not00011
+    SLICE_X12Y10.CE      net (fanout=1)        0.517   Mtridata_sda_not0001
+    SLICE_X12Y10.CLK     Tceck                 0.155   Mtridata_sda
+                                                       Mtridata_sda
+    -------------------------------------------------  ---------------------------
+    Total                                      8.493ns (3.851ns logic, 4.642ns route)
+                                                       (45.3% logic, 54.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.856ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_4 (FF)
+  Destination:          Mtridata_sda (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      8.371ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.106ns (0.420 - 0.526)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cont_4 to Mtridata_sda
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y0.YQ       Tcko                  0.596   cont<4>
+                                                       cont_4
+    SLICE_X20Y0.G2       net (fanout=2)        0.383   cont<4>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y11.F3      net (fanout=2)        0.285   Mtridata_sda_or0010231
+    SLICE_X12Y11.X       Tilo                  0.601   Mtridata_sda_not0001
+                                                       Mtridata_sda_not00011
+    SLICE_X12Y10.CE      net (fanout=1)        0.517   Mtridata_sda_not0001
+    SLICE_X12Y10.CLK     Tceck                 0.155   Mtridata_sda
+                                                       Mtridata_sda
+    -------------------------------------------------  ---------------------------
+    Total                                      8.371ns (3.851ns logic, 4.520ns route)
+                                                       (46.0% logic, 54.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     74.884ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont_1 (FF)
+  Destination:          Mtridata_sda (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      8.343ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.106ns (0.420 - 0.526)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cont_1 to Mtridata_sda
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y0.XQ       Tcko                  0.495   cont<1>
+                                                       cont_1
+    SLICE_X20Y0.G3       net (fanout=5)        0.456   cont<1>
+    SLICE_X20Y0.Y        Tilo                  0.616   Mtridata_sda_or001015
+                                                       estado_cmp_lt00001
+    SLICE_X15Y10.F1      net (fanout=13)       1.530   estado_cmp_lt0000
+    SLICE_X15Y10.X       Tilo                  0.562   Mtridata_sda_or001037
+                                                       Mtridata_sda_or001037
+    SLICE_X14Y0.BX       net (fanout=2)        0.809   Mtridata_sda_or001037
+    SLICE_X14Y0.X        Tbxx                  0.705   N411
+                                                       Mtridata_sda_or0010179_SW1
+    SLICE_X12Y8.G2       net (fanout=1)        0.996   N411
+    SLICE_X12Y8.Y        Tilo                  0.616   Mtrien_sda_not0001
+                                                       Mtridata_sda_or0010231
+    SLICE_X12Y11.F3      net (fanout=2)        0.285   Mtridata_sda_or0010231
+    SLICE_X12Y11.X       Tilo                  0.601   Mtridata_sda_not0001
+                                                       Mtridata_sda_not00011
+    SLICE_X12Y10.CE      net (fanout=1)        0.517   Mtridata_sda_not0001
+    SLICE_X12Y10.CLK     Tceck                 0.155   Mtridata_sda
+                                                       Mtridata_sda
+    -------------------------------------------------  ---------------------------
+    Total                                      8.343ns (3.750ns logic, 4.593ns route)
+                                                       (44.9% logic, 55.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point cargador_3_3 (SLICE_X7Y20.CE), 22 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     75.412ns (requirement - (data path - clock path skew + uncertainty))
   Source:               estado_FSM_FFd9 (FF)
-  Destination:          cont_2 (FF)
+  Destination:          cargador_3_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      5.549ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.036ns (0.217 - 0.253)
+  Data Path Delay:      7.915ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.006ns (0.224 - 0.230)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: estado_FSM_FFd9 to cont_2
+  Maximum Data Path: estado_FSM_FFd9 to cargador_3_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y14.XQ       Tcko                  0.521   estado_FSM_FFd9
+    SLICE_X14Y16.XQ      Tcko                  0.521   estado_FSM_FFd9
                                                        estado_FSM_FFd9
-    SLICE_X11Y9.G3       net (fanout=19)       1.409   estado_FSM_FFd9
-    SLICE_X11Y9.Y        Tilo                  0.561   cont_mux0001<0>222
-                                                       cont_mux0001<0>210
-    SLICE_X13Y9.G2       net (fanout=2)        0.386   cont_mux0001<0>210
-    SLICE_X13Y9.Y        Tilo                  0.561   N19
-                                                       cont_mux0001<0>224
-    SLICE_X12Y10.G3      net (fanout=5)        0.804   N7
-    SLICE_X12Y10.Y       Tilo                  0.616   cont<2>
-                                                       cont_mux0001<2>_SW0
-    SLICE_X12Y10.F4      net (fanout=1)        0.035   cont_mux0001<2>_SW0/O
-    SLICE_X12Y10.CLK     Tfck                  0.656   cont<2>
-                                                       cont_mux0001<2>
-                                                       cont_2
+    SLICE_X16Y10.F2      net (fanout=14)       1.119   estado_FSM_FFd9
+    SLICE_X16Y10.X       Tilo                  0.601   pas_scl_mux0000218
+                                                       pas_scl_mux0000218
+    SLICE_X16Y13.F3      net (fanout=1)        0.496   pas_scl_mux0000218
+    SLICE_X16Y13.X       Tilo                  0.601   N16
+                                                       pas_scl_mux00002134
+    SLICE_X14Y14.G1      net (fanout=4)        1.182   N16
+    SLICE_X14Y14.Y       Tilo                  0.616   cargador_3_7_not0001
+                                                       cargador_3_0_not000111
+    SLICE_X6Y20.F3       net (fanout=8)        1.071   N18
+    SLICE_X6Y20.X        Tilo                  0.601   cargador_3_3_not0001
+                                                       cargador_3_3_not00011
+    SLICE_X7Y20.CE       net (fanout=1)        0.952   cargador_3_3_not0001
+    SLICE_X7Y20.CLK      Tceck                 0.155   cargador_3<3>
+                                                       cargador_3_3
     -------------------------------------------------  ---------------------------
-    Total                                      5.549ns (2.915ns logic, 2.634ns route)
-                                                       (52.5% logic, 47.5% route)
+    Total                                      7.915ns (3.095ns logic, 4.820ns route)
+                                                       (39.1% logic, 60.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     78.363ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               sig_scl (FF)
-  Destination:          cont_2 (FF)
+Slack (setup path):     75.665ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               estado_FSM_FFd11 (FF)
+  Destination:          cargador_3_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      4.918ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.052ns (0.217 - 0.269)
+  Data Path Delay:      7.648ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.020ns (0.224 - 0.244)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: sig_scl to cont_2
+  Maximum Data Path: estado_FSM_FFd11 to cargador_3_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y9.YQ       Tcko                  0.596   sig_scl
-                                                       sig_scl
-    SLICE_X11Y9.G4       net (fanout=25)       0.703   sig_scl
-    SLICE_X11Y9.Y        Tilo                  0.561   cont_mux0001<0>222
-                                                       cont_mux0001<0>210
-    SLICE_X13Y9.G2       net (fanout=2)        0.386   cont_mux0001<0>210
-    SLICE_X13Y9.Y        Tilo                  0.561   N19
-                                                       cont_mux0001<0>224
-    SLICE_X12Y10.G3      net (fanout=5)        0.804   N7
-    SLICE_X12Y10.Y       Tilo                  0.616   cont<2>
-                                                       cont_mux0001<2>_SW0
-    SLICE_X12Y10.F4      net (fanout=1)        0.035   cont_mux0001<2>_SW0/O
-    SLICE_X12Y10.CLK     Tfck                  0.656   cont<2>
-                                                       cont_mux0001<2>
-                                                       cont_2
+    SLICE_X12Y14.XQ      Tcko                  0.521   estado_FSM_FFd11
+                                                       estado_FSM_FFd11
+    SLICE_X16Y13.G1      net (fanout=16)       0.910   estado_FSM_FFd11
+    SLICE_X16Y13.Y       Tilo                  0.616   N16
+                                                       pas_scl_mux00002132
+    SLICE_X16Y13.F2      net (fanout=1)        0.423   pas_scl_mux00002132/O
+    SLICE_X16Y13.X       Tilo                  0.601   N16
+                                                       pas_scl_mux00002134
+    SLICE_X14Y14.G1      net (fanout=4)        1.182   N16
+    SLICE_X14Y14.Y       Tilo                  0.616   cargador_3_7_not0001
+                                                       cargador_3_0_not000111
+    SLICE_X6Y20.F3       net (fanout=8)        1.071   N18
+    SLICE_X6Y20.X        Tilo                  0.601   cargador_3_3_not0001
+                                                       cargador_3_3_not00011
+    SLICE_X7Y20.CE       net (fanout=1)        0.952   cargador_3_3_not0001
+    SLICE_X7Y20.CLK      Tceck                 0.155   cargador_3<3>
+                                                       cargador_3_3
     -------------------------------------------------  ---------------------------
-    Total                                      4.918ns (2.990ns logic, 1.928ns route)
-                                                       (60.8% logic, 39.2% route)
+    Total                                      7.648ns (3.110ns logic, 4.538ns route)
+                                                       (40.7% logic, 59.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     78.374ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               pas_scl (FF)
-  Destination:          cont_2 (FF)
+Slack (setup path):     75.755ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               estado_FSM_FFd17 (FF)
+  Destination:          cargador_3_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      4.912ns (Levels of Logic = 4)
-  Clock Path Skew:      -0.047ns (0.217 - 0.264)
+  Data Path Delay:      7.503ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.075ns (0.416 - 0.491)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: pas_scl to cont_2
+  Maximum Data Path: estado_FSM_FFd17 to cargador_3_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X8Y10.XQ       Tcko                  0.521   pas_scl
-                                                       pas_scl
-    SLICE_X11Y9.F4       net (fanout=25)       0.835   pas_scl
-    SLICE_X11Y9.X        Tilo                  0.562   cont_mux0001<0>222
-                                                       cont_mux0001<0>222
-    SLICE_X13Y9.G4       net (fanout=2)        0.322   cont_mux0001<0>222
-    SLICE_X13Y9.Y        Tilo                  0.561   N19
-                                                       cont_mux0001<0>224
-    SLICE_X12Y10.G3      net (fanout=5)        0.804   N7
-    SLICE_X12Y10.Y       Tilo                  0.616   cont<2>
-                                                       cont_mux0001<2>_SW0
-    SLICE_X12Y10.F4      net (fanout=1)        0.035   cont_mux0001<2>_SW0/O
-    SLICE_X12Y10.CLK     Tfck                  0.656   cont<2>
-                                                       cont_mux0001<2>
-                                                       cont_2
+    SLICE_X18Y14.YQ      Tcko                  0.596   estado_FSM_FFd17
+                                                       estado_FSM_FFd17
+    SLICE_X16Y13.G2      net (fanout=13)       0.690   estado_FSM_FFd17
+    SLICE_X16Y13.Y       Tilo                  0.616   N16
+                                                       pas_scl_mux00002132
+    SLICE_X16Y13.F2      net (fanout=1)        0.423   pas_scl_mux00002132/O
+    SLICE_X16Y13.X       Tilo                  0.601   N16
+                                                       pas_scl_mux00002134
+    SLICE_X14Y14.G1      net (fanout=4)        1.182   N16
+    SLICE_X14Y14.Y       Tilo                  0.616   cargador_3_7_not0001
+                                                       cargador_3_0_not000111
+    SLICE_X6Y20.F3       net (fanout=8)        1.071   N18
+    SLICE_X6Y20.X        Tilo                  0.601   cargador_3_3_not0001
+                                                       cargador_3_3_not00011
+    SLICE_X7Y20.CE       net (fanout=1)        0.952   cargador_3_3_not0001
+    SLICE_X7Y20.CLK      Tceck                 0.155   cargador_3<3>
+                                                       cargador_3_3
     -------------------------------------------------  ---------------------------
-    Total                                      4.912ns (2.916ns logic, 1.996ns route)
-                                                       (59.4% logic, 40.6% route)
+    Total                                      7.503ns (3.185ns logic, 4.318ns route)
+                                                       (42.4% logic, 57.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point datos_2_1 (SLICE_X1Y22.BX), 1 path
+Paths for end point datos_1_1 (SLICE_X9Y2.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.758ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.751ns (requirement - (clock path skew + uncertainty - data path))
   Source:               cargador_2_1 (FF)
-  Destination:          datos_2_1 (FF)
+  Destination:          datos_1_1 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.768ns (Levels of Logic = 0)
-  Clock Path Skew:      0.010ns (0.062 - 0.052)
+  Data Path Delay:      0.778ns (Levels of Logic = 0)
+  Clock Path Skew:      0.027ns (0.267 - 0.240)
   Source Clock:         clk_BUFGP rising at 83.333ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: cargador_2_1 to datos_2_1
+  Minimum Data Path: cargador_2_1 to datos_1_1
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X1Y23.YQ       Tcko                  0.419   cargador_2<1>
+    SLICE_X11Y5.YQ       Tcko                  0.419   cargador_2<1>
                                                        cargador_2_1
-    SLICE_X1Y22.BX       net (fanout=1)        0.287   cargador_2<1>
-    SLICE_X1Y22.CLK      Tckdi       (-Th)    -0.062   datos_2_1
-                                                       datos_2_1
+    SLICE_X9Y2.BX        net (fanout=1)        0.297   cargador_2<1>
+    SLICE_X9Y2.CLK       Tckdi       (-Th)    -0.062   datos_1_1
+                                                       datos_1_1
     -------------------------------------------------  ---------------------------
-    Total                                      0.768ns (0.481ns logic, 0.287ns route)
-                                                       (62.6% logic, 37.4% route)
+    Total                                      0.778ns (0.481ns logic, 0.297ns route)
+                                                       (61.8% logic, 38.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point datos_1_3 (SLICE_X0Y15.BX), 1 path
+Paths for end point datos_1_5 (SLICE_X12Y2.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.807ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cargador_1_3 (FF)
-  Destination:          datos_1_3 (FF)
+Slack (hold path):      0.801ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               cargador_2_5 (FF)
+  Destination:          datos_1_5 (FF)
   Requirement:          0.000ns
   Data Path Delay:      0.808ns (Levels of Logic = 0)
-  Clock Path Skew:      0.001ns (0.005 - 0.004)
+  Clock Path Skew:      0.007ns (0.051 - 0.044)
   Source Clock:         clk_BUFGP rising at 83.333ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: cargador_1_3 to datos_1_3
+  Minimum Data Path: cargador_2_5 to datos_1_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X1Y14.YQ       Tcko                  0.419   cargador_1<3>
-                                                       cargador_1_3
-    SLICE_X0Y15.BX       net (fanout=1)        0.287   cargador_1<3>
-    SLICE_X0Y15.CLK      Tckdi       (-Th)    -0.102   datos_1_3
-                                                       datos_1_3
+    SLICE_X13Y3.YQ       Tcko                  0.419   cargador_2<5>
+                                                       cargador_2_5
+    SLICE_X12Y2.BX       net (fanout=1)        0.287   cargador_2<5>
+    SLICE_X12Y2.CLK      Tckdi       (-Th)    -0.102   datos_1_5
+                                                       datos_1_5
     -------------------------------------------------  ---------------------------
     Total                                      0.808ns (0.521ns logic, 0.287ns route)
                                                        (64.5% logic, 35.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point conteo_0 (SLICE_X11Y10.BX), 1 path
+Paths for end point datos_2_0 (SLICE_X2Y20.BY), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.828ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               conteo_0 (FF)
-  Destination:          conteo_0 (FF)
+Slack (hold path):      0.809ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               cargador_3_0 (FF)
+  Destination:          datos_2_0 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.828ns (Levels of Logic = 0)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      0.858ns (Levels of Logic = 0)
+  Clock Path Skew:      0.049ns (0.281 - 0.232)
   Source Clock:         clk_BUFGP rising at 83.333ns
   Destination Clock:    clk_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: conteo_0 to conteo_0
+  Minimum Data Path: cargador_3_0 to datos_2_0
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y10.XQ      Tcko                  0.396   conteo<0>
-                                                       conteo_0
-    SLICE_X11Y10.BX      net (fanout=6)        0.350   conteo<0>
-    SLICE_X11Y10.CLK     Tckdi       (-Th)    -0.082   conteo<0>
-                                                       conteo_0
+    SLICE_X5Y18.YQ       Tcko                  0.419   cargador_3<0>
+                                                       cargador_3_0
+    SLICE_X2Y20.BY       net (fanout=1)        0.302   cargador_3<0>
+    SLICE_X2Y20.CLK      Tckdi       (-Th)    -0.137   datos_2_1
+                                                       datos_2_0
     -------------------------------------------------  ---------------------------
-    Total                                      0.828ns (0.478ns logic, 0.350ns route)
-                                                       (57.7% logic, 42.3% route)
+    Total                                      0.858ns (0.556ns logic, 0.302ns route)
+                                                       (64.8% logic, 35.2% route)
 
 --------------------------------------------------------------------------------
 
@@ -465,27 +483,27 @@ Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
   Period: 83.333ns
   Low pulse: 41.666ns
   Low pulse limit: 0.664ns (Tcl)
-  Physical resource: cont<0>/CLK
-  Logical resource: cont_0/CK
-  Location pin: SLICE_X12Y8.CLK
+  Physical resource: estado_FSM_FFd11/CLK
+  Logical resource: estado_FSM_FFd11/CK
+  Location pin: SLICE_X12Y14.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
   Period: 83.333ns
   High pulse: 41.666ns
   High pulse limit: 0.664ns (Tch)
-  Physical resource: cont<0>/CLK
-  Logical resource: cont_0/CK
-  Location pin: SLICE_X12Y8.CLK
+  Physical resource: estado_FSM_FFd11/CLK
+  Logical resource: estado_FSM_FFd11/CK
+  Location pin: SLICE_X12Y14.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
   Period: 83.333ns
   Low pulse: 41.666ns
   Low pulse limit: 0.664ns (Tcl)
-  Physical resource: pas_scl/CLK
-  Logical resource: pas_scl/CK
-  Location pin: SLICE_X8Y10.CLK
+  Physical resource: Mtridata_sda/CLK
+  Logical resource: Mtridata_sda/CK
+  Location pin: SLICE_X12Y10.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -502,7 +520,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.475|         |         |         |
+clk            |    8.780|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -511,16 +529,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 791 paths, 0 nets, and 557 connections
+Constraints cover 1648 paths, 0 nets, and 751 connections
 
 Design statistics:
-   Minimum period:   6.475ns{1}   (Maximum frequency: 154.440MHz)
+   Minimum period:   8.780ns{1}   (Maximum frequency: 113.895MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Oct 22 08:36:39 2021 
+Analysis completed Sat Oct 23 17:40:18 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

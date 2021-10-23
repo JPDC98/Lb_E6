@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/Prueba_mpu/mpu_6050/control_i2c.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Prueba_mpu/mpu_6050/control_i2c.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
