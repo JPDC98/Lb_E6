@@ -1,0 +1,5 @@
+set -tmpdir "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/xst/projnav.tmp"
+set -xsthdpdir "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/xst"
+elaborate
+-ifn control_i2c.prj
+-ifmt mixed

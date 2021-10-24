@@ -11,8 +11,8 @@ try:
                             timeout=None)
     print(com_serial.name) #imprimimos el puerto serial a utilizar, conexión correcta
     while(1):
-        datos_bytes = com_serial.read(2) #Leemos los dos bits enviados de la FPGA
-        print("{}      {} ".format(datos_bytes[0],datos_bytes[1]))
+        datos_bytes = com_serial.read(6) #Leemos los dos bits enviados de la FPGA
+        print("{}      {}      {}      {}     {}       {}".format(datos_bytes[0],datos_bytes[1],datos_bytes[2],datos_bytes[3],datos_bytes[4],datos_bytes[5]))
 
 except:
     com_serial.close() # se cierra la comunicación para evitar loops indeseados.

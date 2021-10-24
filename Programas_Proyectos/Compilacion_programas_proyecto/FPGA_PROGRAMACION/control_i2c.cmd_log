@@ -1,0 +1,1 @@
+vhdtdtfi -prj FPGA -o C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhi -module control_i2c -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work control_i2c.vhd 

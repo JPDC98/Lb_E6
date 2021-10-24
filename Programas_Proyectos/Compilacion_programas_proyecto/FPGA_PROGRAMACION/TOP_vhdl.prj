@@ -1,0 +1,4 @@
+vhdl work "C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA_PROGRAMACION\transmiso_tx.vhd"
+vhdl work "C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA_PROGRAMACION\control_ultrasonico.vhd"
+vhdl work "C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA_PROGRAMACION\control_i2c.vhd"
+vhdl work "C:\Lb_E6\Programas_Proyectos\Compilacion_programas_proyecto\FPGA_PROGRAMACION\TOP.vhd"

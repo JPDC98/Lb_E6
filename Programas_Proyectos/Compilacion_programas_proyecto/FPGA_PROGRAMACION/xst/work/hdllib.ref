@@ -1,0 +1,8 @@
+AR control_i2c behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd sub00/vhpl07 1635036402
+EN transmiso_tx NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd sub00/vhpl02 1635036403
+EN control_i2c NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd sub00/vhpl06 1635036401
+AR control_ultrasonico behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd sub00/vhpl01 1635036400
+EN top NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd sub00/vhpl04 1635036405
+AR transmiso_tx behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd sub00/vhpl03 1635036404
+EN control_ultrasonico NULL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd sub00/vhpl00 1635036399
+AR top behavioral C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd sub00/vhpl05 1635036406

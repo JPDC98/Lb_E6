@@ -120,8 +120,8 @@ CONFIG VCCAUX = "3.3" ;
 # HEADER P6
 ####################################################################################################
    
-    #NET "IO_P6[0]"           LOC = P19   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
-    #NET "IO_P6[1]"           LOC = P21   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+	  NET "SDA"           LOC = P19   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
+     NET "SCL"           LOC = P21   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P6[2]"           LOC = P18   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P6[3]"           LOC = P20   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;
     #NET "IO_P6[4]"           LOC = P15   | IOSTANDARD = LVCMOS33 | SLEW = SLOW | DRIVE = 12;

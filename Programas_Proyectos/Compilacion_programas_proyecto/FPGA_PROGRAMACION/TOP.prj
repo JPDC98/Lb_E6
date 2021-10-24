@@ -1,0 +1,4 @@
+vhdl work "transmiso_tx.vhd"
+vhdl work "control_ultrasonico.vhd"
+vhdl work "control_i2c.vhd"
+vhdl work "TOP.vhd"
