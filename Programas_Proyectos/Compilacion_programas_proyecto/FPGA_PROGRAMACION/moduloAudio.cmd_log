@@ -1,0 +1,1 @@
+vhdtdtfi -prj FPGA -o C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhi -module moduloAudio -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work moduloAudio.vhd 

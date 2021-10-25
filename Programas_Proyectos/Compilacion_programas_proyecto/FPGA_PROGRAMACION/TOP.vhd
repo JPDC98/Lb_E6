@@ -12,6 +12,7 @@ entity TOP is
            ECO_2 : in  STD_LOGIC;
 			  SDA: inout STD_LOGIC;
 			  SCL: out STD_LOGIC;
+			  BUZZER: out STD_LOGIC;
            TX : out  STD_LOGIC;
            CLK : in  STD_LOGIC);
 end TOP;
@@ -55,6 +56,14 @@ architecture Behavioral of TOP is
 		);
 	END COMPONENT;
 	
+	COMPONENT moduloAudio
+	PORT(
+		clk : IN std_logic;
+		distancia : IN std_logic_vector(7 downto 0);          
+		salida_alarma : OUT std_logic
+		);
+	END COMPONENT;
+	
 	signal un_dato_1: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
 	signal un_dato_2: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
 	signal un_dato_3: std_logic_vector(bits_datos-1 downto 0):= (others =>'0');
@@ -72,6 +81,12 @@ begin
 		clk => CLK 
 	);
 	
+	Inst_moduloAudio: moduloAudio PORT MAP(
+		clk => CLK,
+		distancia => un_dato_1,
+		salida_alarma => BUZZER
+	);
+
 	Inst_control_ultrasonico_2: control_ultrasonico PORT MAP(
 		echo => ECO_2,
 		activador => ACTIV,

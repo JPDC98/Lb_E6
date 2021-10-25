@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP.prj
 
@@ -104,16 +104,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/TOP is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/TOP.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd".
-WARNING:HDLParsers:3607 - Unit work/TOP/Behavioral is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/TOP.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd".
-WARNING:HDLParsers:3607 - Unit work/control_i2c is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd".
-WARNING:HDLParsers:3607 - Unit work/control_i2c/Behavioral is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd".
-WARNING:HDLParsers:3607 - Unit work/control_ultrasonico is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_ultrasonico.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd".
-WARNING:HDLParsers:3607 - Unit work/control_ultrasonico/Behavioral is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_ultrasonico.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd".
-WARNING:HDLParsers:3607 - Unit work/transmiso_tx is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/transmiso_tx.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd".
-WARNING:HDLParsers:3607 - Unit work/transmiso_tx/Behavioral is now defined in a different file.  It was defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/transmiso_tx.vhd", and is now defined in "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd".
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd" in Library work.
 Architecture behavioral of Entity control_ultrasonico is up to date.
+Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd" in Library work.
+Architecture behavioral of Entity moduloaudio is up to date.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd" in Library work.
 Architecture behavioral of Entity control_i2c is up to date.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd" in Library work.
@@ -134,6 +128,13 @@ Analyzing hierarchy for entity <control_ultrasonico> in library <work> (architec
 	t_cm_us = 706
 	t_max_echo = 24000000
 	t_trigg = 120
+
+Analyzing hierarchy for entity <moduloAudio> in library <work> (architecture <behavioral>) with generics.
+	clk12 = 6000000
+	m100 = 100
+	m150 = 150
+	m200 = 200
+	m50 = 50
 
 Analyzing hierarchy for entity <control_i2c> in library <work> (architecture <behavioral>) with generics.
 	LOW_DISABLE = "00000000"
@@ -168,6 +169,14 @@ Analyzing generic Entity <control_ultrasonico> in library <work> (Architecture <
 	t_max_echo = 24000000
 	t_trigg = 120
 Entity <control_ultrasonico> analyzed. Unit <control_ultrasonico> generated.
+
+Analyzing generic Entity <moduloAudio> in library <work> (Architecture <behavioral>).
+	clk12 = 6000000
+	m100 = 100
+	m150 = 150
+	m200 = 200
+	m50 = 50
+Entity <moduloAudio> analyzed. Unit <moduloAudio> generated.
 
 Analyzing generic Entity <control_i2c> in library <work> (Architecture <behavioral>).
 	LOW_DISABLE = "00000000"
@@ -227,6 +236,31 @@ Synthesizing Unit <control_ultrasonico>.
 	inferred   3 Adder/Subtractor(s).
 	inferred   4 Comparator(s).
 Unit <control_ultrasonico> synthesized.
+
+
+Synthesizing Unit <moduloAudio>.
+    Related source file is "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd".
+    Found 1-bit register for signal <salida_alarma>.
+    Found 1-bit register for signal <clk_div>.
+    Found 23-bit up counter for signal <contador_clk_div>.
+    Found 8-bit register for signal <contador_distancia>.
+    Found 8-bit register for signal <dist>.
+    Found 4-bit comparator lessequal for signal <salida_alarma$cmp_le0000> created at line 64.
+    Found 3-bit register for signal <t_bajo>.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0000> created at line 32.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0001> created at line 34.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0002> created at line 37.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0003> created at line 40.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0000> created at line 32.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0001> created at line 34.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0002> created at line 37.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0003> created at line 40.
+    Found 4-bit up counter for signal <t_bajocnt>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+Unit <moduloAudio> synthesized.
 
 
 Synthesizing Unit <control_i2c>.
@@ -357,28 +391,32 @@ Macro Statistics
  5-bit adder                                           : 1
  7-bit adder                                           : 1
  8-bit adder                                           : 2
-# Counters                                             : 2
+# Counters                                             : 4
+ 23-bit up counter                                     : 1
  3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 66
- 1-bit register                                        : 40
+# Registers                                            : 71
+ 1-bit register                                        : 42
  14-bit register                                       : 1
  17-bit register                                       : 1
  25-bit register                                       : 4
- 3-bit register                                        : 2
+ 3-bit register                                        : 3
  5-bit register                                        : 1
  7-bit register                                        : 1
- 8-bit register                                        : 16
-# Comparators                                          : 15
+ 8-bit register                                        : 18
+# Comparators                                          : 24
  14-bit comparator less                                : 1
  17-bit comparator less                                : 1
  25-bit comparator greater                             : 2
  25-bit comparator less                                : 4
  3-bit comparator less                                 : 2
+ 4-bit comparator lessequal                            : 1
  5-bit comparator less                                 : 1
  6-bit comparator less                                 : 1
  7-bit comparator less                                 : 1
- 8-bit comparator less                                 : 2
+ 8-bit comparator greater                              : 4
+ 8-bit comparator less                                 : 6
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  8-bit 8-to-1 multiplexer                              : 1
@@ -473,21 +511,25 @@ Macro Statistics
  5-bit adder                                           : 1
  7-bit adder                                           : 1
  8-bit adder                                           : 2
-# Counters                                             : 2
+# Counters                                             : 4
+ 23-bit up counter                                     : 1
  3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 317
- Flip-Flops                                            : 317
-# Comparators                                          : 15
+# Registers                                            : 338
+ Flip-Flops                                            : 338
+# Comparators                                          : 24
  14-bit comparator less                                : 1
  17-bit comparator less                                : 1
  25-bit comparator greater                             : 2
  25-bit comparator less                                : 4
  3-bit comparator less                                 : 2
+ 4-bit comparator lessequal                            : 1
  5-bit comparator less                                 : 1
  6-bit comparator less                                 : 1
  7-bit comparator less                                 : 1
- 8-bit comparator less                                 : 2
+ 8-bit comparator greater                              : 4
+ 8-bit comparator less                                 : 6
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  8-bit 8-to-1 multiplexer                              : 1
@@ -509,21 +551,36 @@ Optimizing unit <TOP> ...
 
 Optimizing unit <control_ultrasonico> ...
 
+Optimizing unit <moduloAudio> ...
+
 Optimizing unit <transmiso_tx> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 53.
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 59.
 FlipFlop Inst_control_i2c/pas_scl has been replicated 1 time(s)
 
 Final Macro Processing ...
+
+Processing Unit <TOP> :
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_7>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_6>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_5>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_4>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_3>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_2>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_1>.
+	Found 2-bit shift register for signal <Inst_moduloAudio/contador_distancia_0>.
+Unit <TOP> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 352
- Flip-Flops                                            : 352
+# Registers                                            : 384
+ Flip-Flops                                            : 384
+# Shift Registers                                      : 8
+ 2-bit shift register                                  : 8
 
 =========================================================================
 
@@ -549,40 +606,43 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 9
+# IOs                              : 10
 
 Cell Usage :
-# BELS                             : 1004
+# BELS                             : 1121
 #      GND                         : 1
-#      INV                         : 14
-#      LUT1                        : 92
-#      LUT2                        : 32
+#      INV                         : 17
+#      LUT1                        : 114
+#      LUT2                        : 35
 #      LUT2_D                      : 3
-#      LUT2_L                      : 4
-#      LUT3                        : 86
+#      LUT2_L                      : 5
+#      LUT3                        : 99
 #      LUT3_D                      : 12
 #      LUT3_L                      : 4
-#      LUT4                        : 371
-#      LUT4_D                      : 17
-#      LUT4_L                      : 17
-#      MUXCY                       : 176
-#      MUXF5                       : 35
+#      LUT4                        : 389
+#      LUT4_D                      : 18
+#      LUT4_L                      : 18
+#      MUXCY                       : 204
+#      MUXF5                       : 39
 #      MUXF6                       : 8
 #      VCC                         : 1
-#      XORCY                       : 131
-# FlipFlops/Latches                : 352
-#      FD                          : 180
-#      FDE                         : 145
-#      FDRE                        : 9
+#      XORCY                       : 154
+# FlipFlops/Latches                : 392
+#      FD                          : 189
+#      FDE                         : 146
+#      FDR                         : 25
+#      FDRE                        : 13
 #      FDRS                        : 2
-#      FDS                         : 15
+#      FDS                         : 16
 #      FDSE                        : 1
+# Shift Registers                  : 8
+#      SRL16                       : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 9
 #      IBUF                        : 3
 #      IOBUF                       : 1
-#      OBUF                        : 4
+#      OBUF                        : 5
 =========================================================================
 
 Device utilization summary:
@@ -590,11 +650,13 @@ Device utilization summary:
 
 Selected Device : 3s50atq144-5 
 
- Number of Slices:                      376  out of    704    53%  
- Number of Slice Flip Flops:            352  out of   1408    25%  
- Number of 4 input LUTs:                652  out of   1408    46%  
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    108     8%  
+ Number of Slices:                      410  out of    704    58%  
+ Number of Slice Flip Flops:            392  out of   1408    27%  
+ Number of 4 input LUTs:                722  out of   1408    51%  
+    Number used as logic:               714
+    Number used as Shift registers:       8
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    108     9%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -615,11 +677,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 352   |
------------------------------------+------------------------+-------+
+-----------------------------------+-----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------------+-------+
+CLK                                | BUFGP                             | 395   |
+Inst_moduloAudio/clk_div           | NONE(Inst_moduloAudio/t_bajocnt_3)| 5     |
+-----------------------------------+-----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -641,7 +705,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 6.831ns (frequency: 146.400MHz)
-  Total number of paths / destination ports: 17729 / 503
+  Total number of paths / destination ports: 18633 / 572
 -------------------------------------------------------------------------
 Delay:               6.831ns (Levels of Logic = 6)
   Source:            Inst_control_i2c/sig_scl (FF)
@@ -656,14 +720,38 @@ Delay:               6.831ns (Levels of Logic = 6)
      FDE:C->Q             31   0.495   1.139  Inst_control_i2c/sig_scl (Inst_control_i2c/sig_scl)
      LUT2_D:I1->O          8   0.562   0.645  Inst_control_i2c/estado_FSM_FFd9-In11 (Inst_control_i2c/estado_FSM_N2)
      LUT4_D:I3->O         13   0.561   0.859  Inst_control_i2c/Mtridata_sda_mux000011 (N2)
-     LUT4:I2->O            1   0.561   0.000  Inst_control_i2c/Mtridata_sda_mux0000103_SW0_G (N151)
-     MUXF5:I1->O           1   0.229   0.359  Inst_control_i2c/Mtridata_sda_mux0000103_SW0 (N126)
+     LUT4:I2->O            1   0.561   0.000  Inst_control_i2c/Mtridata_sda_mux0000103_SW0_G (N1611)
+     MUXF5:I1->O           1   0.229   0.359  Inst_control_i2c/Mtridata_sda_mux0000103_SW0 (N136)
      LUT4_L:I3->LO         1   0.561   0.102  Inst_control_i2c/Mtridata_sda_mux0000103 (Inst_control_i2c/Mtridata_sda_mux0000103)
      LUT4:I3->O            1   0.561   0.000  Inst_control_i2c/Mtridata_sda_mux0000160 (Inst_control_i2c/Mtridata_sda_mux0000)
      FDSE:D                    0.197          Inst_control_i2c/Mtridata_sda
     ----------------------------------------
     Total                      6.831ns (3.727ns logic, 3.104ns route)
                                        (54.6% logic, 45.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_moduloAudio/clk_div'
+  Clock period: 4.403ns (frequency: 227.141MHz)
+  Total number of paths / destination ports: 45 / 9
+-------------------------------------------------------------------------
+Delay:               4.403ns (Levels of Logic = 3)
+  Source:            Inst_moduloAudio/t_bajocnt_0 (FF)
+  Destination:       Inst_moduloAudio/t_bajocnt_3 (FF)
+  Source Clock:      Inst_moduloAudio/clk_div rising
+  Destination Clock: Inst_moduloAudio/clk_div rising
+
+  Data Path: Inst_moduloAudio/t_bajocnt_0 to Inst_moduloAudio/t_bajocnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.495   0.677  Inst_moduloAudio/t_bajocnt_0 (Inst_moduloAudio/t_bajocnt_0)
+     LUT4_L:I0->LO         1   0.561   0.166  Inst_moduloAudio/t_bajocnt_and000017 (Inst_moduloAudio/t_bajocnt_and000017)
+     LUT3:I1->O            2   0.562   0.446  Inst_moduloAudio/t_bajocnt_and0000411 (Inst_moduloAudio/t_bajocnt_and0000411)
+     LUT3:I1->O            4   0.562   0.499  Inst_moduloAudio/t_bajocnt_and0000108 (Inst_moduloAudio/t_bajocnt_and0000)
+     FDRE:R                    0.435          Inst_moduloAudio/t_bajocnt_0
+    ----------------------------------------
+    Total                      4.403ns (2.615ns logic, 1.788ns route)
+                                       (59.4% logic, 40.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -709,16 +797,35 @@ Offset:              6.949ns (Levels of Logic = 2)
                                        (78.5% logic, 21.5% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_moduloAudio/clk_div'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.248ns (Levels of Logic = 1)
+  Source:            Inst_moduloAudio/salida_alarma (FF)
+  Destination:       BUZZER (PAD)
+  Source Clock:      Inst_moduloAudio/clk_div rising
+
+  Data Path: Inst_moduloAudio/salida_alarma to BUZZER
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.495   0.357  Inst_moduloAudio/salida_alarma (Inst_moduloAudio/salida_alarma)
+     OBUF:I->O                 4.396          BUZZER_OBUF (BUZZER)
+    ----------------------------------------
+    Total                      5.248ns (4.891ns logic, 0.357ns route)
+                                       (93.2% logic, 6.8% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.11 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.01 secs
  
 --> 
 
-Total memory usage is 4529364 kilobytes
+Total memory usage is 4529368 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
-Number of infos    :    4 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 

@@ -5,30 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/TOP</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/TOP.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/TOP/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/TOP.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/control_i2c</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/control_i2c/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/control_ultrasonico</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_ultrasonico.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/control_ultrasonico/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_ultrasonico.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/transmiso_tx</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/transmiso_tx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/transmiso_tx/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/transmiso_tx.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd</arg>&quot;.
-</msg>
-
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
@@ -61,6 +37,9 @@ You should achieve better results by setting this init to <arg fmt="%i" index="3
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">Inst_control_i2c/cargador_regis_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TOP</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Inst_control_i2c/cargador_regis_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>
