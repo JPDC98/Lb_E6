@@ -1,43 +1,47 @@
-V3 26
+V3 28
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/control_ultrasonico.vhd 2021/10/19.23:52:02 P.20131013
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/TOP.vhd 2021/10/19.23:16:05 P.20131013
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA/transmiso_tx.vhd 2021/10/20.11:14:19 P.20131013
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd 2021/10/23.17:51:49 P.20131013
-EN work/control_i2c 1635099642 \
+EN work/control_i2c 1635450831 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/control_i2c/Behavioral 1635099643 \
+AR work/control_i2c/Behavioral 1635450832 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd \
-      EN work/control_i2c 1635099642
+      EN work/control_i2c 1635450831
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd 2021/10/19.23:52:02 P.20131013
-EN work/control_ultrasonico 1635099638 \
+EN work/control_ultrasonico 1635450827 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/control_ultrasonico/Behavioral 1635099639 \
+AR work/control_ultrasonico/Behavioral 1635450828 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd \
-      EN work/control_ultrasonico 1635099638
-FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd 2021/10/24.12:14:01 P.20131013
-EN work/moduloAudio 1635099640 \
+      EN work/control_ultrasonico 1635450827
+FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/encontrar_errores.vhd 2021/11/05.19:30:01 P.20131013
+EN work/encontrar_errores 0 \
+      FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/encontrar_errores.vhd \
+      PB ieee/std_logic_1164 1381692176
+FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd 2021/10/28.13:53:39 P.20131013
+EN work/moduloAudio 1635450829 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/moduloAudio/Behavioral 1635099641 \
+AR work/moduloAudio/Behavioral 1635450830 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd \
-      EN work/moduloAudio 1635099640
+      EN work/moduloAudio 1635450829
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd 2021/10/24.12:19:30 P.20131013
-EN work/TOP 1635099646 \
+EN work/TOP 1635450835 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/TOP/Behavioral 1635099647 \
+AR work/TOP/Behavioral 1635450836 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd \
-      EN work/TOP 1635099646 CP control_ultrasonico CP moduloAudio CP control_i2c \
+      EN work/TOP 1635450835 CP control_ultrasonico CP moduloAudio CP control_i2c \
       CP transmiso_tx
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd 2021/10/23.18:40:17 P.20131013
-EN work/transmiso_tx 1635099644 \
+EN work/transmiso_tx 1635450833 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/transmiso_tx/Behavioral 1635099645 \
+AR work/transmiso_tx/Behavioral 1635450834 \
       FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd \
-      EN work/transmiso_tx 1635099644
+      EN work/transmiso_tx 1635450833
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_i2c.vhd 2021/10/23.17:51:49 P.20131013
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/control_ultrasonico.vhd 2021/10/19.23:52:02 P.20131013
 FL C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_Ultrasonico/TOP.vhd 2021/10/23.18:03:43 P.20131013

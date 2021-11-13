@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Oct 24 12:20:58 2021
+// Written by: Map P.20131013 on Thu Oct 28 13:54:08 2021
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "3.3";
-COMP "TX" LOCATE = SITE "P27" LEVEL 1;
+COMP "TX" LOCATE = SITE "P134" LEVEL 1;
 COMP "CLK" LOCATE = SITE "P129" LEVEL 1;
 COMP "SDA" LOCATE = SITE "P19" LEVEL 1;
 COMP "SCL" LOCATE = SITE "P21" LEVEL 1;

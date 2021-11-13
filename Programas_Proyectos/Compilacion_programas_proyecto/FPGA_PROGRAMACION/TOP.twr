@@ -36,259 +36,139 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 Timing constraint: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 18625 paths analyzed, 1263 endpoints analyzed, 0 failing endpoints
+ 18507 paths analyzed, 1254 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.395ns.
+ Minimum period is   8.478ns.
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_control_i2c/cargador_1_6 (SLICE_X4Y27.CE), 22 paths
+Paths for end point Inst_control_i2c/cargador_1_4 (SLICE_X9Y17.CE), 22 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     74.938ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     74.855ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_control_i2c/estado_FSM_FFd17 (FF)
-  Destination:          Inst_control_i2c/cargador_1_6 (FF)
+  Destination:          Inst_control_i2c/cargador_1_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      8.306ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.089ns (0.451 - 0.540)
+  Data Path Delay:      8.314ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.164ns (0.409 - 0.573)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd17 to Inst_control_i2c/cargador_1_6
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd17 to Inst_control_i2c/cargador_1_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y27.YQ      Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X21Y3.YQ       Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
                                                        Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.G4      net (fanout=14)       1.106   Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
+    SLICE_X18Y6.G4       net (fanout=14)       1.114   Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X18Y6.Y        Tilo                  0.616   N16
                                                        Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X18Y6.F4       net (fanout=1)        0.035   Inst_control_i2c/pas_scl_mux00002132/O
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X4Y26.G2       net (fanout=8)        0.878   N21
-    SLICE_X4Y26.Y        Tilo                  0.616   Inst_control_i2c/cargador_1_0_not0001
-                                                       Inst_control_i2c/cargador_1_6_not00011
-    SLICE_X4Y27.CE       net (fanout=1)        1.179   Inst_control_i2c/cargador_1_6_not0001
-    SLICE_X4Y27.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<6>
-                                                       Inst_control_i2c/cargador_1_6
+    SLICE_X9Y16.G4       net (fanout=8)        1.340   N21
+    SLICE_X9Y16.Y        Tilo                  0.561   Inst_control_i2c/cargador_1_5_not0001
+                                                       Inst_control_i2c/cargador_1_4_not00011
+    SLICE_X9Y17.CE       net (fanout=1)        1.105   Inst_control_i2c/cargador_1_4_not0001
+    SLICE_X9Y17.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<4>
+                                                       Inst_control_i2c/cargador_1_4
     -------------------------------------------------  ---------------------------
-    Total                                      8.306ns (3.689ns logic, 4.617ns route)
+    Total                                      8.314ns (3.689ns logic, 4.625ns route)
                                                        (44.4% logic, 55.6% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     75.102ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     75.010ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_control_i2c/estado_FSM_FFd9 (FF)
-  Destination:          Inst_control_i2c/cargador_1_6 (FF)
+  Destination:          Inst_control_i2c/cargador_1_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      8.101ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.130ns (0.451 - 0.581)
+  Data Path Delay:      8.152ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.171ns (0.409 - 0.580)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd9 to Inst_control_i2c/cargador_1_6
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd9 to Inst_control_i2c/cargador_1_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y28.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y5.XQ       Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
                                                        Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.G2      net (fanout=14)       0.865   Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.Y       Tilo                  0.561   N24
+    SLICE_X18Y7.G2       net (fanout=14)       0.969   Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
                                                        Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.F1      net (fanout=1)        0.115   Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X4Y26.G2       net (fanout=8)        0.878   N21
-    SLICE_X4Y26.Y        Tilo                  0.616   Inst_control_i2c/cargador_1_0_not0001
-                                                       Inst_control_i2c/cargador_1_6_not00011
-    SLICE_X4Y27.CE       net (fanout=1)        1.179   Inst_control_i2c/cargador_1_6_not0001
-    SLICE_X4Y27.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<6>
-                                                       Inst_control_i2c/cargador_1_6
+    SLICE_X9Y16.G4       net (fanout=8)        1.340   N21
+    SLICE_X9Y16.Y        Tilo                  0.561   Inst_control_i2c/cargador_1_5_not0001
+                                                       Inst_control_i2c/cargador_1_4_not00011
+    SLICE_X9Y17.CE       net (fanout=1)        1.105   Inst_control_i2c/cargador_1_4_not0001
+    SLICE_X9Y17.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<4>
+                                                       Inst_control_i2c/cargador_1_4
     -------------------------------------------------  ---------------------------
-    Total                                      8.101ns (3.631ns logic, 4.470ns route)
-                                                       (44.8% logic, 55.2% route)
+    Total                                      8.152ns (3.686ns logic, 4.466ns route)
+                                                       (45.2% logic, 54.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     75.265ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_control_i2c/estado_FSM_FFd4 (FF)
-  Destination:          Inst_control_i2c/cargador_1_6 (FF)
+Slack (setup path):     75.250ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_i2c/estado_FSM_FFd8 (FF)
+  Destination:          Inst_control_i2c/cargador_1_4 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.957ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.111ns (0.451 - 0.562)
+  Data Path Delay:      7.943ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.140ns (0.409 - 0.549)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd4 to Inst_control_i2c/cargador_1_6
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd8 to Inst_control_i2c/cargador_1_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y25.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd4
-                                                       Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.G1      net (fanout=9)        0.760   Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
-                                                       Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
-                                                       Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
-                                                       Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
-                                                       Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X4Y26.G2       net (fanout=8)        0.878   N21
-    SLICE_X4Y26.Y        Tilo                  0.616   Inst_control_i2c/cargador_1_0_not0001
-                                                       Inst_control_i2c/cargador_1_6_not00011
-    SLICE_X4Y27.CE       net (fanout=1)        1.179   Inst_control_i2c/cargador_1_6_not0001
-    SLICE_X4Y27.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<6>
-                                                       Inst_control_i2c/cargador_1_6
-    -------------------------------------------------  ---------------------------
-    Total                                      7.957ns (3.686ns logic, 4.271ns route)
-                                                       (46.3% logic, 53.7% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_control_i2c/cargador_1_1 (SLICE_X11Y20.CE), 22 paths
---------------------------------------------------------------------------------
-Slack (setup path):     75.440ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_control_i2c/estado_FSM_FFd17 (FF)
-  Destination:          Inst_control_i2c/cargador_1_1 (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      7.780ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.113ns (0.427 - 0.540)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd17 to Inst_control_i2c/cargador_1_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X21Y27.YQ      Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
-                                                       Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.G4      net (fanout=14)       1.106   Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
-                                                       Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
-                                                       Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
-                                                       Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
-                                                       Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X17Y18.F2      net (fanout=8)        0.701   N21
-    SLICE_X17Y18.X       Tilo                  0.562   Inst_control_i2c/cargador_1_1_not0001
-                                                       Inst_control_i2c/cargador_1_1_not00011
-    SLICE_X11Y20.CE      net (fanout=1)        0.884   Inst_control_i2c/cargador_1_1_not0001
-    SLICE_X11Y20.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<1>
-                                                       Inst_control_i2c/cargador_1_1
-    -------------------------------------------------  ---------------------------
-    Total                                      7.780ns (3.635ns logic, 4.145ns route)
-                                                       (46.7% logic, 53.3% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     75.604ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_control_i2c/estado_FSM_FFd9 (FF)
-  Destination:          Inst_control_i2c/cargador_1_1 (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      7.575ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.154ns (0.427 - 0.581)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd9 to Inst_control_i2c/cargador_1_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X16Y28.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
-                                                       Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.G2      net (fanout=14)       0.865   Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.Y       Tilo                  0.561   N24
+    SLICE_X21Y9.XQ       Tcko                  0.495   Inst_control_i2c/estado_FSM_FFd8
+                                                       Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.G1       net (fanout=5)        0.786   Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
                                                        Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.F1      net (fanout=1)        0.115   Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X17Y18.F2      net (fanout=8)        0.701   N21
-    SLICE_X17Y18.X       Tilo                  0.562   Inst_control_i2c/cargador_1_1_not0001
-                                                       Inst_control_i2c/cargador_1_1_not00011
-    SLICE_X11Y20.CE      net (fanout=1)        0.884   Inst_control_i2c/cargador_1_1_not0001
-    SLICE_X11Y20.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<1>
-                                                       Inst_control_i2c/cargador_1_1
+    SLICE_X9Y16.G4       net (fanout=8)        1.340   N21
+    SLICE_X9Y16.Y        Tilo                  0.561   Inst_control_i2c/cargador_1_5_not0001
+                                                       Inst_control_i2c/cargador_1_4_not00011
+    SLICE_X9Y17.CE       net (fanout=1)        1.105   Inst_control_i2c/cargador_1_4_not0001
+    SLICE_X9Y17.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<4>
+                                                       Inst_control_i2c/cargador_1_4
     -------------------------------------------------  ---------------------------
-    Total                                      7.575ns (3.577ns logic, 3.998ns route)
-                                                       (47.2% logic, 52.8% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     75.767ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_control_i2c/estado_FSM_FFd4 (FF)
-  Destination:          Inst_control_i2c/cargador_1_1 (FF)
-  Requirement:          83.333ns
-  Data Path Delay:      7.431ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.135ns (0.427 - 0.562)
-  Source Clock:         CLK_BUFGP rising at 0.000ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd4 to Inst_control_i2c/cargador_1_1
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X16Y25.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd4
-                                                       Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.G1      net (fanout=9)        0.760   Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
-                                                       Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
-                                                       Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
-                                                       Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
-                                                       Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X17Y18.F2      net (fanout=8)        0.701   N21
-    SLICE_X17Y18.X       Tilo                  0.562   Inst_control_i2c/cargador_1_1_not0001
-                                                       Inst_control_i2c/cargador_1_1_not00011
-    SLICE_X11Y20.CE      net (fanout=1)        0.884   Inst_control_i2c/cargador_1_1_not0001
-    SLICE_X11Y20.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<1>
-                                                       Inst_control_i2c/cargador_1_1
-    -------------------------------------------------  ---------------------------
-    Total                                      7.431ns (3.632ns logic, 3.799ns route)
-                                                       (48.9% logic, 51.1% route)
+    Total                                      7.943ns (3.660ns logic, 4.283ns route)
+                                                       (46.1% logic, 53.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_control_i2c/cargador_1_3 (SLICE_X8Y23.CE), 22 paths
+Paths for end point Inst_control_i2c/cargador_1_3 (SLICE_X15Y16.CE), 22 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     75.466ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     75.251ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_control_i2c/estado_FSM_FFd17 (FF)
   Destination:          Inst_control_i2c/cargador_1_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.765ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.102ns (0.438 - 0.540)
+  Data Path Delay:      7.904ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.178ns (0.395 - 0.573)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
@@ -297,37 +177,37 @@ Slack (setup path):     75.466ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X21Y27.YQ      Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X21Y3.YQ       Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
                                                        Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.G4      net (fanout=14)       1.106   Inst_control_i2c/estado_FSM_FFd17
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
+    SLICE_X18Y6.G4       net (fanout=14)       1.114   Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X18Y6.Y        Tilo                  0.616   N16
                                                        Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X18Y6.F4       net (fanout=1)        0.035   Inst_control_i2c/pas_scl_mux00002132/O
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X9Y22.F2       net (fanout=8)        0.393   N21
-    SLICE_X9Y22.X        Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y17.F2      net (fanout=8)        0.924   N21
+    SLICE_X15Y17.X       Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
                                                        Inst_control_i2c/cargador_1_3_not00011
-    SLICE_X8Y23.CE       net (fanout=1)        1.177   Inst_control_i2c/cargador_1_3_not0001
-    SLICE_X8Y23.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<3>
+    SLICE_X15Y16.CE      net (fanout=1)        1.110   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y16.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<3>
                                                        Inst_control_i2c/cargador_1_3
     -------------------------------------------------  ---------------------------
-    Total                                      7.765ns (3.635ns logic, 4.130ns route)
-                                                       (46.8% logic, 53.2% route)
+    Total                                      7.904ns (3.690ns logic, 4.214ns route)
+                                                       (46.7% logic, 53.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     75.630ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     75.406ns (requirement - (data path - clock path skew + uncertainty))
   Source:               Inst_control_i2c/estado_FSM_FFd9 (FF)
   Destination:          Inst_control_i2c/cargador_1_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.560ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.143ns (0.438 - 0.581)
+  Data Path Delay:      7.742ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.185ns (0.395 - 0.580)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
@@ -336,136 +216,229 @@ Slack (setup path):     75.630ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y28.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y5.XQ       Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
                                                        Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.G2      net (fanout=14)       0.865   Inst_control_i2c/estado_FSM_FFd9
-    SLICE_X19Y21.Y       Tilo                  0.561   N24
+    SLICE_X18Y7.G2       net (fanout=14)       0.969   Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
                                                        Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.F1      net (fanout=1)        0.115   Inst_control_i2c/pas_scl_mux0000218
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X9Y22.F2       net (fanout=8)        0.393   N21
-    SLICE_X9Y22.X        Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y17.F2      net (fanout=8)        0.924   N21
+    SLICE_X15Y17.X       Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
                                                        Inst_control_i2c/cargador_1_3_not00011
-    SLICE_X8Y23.CE       net (fanout=1)        1.177   Inst_control_i2c/cargador_1_3_not0001
-    SLICE_X8Y23.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<3>
+    SLICE_X15Y16.CE      net (fanout=1)        1.110   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y16.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<3>
                                                        Inst_control_i2c/cargador_1_3
     -------------------------------------------------  ---------------------------
-    Total                                      7.560ns (3.577ns logic, 3.983ns route)
-                                                       (47.3% logic, 52.7% route)
+    Total                                      7.742ns (3.687ns logic, 4.055ns route)
+                                                       (47.6% logic, 52.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     75.793ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               Inst_control_i2c/estado_FSM_FFd4 (FF)
+Slack (setup path):     75.646ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_i2c/estado_FSM_FFd8 (FF)
   Destination:          Inst_control_i2c/cargador_1_3 (FF)
   Requirement:          83.333ns
-  Data Path Delay:      7.416ns (Levels of Logic = 5)
-  Clock Path Skew:      -0.124ns (0.438 - 0.562)
+  Data Path Delay:      7.533ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.154ns (0.395 - 0.549)
   Source Clock:         CLK_BUFGP rising at 0.000ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd4 to Inst_control_i2c/cargador_1_3
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd8 to Inst_control_i2c/cargador_1_3
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X16Y25.XQ      Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd4
-                                                       Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.G1      net (fanout=9)        0.760   Inst_control_i2c/estado_FSM_FFd4
-    SLICE_X18Y21.Y       Tilo                  0.616   N16
-                                                       Inst_control_i2c/pas_scl_mux00002132
-    SLICE_X18Y21.F3      net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux00002132/O
-    SLICE_X18Y21.X       Tilo                  0.601   N16
+    SLICE_X21Y9.XQ       Tcko                  0.495   Inst_control_i2c/estado_FSM_FFd8
+                                                       Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.G1       net (fanout=5)        0.786   Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
+                                                       Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
                                                        Inst_control_i2c/pas_scl_mux00002134
-    SLICE_X16Y20.G2      net (fanout=3)        0.629   N16
-    SLICE_X16Y20.Y       Tilo                  0.616   N20
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
                                                        Inst_control_i2c/cargador_1_0_not0001137
-    SLICE_X13Y22.G1      net (fanout=4)        0.804   N14
-    SLICE_X13Y22.Y       Tilo                  0.561   Inst_control_i2c/cargador_1_7_not0001
+    SLICE_X16Y14.G1      net (fanout=4)        0.465   N14
+    SLICE_X16Y14.Y       Tilo                  0.616   Inst_control_i2c/cargador_1_7_not0001
                                                        Inst_control_i2c/cargador_1_0_not000131
-    SLICE_X9Y22.F2       net (fanout=8)        0.393   N21
-    SLICE_X9Y22.X        Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y17.F2      net (fanout=8)        0.924   N21
+    SLICE_X15Y17.X       Tilo                  0.562   Inst_control_i2c/cargador_1_3_not0001
                                                        Inst_control_i2c/cargador_1_3_not00011
-    SLICE_X8Y23.CE       net (fanout=1)        1.177   Inst_control_i2c/cargador_1_3_not0001
-    SLICE_X8Y23.CLK      Tceck                 0.155   Inst_control_i2c/cargador_1<3>
+    SLICE_X15Y16.CE      net (fanout=1)        1.110   Inst_control_i2c/cargador_1_3_not0001
+    SLICE_X15Y16.CLK     Tceck                 0.155   Inst_control_i2c/cargador_1<3>
                                                        Inst_control_i2c/cargador_1_3
     -------------------------------------------------  ---------------------------
-    Total                                      7.416ns (3.632ns logic, 3.784ns route)
-                                                       (49.0% logic, 51.0% route)
+    Total                                      7.533ns (3.661ns logic, 3.872ns route)
+                                                       (48.6% logic, 51.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_control_i2c/cargador_2_0 (SLICE_X16Y18.CE), 22 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     75.252ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_i2c/estado_FSM_FFd17 (FF)
+  Destination:          Inst_control_i2c/cargador_2_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.977ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.104ns (0.242 - 0.346)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd17 to Inst_control_i2c/cargador_2_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y3.YQ       Tcko                  0.524   Inst_control_i2c/estado_FSM_FFd17
+                                                       Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X18Y6.G4       net (fanout=14)       1.114   Inst_control_i2c/estado_FSM_FFd17
+    SLICE_X18Y6.Y        Tilo                  0.616   N16
+                                                       Inst_control_i2c/pas_scl_mux00002132
+    SLICE_X18Y6.F4       net (fanout=1)        0.035   Inst_control_i2c/pas_scl_mux00002132/O
+    SLICE_X18Y6.X        Tilo                  0.601   N16
+                                                       Inst_control_i2c/pas_scl_mux00002134
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
+                                                       Inst_control_i2c/cargador_1_0_not0001137
+    SLICE_X17Y15.G4      net (fanout=4)        0.368   N14
+    SLICE_X17Y15.Y       Tilo                  0.561   Inst_control_i2c/cargador_2_7_not0001
+                                                       Inst_control_i2c/cargador_2_0_not000111
+    SLICE_X13Y15.F2      net (fanout=8)        0.718   N19
+    SLICE_X13Y15.X       Tilo                  0.562   Inst_control_i2c/cargador_2_0_not0001
+                                                       Inst_control_i2c/cargador_2_0_not00011
+    SLICE_X16Y18.CE      net (fanout=1)        1.541   Inst_control_i2c/cargador_2_0_not0001
+    SLICE_X16Y18.CLK     Tceck                 0.155   Inst_control_i2c/cargador_2<0>
+                                                       Inst_control_i2c/cargador_2_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.977ns (3.635ns logic, 4.342ns route)
+                                                       (45.6% logic, 54.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.407ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_i2c/estado_FSM_FFd9 (FF)
+  Destination:          Inst_control_i2c/cargador_2_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.815ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.111ns (0.242 - 0.353)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd9 to Inst_control_i2c/cargador_2_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y5.XQ       Tcko                  0.521   Inst_control_i2c/estado_FSM_FFd9
+                                                       Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y7.G2       net (fanout=14)       0.969   Inst_control_i2c/estado_FSM_FFd9
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
+                                                       Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
+                                                       Inst_control_i2c/pas_scl_mux00002134
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
+                                                       Inst_control_i2c/cargador_1_0_not0001137
+    SLICE_X17Y15.G4      net (fanout=4)        0.368   N14
+    SLICE_X17Y15.Y       Tilo                  0.561   Inst_control_i2c/cargador_2_7_not0001
+                                                       Inst_control_i2c/cargador_2_0_not000111
+    SLICE_X13Y15.F2      net (fanout=8)        0.718   N19
+    SLICE_X13Y15.X       Tilo                  0.562   Inst_control_i2c/cargador_2_0_not0001
+                                                       Inst_control_i2c/cargador_2_0_not00011
+    SLICE_X16Y18.CE      net (fanout=1)        1.541   Inst_control_i2c/cargador_2_0_not0001
+    SLICE_X16Y18.CLK     Tceck                 0.155   Inst_control_i2c/cargador_2<0>
+                                                       Inst_control_i2c/cargador_2_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.815ns (3.632ns logic, 4.183ns route)
+                                                       (46.5% logic, 53.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     75.647ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_control_i2c/estado_FSM_FFd8 (FF)
+  Destination:          Inst_control_i2c/cargador_2_0 (FF)
+  Requirement:          83.333ns
+  Data Path Delay:      7.606ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.080ns (0.242 - 0.322)
+  Source Clock:         CLK_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_control_i2c/estado_FSM_FFd8 to Inst_control_i2c/cargador_2_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y9.XQ       Tcko                  0.495   Inst_control_i2c/estado_FSM_FFd8
+                                                       Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.G1       net (fanout=5)        0.786   Inst_control_i2c/estado_FSM_FFd8
+    SLICE_X18Y7.Y        Tilo                  0.616   N32
+                                                       Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.F3       net (fanout=1)        0.021   Inst_control_i2c/pas_scl_mux0000218
+    SLICE_X18Y6.X        Tilo                  0.601   N16
+                                                       Inst_control_i2c/pas_scl_mux00002134
+    SLICE_X16Y13.G4      net (fanout=3)        0.566   N16
+    SLICE_X16Y13.Y       Tilo                  0.616   N20
+                                                       Inst_control_i2c/cargador_1_0_not0001137
+    SLICE_X17Y15.G4      net (fanout=4)        0.368   N14
+    SLICE_X17Y15.Y       Tilo                  0.561   Inst_control_i2c/cargador_2_7_not0001
+                                                       Inst_control_i2c/cargador_2_0_not000111
+    SLICE_X13Y15.F2      net (fanout=8)        0.718   N19
+    SLICE_X13Y15.X       Tilo                  0.562   Inst_control_i2c/cargador_2_0_not0001
+                                                       Inst_control_i2c/cargador_2_0_not00011
+    SLICE_X16Y18.CE      net (fanout=1)        1.541   Inst_control_i2c/cargador_2_0_not0001
+    SLICE_X16Y18.CLK     Tceck                 0.155   Inst_control_i2c/cargador_2<0>
+                                                       Inst_control_i2c/cargador_2_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.606ns (3.606ns logic, 4.000ns route)
+                                                       (47.4% logic, 52.6% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: NET "CLK_BUFGP/IBUFG" PERIOD = 83.3333333 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E (SLICE_X10Y10.BX), 1 path
+Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_7/SRL16E (SLICE_X4Y24.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.561ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_control_ultrasonico_1/dato_5 (FF)
-  Destination:          Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E (FF)
+Slack (hold path):      0.510ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_ultrasonico_1/dato_7 (FF)
+  Destination:          Inst_moduloAudio/Mshreg_contador_distancia_7/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.559ns (Levels of Logic = 1)
-  Clock Path Skew:      -0.002ns (0.032 - 0.034)
+  Data Path Delay:      0.595ns (Levels of Logic = 1)
+  Clock Path Skew:      0.085ns (0.327 - 0.242)
   Source Clock:         CLK_BUFGP rising at 83.333ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: Inst_control_ultrasonico_1/dato_5 to Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E
+  Minimum Data Path: Inst_control_ultrasonico_1/dato_7 to Inst_moduloAudio/Mshreg_contador_distancia_7/SRL16E
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y9.XQ       Tcko                  0.396   Inst_control_ultrasonico_1/dato<5>
-                                                       Inst_control_ultrasonico_1/dato_5
-    SLICE_X10Y10.BX      net (fanout=2)        0.315   Inst_control_ultrasonico_1/dato<5>
-    SLICE_X10Y10.CLK     Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<5>
-                                                       Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E
+    SLICE_X6Y22.XQ       Tcko                  0.417   Inst_control_ultrasonico_1/dato<7>
+                                                       Inst_control_ultrasonico_1/dato_7
+    SLICE_X4Y24.BX       net (fanout=2)        0.330   Inst_control_ultrasonico_1/dato<7>
+    SLICE_X4Y24.CLK      Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<7>
+                                                       Inst_moduloAudio/Mshreg_contador_distancia_7/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      0.559ns (0.244ns logic, 0.315ns route)
-                                                       (43.6% logic, 56.4% route)
+    Total                                      0.595ns (0.265ns logic, 0.330ns route)
+                                                       (44.5% logic, 55.5% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_3/SRL16E (SLICE_X8Y12.BX), 1 path
+Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_1/SRL16E (SLICE_X8Y22.BX), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.579ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               Inst_control_ultrasonico_1/dato_3 (FF)
-  Destination:          Inst_moduloAudio/Mshreg_contador_distancia_3/SRL16E (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.582ns (Levels of Logic = 1)
-  Clock Path Skew:      0.003ns (0.018 - 0.015)
-  Source Clock:         CLK_BUFGP rising at 83.333ns
-  Destination Clock:    CLK_BUFGP rising at 83.333ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path: Inst_control_ultrasonico_1/dato_3 to Inst_moduloAudio/Mshreg_contador_distancia_3/SRL16E
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X8Y13.XQ       Tcko                  0.417   Inst_control_ultrasonico_1/dato<3>
-                                                       Inst_control_ultrasonico_1/dato_3
-    SLICE_X8Y12.BX       net (fanout=2)        0.317   Inst_control_ultrasonico_1/dato<3>
-    SLICE_X8Y12.CLK      Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<3>
-                                                       Inst_moduloAudio/Mshreg_contador_distancia_3/SRL16E
-    -------------------------------------------------  ---------------------------
-    Total                                      0.582ns (0.265ns logic, 0.317ns route)
-                                                       (45.5% logic, 54.5% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_1/SRL16E (SLICE_X10Y14.BX), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.583ns (requirement - (clock path skew + uncertainty - data path))
+Slack (hold path):      0.537ns (requirement - (clock path skew + uncertainty - data path))
   Source:               Inst_control_ultrasonico_1/dato_1 (FF)
   Destination:          Inst_moduloAudio/Mshreg_contador_distancia_1/SRL16E (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.573ns (Levels of Logic = 1)
-  Clock Path Skew:      -0.010ns (0.007 - 0.017)
+  Data Path Delay:      0.569ns (Levels of Logic = 1)
+  Clock Path Skew:      0.032ns (0.274 - 0.242)
   Source Clock:         CLK_BUFGP rising at 83.333ns
   Destination Clock:    CLK_BUFGP rising at 83.333ns
   Clock Uncertainty:    0.000ns
@@ -474,14 +447,41 @@ Slack (hold path):      0.583ns (requirement - (clock path skew + uncertainty - 
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X11Y12.XQ      Tcko                  0.396   Inst_control_ultrasonico_1/dato<1>
+    SLICE_X11Y22.XQ      Tcko                  0.396   Inst_control_ultrasonico_1/dato<1>
                                                        Inst_control_ultrasonico_1/dato_1
-    SLICE_X10Y14.BX      net (fanout=2)        0.329   Inst_control_ultrasonico_1/dato<1>
-    SLICE_X10Y14.CLK     Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<1>
+    SLICE_X8Y22.BX       net (fanout=2)        0.325   Inst_control_ultrasonico_1/dato<1>
+    SLICE_X8Y22.CLK      Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<1>
                                                        Inst_moduloAudio/Mshreg_contador_distancia_1/SRL16E
     -------------------------------------------------  ---------------------------
-    Total                                      0.573ns (0.244ns logic, 0.329ns route)
-                                                       (42.6% logic, 57.4% route)
+    Total                                      0.569ns (0.244ns logic, 0.325ns route)
+                                                       (42.9% logic, 57.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E (SLICE_X8Y21.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.541ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_control_ultrasonico_1/dato_5 (FF)
+  Destination:          Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.541ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_BUFGP rising at 83.333ns
+  Destination Clock:    CLK_BUFGP rising at 83.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_control_ultrasonico_1/dato_5 to Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y23.XQ       Tcko                  0.396   Inst_control_ultrasonico_1/dato<5>
+                                                       Inst_control_ultrasonico_1/dato_5
+    SLICE_X8Y21.BX       net (fanout=2)        0.297   Inst_control_ultrasonico_1/dato<5>
+    SLICE_X8Y21.CLK      Tdh         (-Th)     0.152   Inst_moduloAudio/contador_distancia<5>
+                                                       Inst_moduloAudio/Mshreg_contador_distancia_5/SRL16E
+    -------------------------------------------------  ---------------------------
+    Total                                      0.541ns (0.244ns logic, 0.297ns route)
+                                                       (45.1% logic, 54.9% route)
 
 --------------------------------------------------------------------------------
 
@@ -493,7 +493,7 @@ Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.664ns (Tcl)
   Physical resource: Inst_transmiso_tx/select_senal<0>/CLK
   Logical resource: Inst_transmiso_tx/select_senal_0/CK
-  Location pin: SLICE_X16Y9.CLK
+  Location pin: SLICE_X16Y27.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
@@ -502,16 +502,16 @@ Slack: 82.005ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.664ns (Tch)
   Physical resource: Inst_transmiso_tx/select_senal<0>/CLK
   Logical resource: Inst_transmiso_tx/select_senal_0/CK
-  Location pin: SLICE_X16Y9.CLK
+  Location pin: SLICE_X16Y27.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 Slack: 82.005ns (period - (min low pulse limit / (low pulse / period)))
   Period: 83.333ns
   Low pulse: 41.666ns
   Low pulse limit: 0.664ns (Tcl)
-  Physical resource: Inst_transmiso_tx/conteo<6>/CLK
-  Logical resource: Inst_transmiso_tx/conteo_6/CK
-  Location pin: SLICE_X22Y4.CLK
+  Physical resource: Inst_transmiso_tx/select_senal<1>/CLK
+  Logical resource: Inst_transmiso_tx/select_senal_1/CK
+  Location pin: SLICE_X16Y26.CLK
   Clock network: CLK_BUFGP
 --------------------------------------------------------------------------------
 
@@ -528,7 +528,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    8.395|         |         |         |
+CLK            |    8.478|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -537,16 +537,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 18625 paths, 0 nets, and 2857 connections
+Constraints cover 18507 paths, 0 nets, and 2873 connections
 
 Design statistics:
-   Minimum period:   8.395ns{1}   (Maximum frequency: 119.119MHz)
+   Minimum period:   8.478ns{1}   (Maximum frequency: 117.952MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Sun Oct 24 12:21:11 2021 
+Analysis completed Thu Oct 28 13:54:24 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

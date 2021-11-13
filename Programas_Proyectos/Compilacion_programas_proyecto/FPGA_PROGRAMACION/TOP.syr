@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: TOP.prj
 
@@ -107,14 +107,14 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_ultrasonico.vhd" in Library work.
 Architecture behavioral of Entity control_ultrasonico is up to date.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd" in Library work.
-Architecture behavioral of Entity moduloaudio is up to date.
+Entity <moduloaudio> compiled.
+Entity <moduloaudio> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/control_i2c.vhd" in Library work.
 Architecture behavioral of Entity control_i2c is up to date.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/transmiso_tx.vhd" in Library work.
 Architecture behavioral of Entity transmiso_tx is up to date.
 Compiling vhdl file "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/TOP.vhd" in Library work.
-Entity <top> compiled.
-Entity <top> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity top is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -130,7 +130,7 @@ Analyzing hierarchy for entity <control_ultrasonico> in library <work> (architec
 	t_trigg = 120
 
 Analyzing hierarchy for entity <moduloAudio> in library <work> (architecture <behavioral>) with generics.
-	clk12 = 6000000
+	clk12 = 120000
 	m100 = 100
 	m150 = 150
 	m200 = 200
@@ -171,7 +171,7 @@ Analyzing generic Entity <control_ultrasonico> in library <work> (Architecture <
 Entity <control_ultrasonico> analyzed. Unit <control_ultrasonico> generated.
 
 Analyzing generic Entity <moduloAudio> in library <work> (Architecture <behavioral>).
-	clk12 = 6000000
+	clk12 = 120000
 	m100 = 100
 	m150 = 150
 	m200 = 200
@@ -242,24 +242,30 @@ Synthesizing Unit <moduloAudio>.
     Related source file is "C:/Lb_E6/Programas_Proyectos/Compilacion_programas_proyecto/FPGA_PROGRAMACION/moduloAudio.vhd".
     Found 1-bit register for signal <salida_alarma>.
     Found 1-bit register for signal <clk_div>.
-    Found 23-bit up counter for signal <contador_clk_div>.
+    Found 17-bit up counter for signal <contador_clk_div>.
     Found 8-bit register for signal <contador_distancia>.
     Found 8-bit register for signal <dist>.
-    Found 4-bit comparator lessequal for signal <salida_alarma$cmp_le0000> created at line 64.
-    Found 3-bit register for signal <t_bajo>.
-    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0000> created at line 32.
-    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0001> created at line 34.
-    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0002> created at line 37.
-    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0003> created at line 40.
-    Found 8-bit comparator less for signal <t_bajo$cmp_lt0000> created at line 32.
-    Found 8-bit comparator less for signal <t_bajo$cmp_lt0001> created at line 34.
-    Found 8-bit comparator less for signal <t_bajo$cmp_lt0002> created at line 37.
-    Found 8-bit comparator less for signal <t_bajo$cmp_lt0003> created at line 40.
-    Found 4-bit up counter for signal <t_bajocnt>.
+    Found 7-bit comparator lessequal for signal <salida_alarma$cmp_le0000> created at line 69.
+    Found 7-bit comparator lessequal for signal <salida_alarma$cmp_le0001> created at line 67.
+    Found 4-bit register for signal <t_alto>.
+    Found 7-bit up counter for signal <t_altocnt>.
+    Found 6-bit register for signal <t_bajo>.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0000> created at line 35.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0001> created at line 37.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0002> created at line 40.
+    Found 8-bit comparator greater for signal <t_bajo$cmp_gt0003> created at line 43.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0000> created at line 35.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0001> created at line 37.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0002> created at line 40.
+    Found 8-bit comparator less for signal <t_bajo$cmp_lt0003> created at line 43.
+    Found 7-bit register for signal <t_bajocnt>.
+    Found 7-bit adder for signal <t_bajocnt$addsub0000> created at line 69.
+    Found 7-bit comparator greater for signal <t_bajocnt$cmp_gt0000> created at line 67.
     Summary:
 	inferred   2 Counter(s).
-	inferred  21 D-type flip-flop(s).
-	inferred   9 Comparator(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
 Unit <moduloAudio> synthesized.
 
 
@@ -382,39 +388,42 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  8x2-bit ROM                                           : 1
-# Adders/Subtractors                                   : 12
+# Adders/Subtractors                                   : 13
  14-bit adder                                          : 1
  17-bit adder                                          : 1
  25-bit adder                                          : 2
  25-bit addsub                                         : 2
  3-bit adder                                           : 2
  5-bit adder                                           : 1
- 7-bit adder                                           : 1
+ 7-bit adder                                           : 2
  8-bit adder                                           : 2
 # Counters                                             : 4
- 23-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 71
+ 7-bit up counter                                      : 1
+# Registers                                            : 73
  1-bit register                                        : 42
  14-bit register                                       : 1
  17-bit register                                       : 1
  25-bit register                                       : 4
- 3-bit register                                        : 3
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
  5-bit register                                        : 1
- 7-bit register                                        : 1
+ 6-bit register                                        : 1
+ 7-bit register                                        : 2
  8-bit register                                        : 18
-# Comparators                                          : 24
+# Comparators                                          : 26
  14-bit comparator less                                : 1
  17-bit comparator less                                : 1
  25-bit comparator greater                             : 2
  25-bit comparator less                                : 4
  3-bit comparator less                                 : 2
- 4-bit comparator lessequal                            : 1
  5-bit comparator less                                 : 1
  6-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
  7-bit comparator less                                 : 1
+ 7-bit comparator lessequal                            : 2
  8-bit comparator greater                              : 4
  8-bit comparator less                                 : 6
 # Multiplexers                                         : 2
@@ -485,6 +494,7 @@ Optimizing FSM <Inst_control_ultrasonico_2/estado/FSM> on signal <estado[1:3]> w
  calculo | 110
  envio   | 111
 ---------------------
+INFO:Xst:2261 - The FF/Latch <t_bajo_5> in Unit <Inst_moduloAudio> is equivalent to the following FF/Latch, which will be removed : <t_alto_3> 
 WARNING:Xst:1426 - The value init of the FF/Latch cargador_regis_6 hinder the constant cleaning in the block Inst_control_i2c.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch cargador_regis_7 hinder the constant cleaning in the block Inst_control_i2c.
@@ -502,32 +512,33 @@ Macro Statistics
 # FSMs                                                 : 4
 # ROMs                                                 : 1
  8x2-bit ROM                                           : 1
-# Adders/Subtractors                                   : 12
+# Adders/Subtractors                                   : 13
  14-bit adder                                          : 1
  17-bit adder                                          : 1
  25-bit adder                                          : 2
  25-bit addsub                                         : 2
  3-bit adder                                           : 2
  5-bit adder                                           : 1
- 7-bit adder                                           : 1
+ 7-bit adder                                           : 2
  8-bit adder                                           : 2
 # Counters                                             : 4
- 23-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
  3-bit up counter                                      : 1
- 4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 338
- Flip-Flops                                            : 338
-# Comparators                                          : 24
+ 7-bit up counter                                      : 1
+# Registers                                            : 352
+ Flip-Flops                                            : 352
+# Comparators                                          : 26
  14-bit comparator less                                : 1
  17-bit comparator less                                : 1
  25-bit comparator greater                             : 2
  25-bit comparator less                                : 4
  3-bit comparator less                                 : 2
- 4-bit comparator lessequal                            : 1
  5-bit comparator less                                 : 1
  6-bit comparator less                                 : 1
+ 7-bit comparator greater                              : 1
  7-bit comparator less                                 : 1
+ 7-bit comparator lessequal                            : 2
  8-bit comparator greater                              : 4
  8-bit comparator less                                 : 6
 # Multiplexers                                         : 2
@@ -539,6 +550,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <t_bajo_5> in Unit <moduloAudio> is equivalent to the following FF/Latch, which will be removed : <t_alto_3> 
 WARNING:Xst:1426 - The value init of the FF/Latch Inst_control_i2c/cargador_regis_6 hinder the constant cleaning in the block TOP.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch Inst_control_i2c/cargador_regis_7 hinder the constant cleaning in the block TOP.
@@ -557,7 +569,7 @@ Optimizing unit <transmiso_tx> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 59.
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 61.
 FlipFlop Inst_control_i2c/pas_scl has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -577,8 +589,8 @@ Unit <TOP> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 384
- Flip-Flops                                            : 384
+# Registers                                            : 394
+ Flip-Flops                                            : 394
 # Shift Registers                                      : 8
  2-bit shift register                                  : 8
 
@@ -609,31 +621,31 @@ Design Statistics
 # IOs                              : 10
 
 Cell Usage :
-# BELS                             : 1121
+# BELS                             : 1140
 #      GND                         : 1
-#      INV                         : 17
-#      LUT1                        : 114
-#      LUT2                        : 35
+#      INV                         : 19
+#      LUT1                        : 108
+#      LUT2                        : 47
 #      LUT2_D                      : 3
 #      LUT2_L                      : 5
 #      LUT3                        : 99
-#      LUT3_D                      : 12
-#      LUT3_L                      : 4
-#      LUT4                        : 389
-#      LUT4_D                      : 18
-#      LUT4_L                      : 18
-#      MUXCY                       : 204
-#      MUXF5                       : 39
+#      LUT3_D                      : 13
+#      LUT3_L                      : 5
+#      LUT4                        : 403
+#      LUT4_D                      : 17
+#      LUT4_L                      : 19
+#      MUXCY                       : 209
+#      MUXF5                       : 35
 #      MUXF6                       : 8
 #      VCC                         : 1
-#      XORCY                       : 154
-# FlipFlops/Latches                : 392
-#      FD                          : 189
-#      FDE                         : 146
-#      FDR                         : 25
-#      FDRE                        : 13
-#      FDRS                        : 2
-#      FDS                         : 16
+#      XORCY                       : 148
+# FlipFlops/Latches                : 402
+#      FD                          : 190
+#      FDE                         : 153
+#      FDR                         : 19
+#      FDRE                        : 17
+#      FDRS                        : 4
+#      FDS                         : 18
 #      FDSE                        : 1
 # Shift Registers                  : 8
 #      SRL16                       : 8
@@ -650,10 +662,10 @@ Device utilization summary:
 
 Selected Device : 3s50atq144-5 
 
- Number of Slices:                      410  out of    704    58%  
- Number of Slice Flip Flops:            392  out of   1408    27%  
- Number of 4 input LUTs:                722  out of   1408    51%  
-    Number used as logic:               714
+ Number of Slices:                      424  out of    704    60%  
+ Number of Slice Flip Flops:            402  out of   1408    28%  
+ Number of 4 input LUTs:                746  out of   1408    52%  
+    Number used as logic:               738
     Number used as Shift registers:       8
  Number of IOs:                          10
  Number of bonded IOBs:                  10  out of    108     9%  
@@ -681,7 +693,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)             | Load  |
 -----------------------------------+-----------------------------------+-------+
 CLK                                | BUFGP                             | 395   |
-Inst_moduloAudio/clk_div           | NONE(Inst_moduloAudio/t_bajocnt_3)| 5     |
+Inst_moduloAudio/clk_div           | NONE(Inst_moduloAudio/t_altocnt_6)| 15    |
 -----------------------------------+-----------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -693,7 +705,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.831ns (Maximum Frequency: 146.400MHz)
+   Minimum period: 6.699ns (Maximum Frequency: 149.270MHz)
    Minimum input arrival time before clock: 5.490ns
    Maximum output required time after clock: 6.949ns
    Maximum combinational path delay: No path found
@@ -704,54 +716,65 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 6.831ns (frequency: 146.400MHz)
-  Total number of paths / destination ports: 18633 / 572
+  Clock period: 6.699ns (frequency: 149.270MHz)
+  Total number of paths / destination ports: 18515 / 573
 -------------------------------------------------------------------------
-Delay:               6.831ns (Levels of Logic = 6)
-  Source:            Inst_control_i2c/sig_scl (FF)
-  Destination:       Inst_control_i2c/Mtridata_sda (FF)
+Delay:               6.699ns (Levels of Logic = 11)
+  Source:            Inst_control_ultrasonico_2/pulsos_0 (FF)
+  Destination:       Inst_control_ultrasonico_2/pulsos_24 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_control_i2c/sig_scl to Inst_control_i2c/Mtridata_sda
+  Data Path: Inst_control_ultrasonico_2/pulsos_0 to Inst_control_ultrasonico_2/pulsos_24
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             31   0.495   1.139  Inst_control_i2c/sig_scl (Inst_control_i2c/sig_scl)
-     LUT2_D:I1->O          8   0.562   0.645  Inst_control_i2c/estado_FSM_FFd9-In11 (Inst_control_i2c/estado_FSM_N2)
-     LUT4_D:I3->O         13   0.561   0.859  Inst_control_i2c/Mtridata_sda_mux000011 (N2)
-     LUT4:I2->O            1   0.561   0.000  Inst_control_i2c/Mtridata_sda_mux0000103_SW0_G (N1611)
-     MUXF5:I1->O           1   0.229   0.359  Inst_control_i2c/Mtridata_sda_mux0000103_SW0 (N136)
-     LUT4_L:I3->LO         1   0.561   0.102  Inst_control_i2c/Mtridata_sda_mux0000103 (Inst_control_i2c/Mtridata_sda_mux0000103)
-     LUT4:I3->O            1   0.561   0.000  Inst_control_i2c/Mtridata_sda_mux0000160 (Inst_control_i2c/Mtridata_sda_mux0000)
-     FDSE:D                    0.197          Inst_control_i2c/Mtridata_sda
+     FD:C->Q               3   0.495   0.559  Inst_control_ultrasonico_2/pulsos_0 (Inst_control_ultrasonico_2/pulsos_0)
+     LUT4:I0->O            1   0.561   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_lut<0> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<0> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<1> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<2> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<3> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<4> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<5> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<5>)
+     MUXCY:CI->O          10   0.179   0.752  Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<6> (Inst_control_ultrasonico_2/Mcompar_estado_cmp_gt0000_cy<6>)
+     LUT4:I3->O            1   0.561   0.359  Inst_control_ultrasonico_2/pulsos_mux0002<0>14_SW0 (N98)
+     LUT4_D:I3->O         24   0.561   1.066  Inst_control_ultrasonico_2/pulsos_mux0002<0>120 (Inst_control_ultrasonico_2/N01)
+     LUT4:I3->O            1   0.561   0.000  Inst_control_ultrasonico_2/pulsos_mux0002<8>1 (Inst_control_ultrasonico_2/pulsos_mux0002<8>)
+     FD:D                      0.197          Inst_control_ultrasonico_2/pulsos_16
     ----------------------------------------
-    Total                      6.831ns (3.727ns logic, 3.104ns route)
-                                       (54.6% logic, 45.4% route)
+    Total                      6.699ns (3.963ns logic, 2.736ns route)
+                                       (59.2% logic, 40.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Inst_moduloAudio/clk_div'
-  Clock period: 4.403ns (frequency: 227.141MHz)
-  Total number of paths / destination ports: 45 / 9
+  Clock period: 5.218ns (frequency: 191.663MHz)
+  Total number of paths / destination ports: 364 / 37
 -------------------------------------------------------------------------
-Delay:               4.403ns (Levels of Logic = 3)
+Delay:               5.218ns (Levels of Logic = 9)
   Source:            Inst_moduloAudio/t_bajocnt_0 (FF)
-  Destination:       Inst_moduloAudio/t_bajocnt_3 (FF)
+  Destination:       Inst_moduloAudio/t_altocnt_6 (FF)
   Source Clock:      Inst_moduloAudio/clk_div rising
   Destination Clock: Inst_moduloAudio/clk_div rising
 
-  Data Path: Inst_moduloAudio/t_bajocnt_0 to Inst_moduloAudio/t_bajocnt_3
+  Data Path: Inst_moduloAudio/t_bajocnt_0 to Inst_moduloAudio/t_altocnt_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             6   0.495   0.677  Inst_moduloAudio/t_bajocnt_0 (Inst_moduloAudio/t_bajocnt_0)
-     LUT4_L:I0->LO         1   0.561   0.166  Inst_moduloAudio/t_bajocnt_and000017 (Inst_moduloAudio/t_bajocnt_and000017)
-     LUT3:I1->O            2   0.562   0.446  Inst_moduloAudio/t_bajocnt_and0000411 (Inst_moduloAudio/t_bajocnt_and0000411)
-     LUT3:I1->O            4   0.562   0.499  Inst_moduloAudio/t_bajocnt_and0000108 (Inst_moduloAudio/t_bajocnt_and0000)
-     FDRE:R                    0.435          Inst_moduloAudio/t_bajocnt_0
+     FDE:C->Q              6   0.495   0.635  Inst_moduloAudio/t_bajocnt_0 (Inst_moduloAudio/t_bajocnt_0)
+     LUT2:I1->O            1   0.562   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_lut<0> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<0> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<1> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<2> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<3> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<4> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<5> (Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<5>)
+     MUXCY:CI->O          11   0.179   0.901  Inst_moduloAudio/Mcompar_salida_alarma_cmp_le0001_cy<6> (Inst_moduloAudio/salida_alarma_cmp_le0001)
+     LUT3:I0->O            7   0.561   0.602  Inst_moduloAudio/t_altocnt_and00001 (Inst_moduloAudio/t_altocnt_and0000)
+     FDRE:R                    0.435          Inst_moduloAudio/t_altocnt_0
     ----------------------------------------
-    Total                      4.403ns (2.615ns logic, 1.788ns route)
-                                       (59.4% logic, 40.6% route)
+    Total                      5.218ns (3.080ns logic, 2.138ns route)
+                                       (59.0% logic, 41.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
@@ -768,7 +791,7 @@ Offset:              5.490ns (Levels of Logic = 5)
     ----------------------------------------  ------------
      IBUF:I->O             6   0.824   0.677  ECO_2_IBUF (ECO_2_IBUF)
      LUT3_L:I0->LO         1   0.561   0.123  Inst_control_ultrasonico_2/pulsos_mux0002<0>19 (Inst_control_ultrasonico_2/pulsos_mux0002<0>19)
-     LUT4:I2->O            1   0.561   0.359  Inst_control_ultrasonico_2/pulsos_mux0002<0>14_SW0 (N96)
+     LUT4:I2->O            1   0.561   0.359  Inst_control_ultrasonico_2/pulsos_mux0002<0>14_SW0 (N98)
      LUT4_D:I3->O         24   0.561   1.066  Inst_control_ultrasonico_2/pulsos_mux0002<0>120 (Inst_control_ultrasonico_2/N01)
      LUT4:I3->O            1   0.561   0.000  Inst_control_ultrasonico_2/pulsos_mux0002<8>1 (Inst_control_ultrasonico_2/pulsos_mux0002<8>)
      FD:D                      0.197          Inst_control_ultrasonico_2/pulsos_16
@@ -809,7 +832,7 @@ Offset:              5.248ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.495   0.357  Inst_moduloAudio/salida_alarma (Inst_moduloAudio/salida_alarma)
+     FDRE:C->Q             1   0.495   0.357  Inst_moduloAudio/salida_alarma (Inst_moduloAudio/salida_alarma)
      OBUF:I->O                 4.396          BUZZER_OBUF (BUZZER)
     ----------------------------------------
     Total                      5.248ns (4.891ns logic, 0.357ns route)
@@ -818,14 +841,14 @@ Offset:              5.248ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.01 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.84 secs
  
 --> 
 
-Total memory usage is 4529368 kilobytes
+Total memory usage is 4545620 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    6 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

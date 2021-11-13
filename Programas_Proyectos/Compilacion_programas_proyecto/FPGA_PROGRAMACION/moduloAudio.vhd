@@ -1,9 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+
 use IEEE.NUMERIC_STD.ALL;
 
 entity moduloAudio is
-	generic(clk12:integer:=6000000;--Divide el ciclo en 1 segundo 500 ms bajo 500 ms alto cambiar si se desea un ciclo mas rapido
+	generic(clk12:integer:=120000;--Divide el ciclo en 1 segundo 500 ms bajo 500 ms alto cambiar si se desea un ciclo mas rapido
 			  m50:integer:=50;
 			  m100:integer:=100;
 			  m150:integer:=150;
@@ -12,6 +13,7 @@ entity moduloAudio is
 
     Port ( clk:in STD_LOGIC;
 			  distancia : in  STD_LOGIC_VECTOR (7 downto 0);
+			  --led:out STD_LOGIC_VECTOR(7 DOWNTO 0);
            salida_alarma : out  STD_LOGIC);
 end moduloAudio;
 
@@ -19,30 +21,31 @@ architecture Behavioral of moduloAudio is
 	signal dist:std_logic_vector(7 downto 0);
 	signal contador_clk_div: integer range 0 to clk12:=0;
 	signal contador_distancia: integer range 0 to 255:=0;
-	signal t_bajo,t_bajocnt: integer range 0 to 10:=0;-- t_alto,t_altocnt
+	signal t_bajo,t_bajocnt,t_alto,t_altocnt: integer range 0 to 100:=0;-- t_alto,t_altocnt
 	signal clk_div: STD_LOGIC:='0';
 
 begin
 ------------------Divisor de reloj------------------------------
+	--led<=distancia;
 	process(clk)
 		begin
 			if(rising_edge(clk)) then 
 				dist<=distancia;
 				contador_distancia<=to_integer(unsigned(dist));
 				if(contador_distancia>m150 and contador_distancia<m200) then
-					--t_alto<=1;
-					t_bajo<=5;
+					t_alto<=10;
+					t_bajo<=60;
 				elsif(contador_distancia>m100 and contador_distancia<m150)then
-					--t_alto<=1;
-					t_bajo<=4;
+					t_alto<=5;
+					t_bajo<=30;
 				elsif(contador_distancia>m50 and contador_distancia<m100)then
-					--t_alto<=1;
-					t_bajo<=3;
+					t_alto<=2;
+					t_bajo<=15;
 				elsif(contador_distancia>0 and contador_distancia<m50)then
-					--t_alto<=1;
-					t_bajo<=2;
+					t_alto<=1;
+					t_bajo<=5;
 				else
-					--t_alto<=0;
+					t_alto<=0;
 					t_bajo<=0;
 				end if;
 				
@@ -64,9 +67,12 @@ begin
 					if(t_bajocnt<=t_bajo)then
 						salida_alarma<='0';
 						t_bajocnt<=t_bajocnt+1;
-					else
+					elsif(t_altocnt<=t_alto) then
 						salida_alarma<='1';
+						t_altocnt<=t_altocnt+1;
+					else
 						t_bajocnt<=0;
+						t_altocnt<=0;
 					end if;	
 				else
 					salida_alarma<='0';

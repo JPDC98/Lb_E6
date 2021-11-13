@@ -9,23 +9,23 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Sun Oct 24 12:20:55 2021
+Mapped Date    : Thu Oct 28 13:54:05 2021
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           392 out of   1,408   27%
-  Number of 4 input LUTs:               602 out of   1,408   42%
+  Number of Slice Flip Flops:           402 out of   1,408   28%
+  Number of 4 input LUTs:               632 out of   1,408   44%
 Logic Distribution:
-  Number of occupied Slices:            454 out of     704   64%
-    Number of Slices containing only related logic:     454 out of     454 100%
-    Number of Slices containing unrelated logic:          0 out of     454   0%
+  Number of occupied Slices:            470 out of     704   66%
+    Number of Slices containing only related logic:     470 out of     470 100%
+    Number of Slices containing unrelated logic:          0 out of     470   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         717 out of   1,408   50%
-    Number used as logic:               594
-    Number used as a route-thru:        115
+  Total Number of 4 input LUTs:         741 out of   1,408   52%
+    Number used as logic:               624
+    Number used as a route-thru:        109
     Number used as Shift registers:       8
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -34,10 +34,10 @@ Logic Distribution:
   Number of bonded IOBs:                 10 out of     108    9%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                3.18
+Average Fanout of Non-Clock Nets:                3.19
 
 Peak Memory Usage:  4477 MB
-Total REAL time to MAP completion:  4 secs 
+Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:
